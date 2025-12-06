@@ -38,10 +38,12 @@ from collections import Counter
 import signal
 import sys
 import os
+import json
 
 # Import reward components from reward_and_loss.py
 from reward_and_loss import (
     FactualityVerifier,
+    AbstentionClassifier,
     EntropyConfidenceCalculator,
     RewardFunction,
     REINFORCELoss
@@ -432,9 +434,17 @@ class SimpleRLTrainer:
             self.policy = AutoPeftModelForCausalLM.from_pretrained(
                 config.policy_model_name,
                 device_map="auto",
-                quantization_config=bnb_config
+                quantization_config=bnb_config,
+                is_trainable=True  # Ensure model is trainable
             )
             print("LoRA checkpoint loaded successfully!")
+
+            # Ensure model is in training mode with gradients enabled
+            self.policy.train()
+            for name, param in self.policy.named_parameters():
+                if "lora" in name.lower():
+                    param.requires_grad = True
+
         else:
             # Load base model and add new LoRA adapters (matching qwen-finetune.py)
             print(f"Loading base model {config.policy_model_name} with LoRA adapters...")
@@ -464,11 +474,14 @@ class SimpleRLTrainer:
 
         # Verifier-based reward model (optional for evaluation-only mode)
         self.reward_model = None
+        self.abstention_classifier = None
         if reward_model is not None:
             self.reward_model = reward_model.to(self.device)
             self.reward_model.eval()
             # Set vocab size for entropy calculation
             self.reward_model.set_vocab_size(self.tokenizer.vocab_size)
+            # Initialize abstention classifier
+            self.abstention_classifier = AbstentionClassifier(self.reward_model.verifier)
 
         # Store reference policy for KL divergence (frozen copy of initial policy)
         # Only create if training (reward_model is not None) and KL penalty > 0
@@ -692,10 +705,62 @@ class SimpleRLTrainer:
                 answers=generated_answers
             )
 
-            # Compute final reward: R = f * (λ_base + λ_conf * conf)
+            # --- ABSTENTION DETECTION using classifier ---
+            abstention_scores = self.abstention_classifier.predict_proba(generated_answers).to(f.device)
+            abstention_threshold = 0.5
+            abstained = (abstention_scores >= abstention_threshold)  # bool [B]
+
+            # DEBUG: Print sample answers and their abstention scores every 100 steps
+            if self.current_step % 100 == 0:
+                print(f"\n[DEBUG] Sample answers at step {self.current_step}:")
+                for i, (answer, score, is_abstain) in enumerate(zip(generated_answers[:2], abstention_scores[:2], abstained[:2])):
+                    print(f"  Answer {i}: '{answer}'")
+                    print(f"    Abstention score: {score.item():.4f}, Classified as abstention: {is_abstain.item()}")
+
+            # --- BASE REWARD: factuality * (λ_base + λ_conf * conf) ---
             lambda_base = self.reward_model.lambda_base
             lambda_conf = self.reward_model.lambda_conf
-            rewards = f * (lambda_base + lambda_conf * conf)  # [B]
+            base_reward = f * (lambda_base + lambda_conf * conf)  # [B]
+
+            # --- CONFIDENCE-WEIGHTED PENALTY for confident negatives ---
+            # If f < 0, multiply by (1 + alpha * conf^gamma) to make confident errors more negative
+            alpha_penalty = 2.0   # tuneable hyperparam
+            gamma_penalty = 2.0   # quadratic in confidence
+
+            negative_mask = (f < 0) & (~abstained)
+            penalty_multiplier = torch.ones_like(base_reward)
+            # Ensure dtype matches for assignment
+            penalty_values = (1.0 + alpha_penalty * (conf[negative_mask] ** gamma_penalty)).to(penalty_multiplier.dtype)
+            penalty_multiplier[negative_mask] = penalty_values
+
+            reward_answer = base_reward * penalty_multiplier  # [B]
+
+            # --- APPLY ABSTENTION: R = 0 if abstained ---
+            rewards = torch.where(
+                abstained,
+                torch.zeros_like(reward_answer),
+                reward_answer
+            )
+
+            # REWARD NORMALIZATION: Normalize to mean=0, std=1 for variance reduction
+            rewards_before_norm = rewards.clone()  # Save for logging
+            rewards_mean = rewards.mean()
+            rewards_std = rewards.std()
+            if rewards_std > 1e-8:  # Avoid division by zero
+                rewards = (rewards - rewards_mean) / (rewards_std + 1e-8)
+
+            # RE-ZERO abstentions after normalization to preserve "abstention = neutral" property
+            # Otherwise normalization shifts them away from 0
+            rewards = torch.where(
+                abstained,
+                torch.zeros_like(rewards),
+                rewards
+            )
+
+            # Store original stats for logging
+            original_reward_mean = rewards_mean.item()
+            original_reward_std = rewards_std.item()
+            abstention_rate = abstained.float().mean().item()
 
         # Clear CUDA cache to free memory before gradient-requiring forward pass
         torch.cuda.empty_cache()
@@ -742,10 +807,30 @@ class SimpleRLTrainer:
         extra_metrics = {
             "mean_factuality": f.mean().item(),
             "mean_confidence": conf.mean().item(),
+            "abstention_rate": abstention_rate,            # % of answers that are abstentions
+            "original_reward_mean": original_reward_mean,  # Before normalization
+            "original_reward_std": original_reward_std,    # Before normalization
+            "normalized_reward_mean": rewards.mean().item(),  # After normalization (should be ~0)
             **loss_metrics
         }
 
-        return loss.item(), rewards.mean().item(), log_probs.mean().item(), extra_metrics
+        # Save prediction details for analysis
+        prediction_details = []
+        for i in range(len(generated_answers)):
+            prediction_details.append({
+                "question": questions[i],
+                "generated_answer": generated_answers[i],
+                "gold_answer": gold_answers[i],
+                "abstention_score": abstention_scores[i].item(),
+                "is_abstention": abstained[i].item(),
+                "factuality_score": f[i].item(),
+                "confidence": conf[i].item(),
+                "reward_before_norm": rewards_before_norm[i].item(),
+                "reward_after_norm": rewards[i].item()
+            })
+        extra_metrics["predictions"] = prediction_details
+
+        return loss.item(), original_reward_mean, log_probs.mean().item(), extra_metrics
 
     def train(self, training_data: List[Tuple[str, str, str]]) -> Dict[str, List[float]]:
         """
@@ -781,9 +866,16 @@ class SimpleRLTrainer:
             # Manual batching instead of DataLoader (which doesn't handle string tuples well)
             import random
             indices = list(range(len(training_data)))
+            # Use fixed seed for reproducibility when resuming
+            random.seed(42 + epoch)
             random.shuffle(indices)
 
-            for step in range(0, len(training_data), self.config.batch_size):
+            # Resume from checkpoint step if available
+            start_step = self.current_step if self.current_step > 0 else 0
+            if start_step > 0:
+                print(f"Resuming from step {start_step}...")
+
+            for step in range(start_step, len(training_data), self.config.batch_size):
                 # Check if we should exit gracefully
                 if self.should_exit:
                     print("Graceful shutdown requested. Exiting training loop...")
@@ -805,9 +897,10 @@ class SimpleRLTrainer:
 
                 if step % 5 == 0:
                     print(f"Epoch {epoch+1}/{self.config.num_epochs}, Step {step}")
-                    print(f"  Loss: {loss:.4f}, Reward: {mean_reward:.4f}")
+                    print(f"  Loss: {loss:.4f}, Reward: {mean_reward:.4f} (std: {extra_metrics['original_reward_std']:.4f})")
                     print(f"  Factuality: {extra_metrics['mean_factuality']:.4f}, "
-                          f"Confidence: {extra_metrics['mean_confidence']:.4f}")
+                          f"Confidence: {extra_metrics['mean_confidence']:.4f}, "
+                          f"Abstention Rate: {extra_metrics['abstention_rate']:.2%}")
                     # Print KL divergence metrics if KL penalty is enabled
                     if self.config.kl_penalty > 0.0:
                         print(f"  KL Loss: {extra_metrics.get('kl_loss', 0.0):.4f}, "
@@ -818,6 +911,24 @@ class SimpleRLTrainer:
                     print(f"\n{'='*70}")
                     print(f"Saving periodic checkpoint at step {step}...")
                     self.save_checkpoint()
+
+                    # Save prediction details to JSON
+                    predictions_file = f"predictions_step_{step}.json"
+                    if "predictions" in extra_metrics:
+                        with open(predictions_file, 'w', encoding='utf-8') as f:
+                            json.dump({
+                                "step": step,
+                                "epoch": epoch,
+                                "predictions": extra_metrics["predictions"],
+                                "summary": {
+                                    "mean_factuality": extra_metrics["mean_factuality"],
+                                    "mean_confidence": extra_metrics["mean_confidence"],
+                                    "abstention_rate": extra_metrics["abstention_rate"],
+                                    "mean_reward": mean_reward
+                                }
+                            }, f, indent=2, ensure_ascii=False)
+                        print(f"Saved predictions to {predictions_file}")
+
                     print(f"{'='*70}\n")
 
             # Check if we should exit after epoch
@@ -904,6 +1015,15 @@ class SimpleRLTrainer:
             # Load optimizer state if it exists
             if self.optimizer and state.get('optimizer_state'):
                 self.optimizer.load_state_dict(state['optimizer_state'])
+
+            # Ensure model is in training mode with gradients enabled
+            self.policy.train()
+            print(f"Model set to training mode")
+
+            # Verify LoRA parameters have gradients
+            lora_params_with_grad = sum(1 for n, p in self.policy.named_parameters()
+                                       if 'lora' in n.lower() and p.requires_grad)
+            print(f"LoRA parameters with gradients: {lora_params_with_grad}")
 
             print(f"Checkpoint loaded: epoch {self.current_epoch}, step {self.current_step}")
         else:
@@ -1076,15 +1196,20 @@ def create_example_prompts() -> List[str]:
     ]
 
 
-def main():
+def main(resume_from_checkpoint=None):
     """
     Verifier-Based Reward Learning RLHF demonstration:
 
     Uses NLI verifier (DeBERTa-FEVER) + entropy confidence for factuality-based rewards.
     Trains policy using REINFORCE with R(x,y) = f * (λ_base + λ_conf * conf).
+
+    Args:
+        resume_from_checkpoint: Path to checkpoint directory to resume training from
     """
     print("="*70)
     print("Verifier-Based Reward Learning RLHF (Qwen2-7B)")
+    if resume_from_checkpoint:
+        print(f"RESUMING FROM CHECKPOINT: {resume_from_checkpoint}")
     print("="*70)
 
     # ========================================================================
@@ -1161,9 +1286,14 @@ def main():
     # Configuration for RL training
     # OPTION 1: Use base Qwen2-7B model
     # OPTION 2: Use fine-tuned HotpotQA model (recommended for better baseline)
+    # OPTION 3: Resume from checkpoint (overrides above options)
     USE_FINETUNED_MODEL = True  # Set to False to use base model
 
-    if USE_FINETUNED_MODEL:
+    if resume_from_checkpoint:
+        # When resuming, load from checkpoint directory
+        policy_model = resume_from_checkpoint
+        print(f"\nResuming from checkpoint: {policy_model}")
+    elif USE_FINETUNED_MODEL:
         policy_model = "fsiddiqui2/Qwen2.5-7B-Instruct-HotpotQA-Finetuned-10000"
     else:
         policy_model = "Qwen/Qwen2-7B"
@@ -1186,6 +1316,10 @@ def main():
     else:
         print(f"KL Penalty: DISABLED (saves ~11GB GPU memory by not loading reference policy)")
     rl_trainer = SimpleRLTrainer(rl_config, reward_model)
+
+    # Load checkpoint state if resuming
+    if resume_from_checkpoint:
+        rl_trainer.load_checkpoint(resume_from_checkpoint)
 
     # Load HotpotQA training data (all samples starting from position 10000)
     print("\nLoading HotpotQA training data (all samples starting from position 10000)...")
@@ -1213,8 +1347,10 @@ def main():
             evidence_parts.append(f"{title}: {' '.join(sentences)}")
         evidence = "\n".join(evidence_parts)
 
-        # Format as closed-book QA prompt (still closed-book for the policy)
+        # Format as closed-book QA prompt with abstention instruction
         prompt = f"""You are an expert at giving concise answers. Do not give any explanations, only a short answer.
+
+IMPORTANT: If you are not confident or do not know the answer, simply respond with "I don't know" rather than guessing.
 
 Question: {question}
 Answer: """
@@ -1284,4 +1420,39 @@ Answer: """
 
 
 if __name__ == "__main__":
-    main()
+    import glob
+
+    # Auto-detect latest checkpoint for resuming
+    checkpoint_dir = "checkpoints"
+    resume_checkpoint = None
+
+    if os.path.exists(checkpoint_dir):
+        # Find all checkpoint directories
+        checkpoint_paths = glob.glob(os.path.join(checkpoint_dir, "checkpoint_epoch_*_step_*"))
+
+        if checkpoint_paths:
+            # Sort by step number (extract step from path)
+            def get_step_number(path):
+                try:
+                    step_str = path.split("_step_")[-1]
+                    return int(step_str)
+                except:
+                    return 0
+
+            checkpoint_paths.sort(key=get_step_number, reverse=True)
+            latest_checkpoint = checkpoint_paths[0]
+
+            print("\n" + "="*70)
+            print("CHECKPOINT DETECTED")
+            print("="*70)
+            print(f"Latest checkpoint found: {latest_checkpoint}")
+            print(f"Available checkpoints: {len(checkpoint_paths)}")
+            print("="*70)
+
+            # Auto-resume from latest checkpoint
+            resume_checkpoint = latest_checkpoint
+            print(f"Auto-resuming from: {resume_checkpoint}")
+            print("="*70)
+
+    # Start or resume training
+    main(resume_from_checkpoint=resume_checkpoint)
