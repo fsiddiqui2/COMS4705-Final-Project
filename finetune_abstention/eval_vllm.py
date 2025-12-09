@@ -24,7 +24,7 @@ SPLIT = "validation"
 DELIMITER_PROMPT = " ###\n"
 DELIMITER_ANSWER = " --> "
 DELIMITER_END = " END"
-REFUSAL_PHRASE = "i don't know"  # Normalized check string
+REFUSAL_PHRASE = "i dont know"  # Normalized check string
 
 # Output Files
 OUTPUT_FILE = "qwen_abstention_cot_eval_results.json"

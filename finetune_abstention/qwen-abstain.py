@@ -16,7 +16,7 @@ from transformers.trainer_utils import get_last_checkpoint
 # ==========================================
 
 MODEL_ID = "Qwen/Qwen2.5-7B-Instruct"
-DATASET_ID = "fsiddiqui2/hotpotqa-abstention-10k" # CHANGED: HF Dataset ID
+DATASET_ID = "fsiddiqui2/hotpotqa-abstention-70-30" # CHANGED: HF Dataset ID
 OUTPUT_DIR = "./qwen_abstention_finetuned"
 
 # --- Training Mode ---
