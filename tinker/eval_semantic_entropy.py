@@ -25,7 +25,7 @@ DATASET_NAME = "hotpot_qa"
 SUBSET_NAME = "distractor"
 SPLIT = "validation"
 NUM_SAMPLES_PER_QUESTION = 10  # Number of generations to estimate entropy
-TOTAL_EVAL_SAMPLES = 100       # Limit total questions for speed (set to None for full)
+TOTAL_EVAL_SAMPLES = 1000       # Limit total questions for speed (set to None for full)
 
 # NLI Model (Local)
 # User requested larger model for better accuracy (requires GPU)
@@ -174,6 +174,71 @@ def calculate_sequence_prob(token_ids, logprobs):
     total_logprob = sum(logprobs)
     return np.exp(total_logprob)
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+def process_generation(item, sampling_client, tokenizer, num_samples):
+    question = item['question']
+    gold_answers = item['answer']
+    if not isinstance(gold_answers, list):
+            gold_answers = [gold_answers]
+
+    # 1. Prepare Prompt
+    messages = [
+        {"role": "system", "content": "You are a concise encyclopedia. Answer the question directly with a short phrase or entity name. Do not explain."},
+        {"role": "user", "content": question}
+    ]
+    prompt_text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+    input_ids = tokenizer.encode(prompt_text, add_special_tokens=False)
+    model_input = ttypes.ModelInput.from_ints(input_ids)
+    
+    # 2. Generate N Samples
+    sampling_params = ttypes.SamplingParams(
+        max_tokens=32, 
+        temperature=0.7, # High temp for diversity
+        top_p=0.9
+    )
+    
+    try:
+        # Request N samples
+        result = sampling_client.sample(model_input, num_samples, sampling_params).result()
+        
+        samples = []
+        for seq in result.sequences:
+            # Decode
+            text = tokenizer.decode(seq.tokens)
+            if "assistant\n" in text: text = text.split("assistant\n")[-1]
+            text = text.replace("<|im_end|>", "").strip()
+            text = text.split("\n")[0].strip()
+            if "." in text: text = text.split(".")[0].strip()
+            
+            # Probability
+            if hasattr(seq, 'logprobs') and seq.logprobs:
+                prob = calculate_sequence_prob(seq.tokens, seq.logprobs)
+            else:
+                prob = 1.0 / num_samples
+            
+            samples.append((text, prob))
+            
+        # Normalize
+        total_prob = sum(p for t, p in samples)
+        if total_prob > 0:
+            samples = [(t, p/total_prob) for t, p in samples]
+            
+        return {
+            "question": question,
+            "gold_answers": gold_answers,
+            "samples": samples,
+            "error": None
+        }
+
+    except Exception as e:
+        return {
+            "question": question,
+            "gold_answers": gold_answers,
+            "samples": [],
+            "error": str(e)
+        }
+
 def main():
     print("🚀 Connecting to Tinker for Semantic Entropy Eval...")
     if not os.environ.get("TINKER_API_KEY"):
@@ -197,72 +262,35 @@ def main():
     
     results = []
     
-    print(f"Starting eval loop for {len(dataset)} questions...")
+    print(f"Starting eval (BATCH SIZE=20 for Generation)...")
     
-    for i, item in tqdm(enumerate(dataset), total=len(dataset)):
-        question = item['question']
-        gold_answers = item['answer']
-        if not isinstance(gold_answers, list):
-             gold_answers = [gold_answers]
+    # 1. Parallel Generation
+    pending_futures = []
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        for item in dataset:
+            future = executor.submit(process_generation, item, sampling_client, tokenizer, NUM_SAMPLES_PER_QUESTION)
+            pending_futures.append(future)
+            
+        # 2. Process results as they arrive (Sequential NLI)
+        print("Processing generations & Running NLI...")
+        for future in tqdm(as_completed(pending_futures), total=len(dataset)):
+            data = future.result()
+            
+            if data['error']:
+                print(f"Error processing question: {data['error']}")
+                continue
+                
+            samples = data['samples']
+            gold_answers = data['gold_answers']
+            question = data['question']
 
-        # 1. Prepare Prompt
-        messages = [
-            {"role": "system", "content": "You are a concise encyclopedia. Answer the question directly with a short phrase or entity name. Do not explain."},
-            {"role": "user", "content": question}
-        ]
-        prompt_text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-        input_ids = tokenizer.encode(prompt_text, add_special_tokens=False)
-        model_input = ttypes.ModelInput.from_ints(input_ids)
-        
-        # 2. Generate N Samples
-        sampling_params = ttypes.SamplingParams(
-            max_tokens=32, 
-            temperature=0.7, # High temp for diversity
-            top_p=0.9
-        )
-        
-        try:
-            # We request N samples in one call (Tinker supports this efficiencly)
-            result = sampling_client.sample(model_input, NUM_SAMPLES_PER_QUESTION, sampling_params).result()
-            
-            samples = []
-            
-            for seq in result.sequences:
-                # Decode Text
-                text = tokenizer.decode(seq.tokens)
-                # Cleanup
-                if "assistant\n" in text: text = text.split("assistant\n")[-1]
-                text = text.replace("<|im_end|>", "").strip()
-                # Basic normalization
-                text = text.split("\n")[0].strip()
-                if "." in text: text = text.split(".")[0].strip()
-                
-                # Get Probability
-                # seq.logprobs is List[float] (if requested? Tinker usually returns it by default in TokensWithLogprobs?)
-                # Wait, check Tinker types. TokensWithLogprobs usually has `logprobs` or `maybe_logprobs`.
-                # Assuming `seq.logprobs` exists and is populated.
-                # If not available, we assume uniform distribution (1/N) as fallback, but that defeats purpose.
-                # Let's verify `seq` has logprobs.
-                
-                # In tinker/types.py or docs: TokensWithLogprobs has `tokens: List[int]` and `logprobs: Optional[List[float]]`
-                if hasattr(seq, 'logprobs') and seq.logprobs:
-                    prob = calculate_sequence_prob(seq.tokens, seq.logprobs)
-                else:
-                    # Fallback to uniform if API doesn't return logprobs (should confirm)
-                    prob = 1.0 / NUM_SAMPLES_PER_QUESTION
-                
-                samples.append((text, prob))
-                
-            # Normalize probabilities to sum to 1 (across the N samples)
-            total_prob = sum(p for t, p in samples)
-            if total_prob > 0:
-                samples = [(t, p/total_prob) for t, p in samples]
-            
-            # 3. Cluster Semantically
+            if not samples:
+                continue
+
+            # 3. Cluster Semantically (Local GPU)
             clusters = clusterer.cluster_answers(samples)
             
             # 4. Calculate Entropy
-            # SE = - sum( P(C) * log(P(C)) )
             entropy = 0.0
             
             # Best Cluster Logic for Accuracy
@@ -271,22 +299,17 @@ def main():
             
             for c in clusters:
                 p_c = c['prob']
-                
                 if p_c > max_cluster_prob:
                     max_cluster_prob = p_c
                     best_cluster = c
-                
                 if p_c > 0:
                     entropy -= p_c * np.log(p_c)
 
-            # 5. Calculate Accuracy (EM/F1) on Best Cluster
-            # Use the representative text from the best cluster
+            # 5. Calculate Accuracy
             best_answer = best_cluster['text'] if best_cluster else ""
-            
             sample_em = max([float(exact_match_score(best_answer, gold)) for gold in gold_answers])
             sample_f1 = max([f1_score(best_answer, gold)[0] for gold in gold_answers])
                     
-            # Store result
             results.append({
                 "question": question,
                 "gold_answers": gold_answers,
@@ -300,12 +323,6 @@ def main():
                 "clusters": [{"text": c['text'], "prob": c['prob']} for c in clusters],
                 "samples": [s[0] for s in samples]
             })
-            
-            # print(f"Q: {question[:30]}... | SE: {entropy:.4f} | Clusters: {len(clusters)}")
-
-        except Exception as e:
-            print(f"Error on sample {i}: {e}")
-            continue
 
     # Stats
     avg_se = np.mean([r['entropy'] for r in results]) if results else 0
