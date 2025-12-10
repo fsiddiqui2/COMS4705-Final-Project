@@ -1,0 +1,4630 @@
+[
+  {
+    "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+    "gold_answers": [
+      "yes"
+    ],
+    "prediction": "no",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "no",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no"
+    ]
+  },
+  {
+    "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+    "gold_answers": [
+      "Chief of Protocol"
+    ],
+    "prediction": "First Lady",
+    "entropy": 1.2936527360869359,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 8,
+    "clusters": [
+      {
+        "text": "First Lady of the United States",
+        "prob": 0.38619360625230226
+      },
+      {
+        "text": "United States Ambassador to the United Nations",
+        "prob": 0.0662651820290368
+      },
+      {
+        "text": "First Lady",
+        "prob": 0.42683403100006184
+      },
+      {
+        "text": "United States Secretary of State",
+        "prob": 0.07598604635060559
+      },
+      {
+        "text": "United States Ambassador to France",
+        "prob": 0.018798925467712887
+      },
+      {
+        "text": "Governor of California",
+        "prob": 0.00912417996601084
+      },
+      {
+        "text": "United States Ambassador",
+        "prob": 0.016629084471806357
+      },
+      {
+        "text": "U",
+        "prob": 0.0001689444624634309
+      }
+    ],
+    "samples": [
+      "First Lady of the United States",
+      "United States Ambassador to the United Nations",
+      "First Lady",
+      "United States Secretary of State",
+      "United States Ambassador to France",
+      "Governor of California",
+      "United States Ambassador",
+      "First Lady of the United States",
+      "U",
+      "First Lady"
+    ]
+  },
+  {
+    "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+    "gold_answers": [
+      "Animorphs"
+    ],
+    "prediction": "The Expanse",
+    "entropy": 0.6695919335650883,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 3,
+    "clusters": [
+      {
+        "text": "Annihilation",
+        "prob": 0.007196829975847134
+      },
+      {
+        "text": "The Expanse",
+        "prob": 0.6689497578831054
+      },
+      {
+        "text": "Dune",
+        "prob": 0.32385341214104746
+      }
+    ],
+    "samples": [
+      "Annihilation",
+      "The Expanse",
+      "Dune",
+      "The Expanse",
+      "The Expanse",
+      "Dune",
+      "Dune",
+      "The Expanse",
+      "The Expanse",
+      "Dune"
+    ]
+  },
+  {
+    "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+    "gold_answers": [
+      "no"
+    ],
+    "prediction": "no",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "no",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no"
+    ]
+  },
+  {
+    "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+    "gold_answers": [
+      "Greenwich Village, New York City"
+    ],
+    "prediction": "New York City",
+    "entropy": 0.7132712954359051,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.7499999999999999
+    },
+    "num_clusters": 3,
+    "clusters": [
+      {
+        "text": "New York City",
+        "prob": 0.6553445617176703
+      },
+      {
+        "text": "Brooklyn",
+        "prob": 0.32715815207280574
+      },
+      {
+        "text": "Buffalo",
+        "prob": 0.01749728620952413
+      }
+    ],
+    "samples": [
+      "New York City",
+      "Brooklyn",
+      "New York City",
+      "Brooklyn",
+      "New York City",
+      "Brooklyn",
+      "New York City",
+      "Buffalo",
+      "Brooklyn",
+      "New York City"
+    ]
+  },
+  {
+    "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+    "gold_answers": [
+      "YG Entertainment"
+    ],
+    "prediction": "S",
+    "entropy": 1.140414994683994,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 8,
+    "clusters": [
+      {
+        "text": "S",
+        "prob": 0.6763288153582475
+      },
+      {
+        "text": "JYP Entertainment",
+        "prob": 0.09205175331567685
+      },
+      {
+        "text": "Cube Entertainment",
+        "prob": 0.09384792145138814
+      },
+      {
+        "text": "Yoo Young-jin",
+        "prob": 0.03534037972194661
+      },
+      {
+        "text": "YG Entertainment",
+        "prob": 0.07531084944878642
+      },
+      {
+        "text": "Pledis Entertainment",
+        "prob": 0.004722834270636914
+      },
+      {
+        "text": "DSP Media",
+        "prob": 0.004341467970241826
+      },
+      {
+        "text": "Big Hit Entertainment",
+        "prob": 0.018055978463075707
+      }
+    ],
+    "samples": [
+      "S",
+      "JYP Entertainment",
+      "S",
+      "Cube Entertainment",
+      "Yoo Young-jin",
+      "YG Entertainment",
+      "Pledis Entertainment",
+      "S",
+      "DSP Media",
+      "Big Hit Entertainment"
+    ]
+  },
+  {
+    "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+    "gold_answers": [
+      "Eenasul Fateh"
+    ],
+    "prediction": "Alvin Ailey",
+    "entropy": 0.6063721718469988,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "Joseph Malinowski",
+        "prob": 1.634232415600031e-05
+      },
+      {
+        "text": "Alain Charles Minard",
+        "prob": 0.01843830585217767
+      },
+      {
+        "text": "Al Haddad",
+        "prob": 0.07887060518030332
+      },
+      {
+        "text": "Alvin Ailey",
+        "prob": 0.8519523006257667
+      },
+      {
+        "text": "Alberto Ibarguren",
+        "prob": 0.0007480746203038459
+      },
+      {
+        "text": "Erik B",
+        "prob": 0.0006180862224200227
+      },
+      {
+        "text": "Erik van den Berg",
+        "prob": 0.001056746464950672
+      },
+      {
+        "text": "Jerry Garcia",
+        "prob": 0.029741307329915243
+      },
+      {
+        "text": "Michael Douglas",
+        "prob": 0.018558075182297556
+      },
+      {
+        "text": "George Alexander \"Al\" Zundel",
+        "prob": 1.5619770868333373e-07
+      }
+    ],
+    "samples": [
+      "Joseph Malinowski",
+      "Alain Charles Minard",
+      "Al Haddad",
+      "Alvin Ailey",
+      "Alberto Ibarguren",
+      "Erik B",
+      "Erik van den Berg",
+      "Jerry Garcia",
+      "Michael Douglas",
+      "George Alexander \"Al\" Zundel"
+    ]
+  },
+  {
+    "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+    "gold_answers": [
+      "3,677 seated"
+    ],
+    "prediction": "4,000",
+    "entropy": 1.483841425255175,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "4,000",
+        "prob": 0.4092594059871584
+      },
+      {
+        "text": "4,100",
+        "prob": 0.07254484282977294
+      },
+      {
+        "text": "5,400",
+        "prob": 0.30265201136500525
+      },
+      {
+        "text": "7,127",
+        "prob": 0.006567463660414677
+      },
+      {
+        "text": "3,200",
+        "prob": 0.102579263795992
+      },
+      {
+        "text": "8,263",
+        "prob": 0.00062245610646279
+      },
+      {
+        "text": "3,600",
+        "prob": 0.09151045913407081
+      },
+      {
+        "text": "5,107",
+        "prob": 0.004063428509004593
+      },
+      {
+        "text": "4,227",
+        "prob": 0.004502304541024045
+      },
+      {
+        "text": "7,176",
+        "prob": 0.005698364071094645
+      }
+    ],
+    "samples": [
+      "4,000",
+      "4,100",
+      "5,400",
+      "7,127",
+      "3,200",
+      "8,263",
+      "3,600",
+      "5,107",
+      "4,227",
+      "7,176"
+    ]
+  },
+  {
+    "question": "Who is older, Annie Morton or Terry Richardson?",
+    "gold_answers": [
+      "Terry Richardson"
+    ],
+    "prediction": "Annie Morton",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "Annie Morton",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "Annie Morton",
+      "Annie Morton",
+      "Annie Morton",
+      "Annie Morton",
+      "Annie Morton",
+      "Annie Morton",
+      "Annie Morton",
+      "Annie Morton",
+      "Annie Morton",
+      "Annie Morton"
+    ]
+  },
+  {
+    "question": "Are Local H and For Against both from the United States?",
+    "gold_answers": [
+      "yes"
+    ],
+    "prediction": "yes",
+    "entropy": 0.37992984992184897,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.8733700227856458
+      },
+      {
+        "text": "no",
+        "prob": 0.1266299772143541
+      }
+    ],
+    "samples": [
+      "yes",
+      "yes",
+      "no",
+      "yes",
+      "no",
+      "yes",
+      "yes",
+      "yes",
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+    "gold_answers": [
+      "Kansas Song"
+    ],
+    "prediction": "\"Fight Song\"",
+    "entropy": 1.368792628450517,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    "num_clusters": 6,
+    "clusters": [
+      {
+        "text": "Rock Chalk, Jayhawk",
+        "prob": 0.23797959340766822
+      },
+      {
+        "text": "\"Fight Song of Kansas\"",
+        "prob": 0.10733156597061193
+      },
+      {
+        "text": "Lawrence Tech Fight Song",
+        "prob": 0.017037636816204082
+      },
+      {
+        "text": "\"Fight Song\"",
+        "prob": 0.39438162947320804
+      },
+      {
+        "text": "\"Lawrence\"",
+        "prob": 0.242102134032128
+      },
+      {
+        "text": "\"The L\"",
+        "prob": 0.0011674403001797275
+      }
+    ],
+    "samples": [
+      "Rock Chalk, Jayhawk",
+      "\"Fight Song of Kansas\"",
+      "Lawrence Tech Fight Song",
+      "\"Fight Song\"",
+      "\"Lawrence\"",
+      "The Fight Song",
+      "\"The L\"",
+      "The Fight Song",
+      "Jayhawk Fight Song",
+      "Fight Song"
+    ]
+  },
+  {
+    "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and T\u00e9a Leoni?",
+    "gold_answers": [
+      "David Weissman"
+    ],
+    "prediction": "Mark Bomback",
+    "entropy": 1.836642031479499,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "John Francis Daley",
+        "prob": 0.08772319745626059
+      },
+      {
+        "text": "Brian Helgeland",
+        "prob": 0.12722124640656685
+      },
+      {
+        "text": "Kenneth LaVey",
+        "prob": 0.00019064645291689254
+      },
+      {
+        "text": "Stephen Schiff",
+        "prob": 0.062191306183786994
+      },
+      {
+        "text": "Neil Turkell",
+        "prob": 0.00022374738479136305
+      },
+      {
+        "text": "T",
+        "prob": 0.0002687439736473637
+      },
+      {
+        "text": "David Koepp",
+        "prob": 0.16497192525392057
+      },
+      {
+        "text": "Michael Dougherty",
+        "prob": 0.172616432268369
+      },
+      {
+        "text": "Mark Bomback",
+        "prob": 0.29014880925782954
+      },
+      {
+        "text": "Peter Berg",
+        "prob": 0.09444394536191088
+      }
+    ],
+    "samples": [
+      "John Francis Daley",
+      "Brian Helgeland",
+      "Kenneth LaVey",
+      "Stephen Schiff",
+      "Neil Turkell",
+      "T",
+      "David Koepp",
+      "Michael Dougherty",
+      "Mark Bomback",
+      "Peter Berg"
+    ]
+  },
+  {
+    "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+    "gold_answers": [
+      "1999"
+    ],
+    "prediction": "1988",
+    "entropy": 1.586811906842013,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 9,
+    "clusters": [
+      {
+        "text": "1997",
+        "prob": 0.030976615096579584
+      },
+      {
+        "text": "1991",
+        "prob": 0.1660279297909349
+      },
+      {
+        "text": "2016",
+        "prob": 0.02843417961289283
+      },
+      {
+        "text": "2009",
+        "prob": 0.01107645535292792
+      },
+      {
+        "text": "1995",
+        "prob": 0.03298639103548286
+      },
+      {
+        "text": "2003",
+        "prob": 0.06605816403538739
+      },
+      {
+        "text": "1988",
+        "prob": 0.4537915988463405
+      },
+      {
+        "text": "2013",
+        "prob": 0.013923002817857048
+      },
+      {
+        "text": "1990",
+        "prob": 0.19672566341159706
+      }
+    ],
+    "samples": [
+      "1997",
+      "1991",
+      "2016",
+      "2009",
+      "1995",
+      "2003",
+      "1988",
+      "2013",
+      "1988",
+      "1990"
+    ]
+  },
+  {
+    "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+    "gold_answers": [
+      "no"
+    ],
+    "prediction": "no",
+    "entropy": -2.220446049250313e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "no",
+        "prob": 1.0000000000000002
+      }
+    ],
+    "samples": [
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no"
+    ]
+  },
+  {
+    "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+    "gold_answers": [
+      "from 1986 to 2013"
+    ],
+    "prediction": "1994 to 1997",
+    "entropy": 0.7794933964408977,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.28571428571428575
+    },
+    "num_clusters": 6,
+    "clusters": [
+      {
+        "text": "1999 to 2003",
+        "prob": 0.14037977159947074
+      },
+      {
+        "text": "from 1994 to 2002",
+        "prob": 0.003413791245023637
+      },
+      {
+        "text": "1994 to 2003",
+        "prob": 0.06835362495763236
+      },
+      {
+        "text": "1994 to 1997",
+        "prob": 0.7663839782626938
+      },
+      {
+        "text": "1999 to 2001",
+        "prob": 0.012104074567207116
+      },
+      {
+        "text": "from 1999 to 2002",
+        "prob": 0.009364759367972365
+      }
+    ],
+    "samples": [
+      "1999 to 2003",
+      "from 1994 to 2002",
+      "1994 to 2003",
+      "1994 to 1997",
+      "1994 to 1997",
+      "1994 to 1997",
+      "1999 to 2001",
+      "from 1999 to 2002",
+      "1999 to 2003",
+      "1994 to 1997"
+    ]
+  },
+  {
+    "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+    "gold_answers": [
+      "9,984"
+    ],
+    "prediction": "1",
+    "entropy": 1.6186896905068922,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 9,
+    "clusters": [
+      {
+        "text": "31 million",
+        "prob": 0.11116886868404022
+      },
+      {
+        "text": "8",
+        "prob": 0.02200296831510746
+      },
+      {
+        "text": "3",
+        "prob": 0.12396675530018039
+      },
+      {
+        "text": "1",
+        "prob": 0.32599341398176035
+      },
+      {
+        "text": "33 million",
+        "prob": 0.15551114465615515
+      },
+      {
+        "text": "13",
+        "prob": 0.002878078058895526
+      },
+      {
+        "text": "6,700,000",
+        "prob": 0.001708566669490824
+      },
+      {
+        "text": "4",
+        "prob": 0.2567648471599874
+      },
+      {
+        "text": "8,704,526",
+        "prob": 5.357174382597678e-06
+      }
+    ],
+    "samples": [
+      "31 million",
+      "8",
+      "3",
+      "1",
+      "33 million",
+      "13",
+      "6,700,000",
+      "4",
+      "4",
+      "8,704,526"
+    ]
+  },
+  {
+    "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+    "gold_answers": [
+      "the North Atlantic Conference"
+    ],
+    "prediction": "New England Collegiate Conference",
+    "entropy": 0.9339188750400872,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.28571428571428575
+    },
+    "num_clusters": 7,
+    "clusters": [
+      {
+        "text": "the East Coast Conference",
+        "prob": 0.1722136706719913
+      },
+      {
+        "text": "New England Collegiate Conference",
+        "prob": 0.7181660985913232
+      },
+      {
+        "text": "Eastern College Athletic Conference",
+        "prob": 0.03758769415337088
+      },
+      {
+        "text": "Big East Conference",
+        "prob": 0.026266179417394907
+      },
+      {
+        "text": "The Great Northeast Athletic Conference",
+        "prob": 0.0006903629245441431
+      },
+      {
+        "text": "New England Collegiate League",
+        "prob": 0.028619157353093765
+      },
+      {
+        "text": "the ECAC West",
+        "prob": 0.016456836888281638
+      }
+    ],
+    "samples": [
+      "the East Coast Conference",
+      "New England Collegiate Conference",
+      "Eastern College Athletic Conference",
+      "Big East Conference",
+      "the Eastern Collegiate Conference",
+      "The Great Northeast Athletic Conference",
+      "New England Collegiate Conference",
+      "New England Collegiate Conference",
+      "New England Collegiate League",
+      "the ECAC West"
+    ]
+  },
+  {
+    "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+    "gold_answers": [
+      "yes"
+    ],
+    "prediction": "yes",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes"
+    ]
+  },
+  {
+    "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+    "gold_answers": [
+      "1969 until 1974"
+    ],
+    "prediction": "1973 to 1977",
+    "entropy": 1.4104944363633645,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 5,
+    "clusters": [
+      {
+        "text": "1973 to 1977",
+        "prob": 0.47500293634202584
+      },
+      {
+        "text": "1981 to 1989",
+        "prob": 0.14221395556987035
+      },
+      {
+        "text": "1963 to 1969",
+        "prob": 0.1643180079867569
+      },
+      {
+        "text": "1977 to 1981",
+        "prob": 0.1195912077933393
+      },
+      {
+        "text": "1961 to 1963",
+        "prob": 0.09887389230800768
+      }
+    ],
+    "samples": [
+      "1973 to 1977",
+      "1981 to 1989",
+      "1963 to 1969",
+      "1973 to 1977",
+      "1974 to 1977",
+      "1977 to 1981",
+      "1973 to 1977",
+      "1963 to 1969",
+      "1974 to 1977",
+      "1961 to 1963"
+    ]
+  },
+  {
+    "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+    "gold_answers": [
+      "Robert Erskine Childers DSC"
+    ],
+    "prediction": "Robert Erskine Childers",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.8571428571428571
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "Robert Erskine Childers",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "Robert Erskine Childers",
+      "Robert Erskine Childers",
+      "Robert Erskine Childers",
+      "Robert Erskine Childers",
+      "Robert Erskine Childers",
+      "Robert Erskine Childers",
+      "Robert Erskine Childers",
+      "Robert Erskine Childers",
+      "Robert Erskine Childers",
+      "Robert Erskine Childers"
+    ]
+  },
+  {
+    "question": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+    "gold_answers": [
+      "Pedro Rodr\u00edguez"
+    ],
+    "prediction": "Esteban Guti\u00e9rrez",
+    "entropy": 0.9326298784197289,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 4,
+    "clusters": [
+      {
+        "text": "Esteban Guti\u00e9rrez",
+        "prob": 0.5068314196025074
+      },
+      {
+        "text": "Rafael Marquez",
+        "prob": 0.012132913440048526
+      },
+      {
+        "text": "Sergio P\u00e9rez",
+        "prob": 0.4201831068517562
+      },
+      {
+        "text": "Esteban Ocon",
+        "prob": 0.06085256010568795
+      }
+    ],
+    "samples": [
+      "Esteban Guti\u00e9rrez",
+      "Rafael Marquez",
+      "Sergio P\u00e9rez",
+      "Esteban Guti\u00e9rrez",
+      "Sergio P\u00e9rez",
+      "Esteban Guti\u00e9rrez",
+      "Sergio P\u00e9rez",
+      "Esteban Guti\u00e9rrez",
+      "Sergio P\u00e9rez",
+      "Esteban Ocon"
+    ]
+  },
+  {
+    "question": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+    "gold_answers": [
+      "Sonic"
+    ],
+    "prediction": "Tails",
+    "entropy": 0.5279514170922204,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 4,
+    "clusters": [
+      {
+        "text": "Tails",
+        "prob": 0.7871015016206613
+      },
+      {
+        "text": "Sonic the Hedgehog",
+        "prob": 0.21119616273235498
+      },
+      {
+        "text": "Sir Topham Hatt",
+        "prob": 0.0016410444782903515
+      },
+      {
+        "text": "Maurice",
+        "prob": 6.12911686933866e-05
+      }
+    ],
+    "samples": [
+      "Tails",
+      "Sonic the Hedgehog",
+      "Tails",
+      "Sir Topham Hatt",
+      "Sonic the Hedgehog",
+      "Tails",
+      "Tails",
+      "Sonic the Hedgehog",
+      "Maurice",
+      "Tails"
+    ]
+  },
+  {
+    "question": "Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",
+    "gold_answers": [
+      "keyboard function keys"
+    ],
+    "prediction": "iPhone",
+    "entropy": 0.1346465748179149,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 6,
+    "clusters": [
+      {
+        "text": "iPod Nano",
+        "prob": 0.007450028798611183
+      },
+      {
+        "text": "iPhone",
+        "prob": 0.9783939481075316
+      },
+      {
+        "text": "iPod Classic",
+        "prob": 0.0015880796297963967
+      },
+      {
+        "text": "The Apple TV",
+        "prob": 0.005962662226810191
+      },
+      {
+        "text": "iPhone or iPod Touch",
+        "prob": 0.005587518524596752
+      },
+      {
+        "text": "AirPlay remote",
+        "prob": 0.0010177627126539085
+      }
+    ],
+    "samples": [
+      "iPod Nano",
+      "iPhone",
+      "iPhone",
+      "iPhone",
+      "iPod Classic",
+      "The Apple TV",
+      "iPhone",
+      "iPhone or iPod Touch",
+      "AirPlay remote",
+      "iPhone"
+    ]
+  },
+  {
+    "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+    "gold_answers": [
+      "Badly Drawn Boy"
+    ],
+    "prediction": "Badly Drawn Boy",
+    "entropy": 0.6332201087701874,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "Badly Drawn Boy",
+        "prob": 0.6713476939612553
+      },
+      {
+        "text": "Wolf Alice",
+        "prob": 0.3286523060387445
+      }
+    ],
+    "samples": [
+      "Badly Drawn Boy",
+      "Badly Drawn Boy",
+      "Wolf Alice",
+      "Badly Drawn Boy",
+      "Wolf Alice",
+      "Wolf Alice",
+      "Wolf Alice",
+      "Wolf Alice",
+      "Badly Drawn Boy",
+      "Badly Drawn Boy"
+    ]
+  },
+  {
+    "question": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+    "gold_answers": [
+      "World's Best Goalkeeper"
+    ],
+    "prediction": "World's Best Goalkeeper",
+    "entropy": 0.0,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "World's Best Goalkeeper",
+        "prob": 1.0
+      }
+    ],
+    "samples": [
+      "World's Best Goalkeeper",
+      "World's Best Goalkeeper",
+      "World's Best Goalkeeper",
+      "World's Best Goalkeeper",
+      "World's Best Goalkeeper",
+      "World's Best Goalkeeper",
+      "World's Best Goalkeeper",
+      "World's Best Goalkeeper",
+      "World's Best Goalkeeper",
+      "World's Best Goalkeeper"
+    ]
+  },
+  {
+    "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+    "gold_answers": [
+      "Barton Lee Hazlewood"
+    ],
+    "prediction": "Nancy Sinatra",
+    "entropy": 0.07971224939329795,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 4,
+    "clusters": [
+      {
+        "text": "Sylvia Fine",
+        "prob": 9.007240985709148e-05
+      },
+      {
+        "text": "Gloria Gaynor",
+        "prob": 0.008147015790649215
+      },
+      {
+        "text": "Nancy Sinatra",
+        "prob": 0.9867544773684798
+      },
+      {
+        "text": "Brenda Lee",
+        "prob": 0.005008434431014022
+      }
+    ],
+    "samples": [
+      "Sylvia Fine",
+      "Gloria Gaynor",
+      "Nancy Sinatra",
+      "Brenda Lee",
+      "Nancy Sinatra",
+      "Nancy Sinatra",
+      "Nancy Sinatra",
+      "Nancy Sinatra",
+      "Nancy Sinatra",
+      "Nancy Sinatra"
+    ]
+  },
+  {
+    "question": "The 2011\u201312 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+    "gold_answers": [
+      "1838"
+    ],
+    "prediction": "1836",
+    "entropy": 0.5927598093087251,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 4,
+    "clusters": [
+      {
+        "text": "1836",
+        "prob": 0.8269702063440341
+      },
+      {
+        "text": "1865",
+        "prob": 0.06110708192610253
+      },
+      {
+        "text": "1868",
+        "prob": 0.1071458822911393
+      },
+      {
+        "text": "1910",
+        "prob": 0.004776829438723807
+      }
+    ],
+    "samples": [
+      "1836",
+      "1836",
+      "1865",
+      "1836",
+      "1868",
+      "1868",
+      "1910",
+      "1836",
+      "1836",
+      "1836"
+    ]
+  },
+  {
+    "question": "Are both Dictyosperma, and Huernia described as a genus?",
+    "gold_answers": [
+      "yes"
+    ],
+    "prediction": "yes",
+    "entropy": 0.14796818537673057,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.9661238012158949
+      },
+      {
+        "text": "no",
+        "prob": 0.033876198784104944
+      }
+    ],
+    "samples": [
+      "yes",
+      "yes",
+      "no",
+      "yes",
+      "no",
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes"
+    ]
+  },
+  {
+    "question": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+    "gold_answers": [
+      "Henry J. Kaiser"
+    ],
+    "prediction": "Henry J",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.8
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "Henry J",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "Henry J",
+      "Henry J",
+      "Henry J",
+      "Henry J",
+      "Henry J",
+      "Henry J",
+      "Henry J",
+      "Henry J",
+      "Henry J",
+      "Henry J"
+    ]
+  },
+  {
+    "question": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+    "gold_answers": [
+      "Arena of Khazan"
+    ],
+    "prediction": "campaign",
+    "entropy": 0.3110469844337834,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 4,
+    "clusters": [
+      {
+        "text": "campaign",
+        "prob": 0.9157998145003273
+      },
+      {
+        "text": "an adventure in a fantasy setting",
+        "prob": 0.00010048635970207642
+      },
+      {
+        "text": "The Adventure",
+        "prob": 0.07820129887423068
+      },
+      {
+        "text": "an adventure game",
+        "prob": 0.005898400265739802
+      }
+    ],
+    "samples": [
+      "campaign",
+      "an adventure in a fantasy setting",
+      "campaign",
+      "Campaign",
+      "adventure",
+      "A Campaign",
+      "The Adventure",
+      "Campaign",
+      "an adventure game",
+      "Adventure"
+    ]
+  },
+  {
+    "question": "When was Poison's album \"Shut Up, Make Love\" released?",
+    "gold_answers": [
+      "2000"
+    ],
+    "prediction": "1991",
+    "entropy": 1.5691739451105073,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "1994",
+        "prob": 0.23404477335450719
+      },
+      {
+        "text": "June 28, 2011",
+        "prob": 0.0012504950380576617
+      },
+      {
+        "text": "August 21, 2015",
+        "prob": 0.0014488839681503734
+      },
+      {
+        "text": "1998",
+        "prob": 0.11431009408528174
+      },
+      {
+        "text": "August 1, 1995",
+        "prob": 0.014186585614380933
+      },
+      {
+        "text": "November 1994",
+        "prob": 0.015521026728731882
+      },
+      {
+        "text": "1992",
+        "prob": 0.2551278438381551
+      },
+      {
+        "text": "September 20, 1994",
+        "prob": 0.010917309627658474
+      },
+      {
+        "text": "1991",
+        "prob": 0.33450634174789406
+      },
+      {
+        "text": "March 24, 1992",
+        "prob": 0.01868664599718258
+      }
+    ],
+    "samples": [
+      "1994",
+      "June 28, 2011",
+      "August 21, 2015",
+      "1998",
+      "August 1, 1995",
+      "November 1994",
+      "1992",
+      "September 20, 1994",
+      "1991",
+      "March 24, 1992"
+    ]
+  },
+  {
+    "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+    "gold_answers": [
+      "Fujioka, Gunma"
+    ],
+    "prediction": "Japan",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "Japan",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "Japan",
+      "Japan",
+      "Japan",
+      "Japan",
+      "Japan",
+      "Japan",
+      "Japan",
+      "Japan",
+      "Japan",
+      "Japan"
+    ]
+  },
+  {
+    "question": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+    "gold_answers": [
+      "Charles Eug\u00e8ne"
+    ],
+    "prediction": "Louis Bl\u00e9riot",
+    "entropy": 0.2334718502203821,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "Louis Bl\u00e9riot",
+        "prob": 0.9376180515390924
+      },
+      {
+        "text": "Jean Mermoz",
+        "prob": 0.062381948460907756
+      }
+    ],
+    "samples": [
+      "Louis Bl\u00e9riot",
+      "Jean Mermoz",
+      "Louis Bl\u00e9riot",
+      "Louis Bl\u00e9riot",
+      "Louis Bl\u00e9riot",
+      "Jean Mermoz",
+      "Louis Bl\u00e9riot",
+      "Louis Bl\u00e9riot",
+      "Louis Bl\u00e9riot",
+      "Jean Mermoz"
+    ]
+  },
+  {
+    "question": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+    "gold_answers": [
+      "no"
+    ],
+    "prediction": "yes",
+    "entropy": 0.6715541806979082,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.6035304963226968
+      },
+      {
+        "text": "no",
+        "prob": 0.39646950367730327
+      }
+    ],
+    "samples": [
+      "yes",
+      "no",
+      "yes",
+      "yes",
+      "yes",
+      "no",
+      "yes",
+      "no",
+      "yes",
+      "no"
+    ]
+  },
+  {
+    "question": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+    "gold_answers": [
+      "Letters to Cleo"
+    ],
+    "prediction": "Letters to Cleo",
+    "entropy": 0.64022436747034,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "Screaming Trees",
+        "prob": 0.33878213368673327
+      },
+      {
+        "text": "Letters to Cleo",
+        "prob": 0.6612178663132667
+      }
+    ],
+    "samples": [
+      "Screaming Trees",
+      "Letters to Cleo",
+      "Letters to Cleo",
+      "Letters to Cleo",
+      "Letters to Cleo",
+      "Letters to Cleo",
+      "Screaming Trees",
+      "Letters to Cleo",
+      "Screaming Trees",
+      "Letters to Cleo"
+    ]
+  },
+  {
+    "question": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
+    "gold_answers": [
+      "October 1922"
+    ],
+    "prediction": "1922",
+    "entropy": 1.3233644617039522,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.6666666666666666
+    },
+    "num_clusters": 8,
+    "clusters": [
+      {
+        "text": "Bolshevik Red Army",
+        "prob": 0.010360764454061389
+      },
+      {
+        "text": "1922",
+        "prob": 0.558953953175932
+      },
+      {
+        "text": "Bolshevik victory in 1922",
+        "prob": 0.003502925329997413
+      },
+      {
+        "text": "Bolsheviks defeated the Whites",
+        "prob": 0.15579145712801407
+      },
+      {
+        "text": "October Revolution",
+        "prob": 0.15941400238561249
+      },
+      {
+        "text": "the Red Army defeated the White Army in 1922",
+        "prob": 0.018264938002316454
+      },
+      {
+        "text": "15 January 1923",
+        "prob": 0.02438402314473639
+      },
+      {
+        "text": "Bolshevik victory",
+        "prob": 0.0693279363793298
+      }
+    ],
+    "samples": [
+      "Bolshevik Red Army",
+      "1922",
+      "Bolshevik victory in 1922",
+      "Bolsheviks defeated the Whites",
+      "October Revolution",
+      "the Red Army defeated the White Army in 1922",
+      "15 January 1923",
+      "October Revolution",
+      "Bolshevik victory",
+      "Red Army defeated the White Army"
+    ]
+  },
+  {
+    "question": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+    "gold_answers": [
+      "2000"
+    ],
+    "prediction": "1921",
+    "entropy": 0.7188543274192896,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 6,
+    "clusters": [
+      {
+        "text": "1921",
+        "prob": 0.7934064883055199
+      },
+      {
+        "text": "1946",
+        "prob": 0.12216018804169423
+      },
+      {
+        "text": "1979",
+        "prob": 0.007920607359002647
+      },
+      {
+        "text": "1954",
+        "prob": 0.06293618194288794
+      },
+      {
+        "text": "1982",
+        "prob": 0.0034178449189263414
+      },
+      {
+        "text": "1997",
+        "prob": 0.01015868943196908
+      }
+    ],
+    "samples": [
+      "1921",
+      "1946",
+      "1946",
+      "1979",
+      "1946",
+      "1954",
+      "1982",
+      "1997",
+      "1921",
+      "1921"
+    ]
+  },
+  {
+    "question": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+    "gold_answers": [
+      "World War II"
+    ],
+    "prediction": "World War II",
+    "entropy": 3.330669073875469e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "World War II",
+        "prob": 0.9999999999999997
+      }
+    ],
+    "samples": [
+      "World War II",
+      "World War II",
+      "World War II",
+      "World War II",
+      "World War II",
+      "World War II",
+      "World War II",
+      "World War II",
+      "World War II",
+      "World War II"
+    ]
+  },
+  {
+    "question": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+    "gold_answers": [
+      "no"
+    ],
+    "prediction": "no",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "no",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no"
+    ]
+  },
+  {
+    "question": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+    "gold_answers": [
+      "New York City"
+    ],
+    "prediction": "Columbus, Ohio",
+    "entropy": 1.81414108052938,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 8,
+    "clusters": [
+      {
+        "text": "St",
+        "prob": 0.14942677548810335
+      },
+      {
+        "text": "Kansas City, Missouri",
+        "prob": 0.10265276485037322
+      },
+      {
+        "text": "Austin, Texas",
+        "prob": 0.059193842902766955
+      },
+      {
+        "text": "Dayton, Ohio",
+        "prob": 0.018647463892011683
+      },
+      {
+        "text": "Columbus, Ohio",
+        "prob": 0.31931556818887746
+      },
+      {
+        "text": "Minneapolis",
+        "prob": 0.156085741827432
+      },
+      {
+        "text": "Springfield, Massachusetts",
+        "prob": 0.02892794357911383
+      },
+      {
+        "text": "Ann Arbor, Michigan",
+        "prob": 0.1657498992713215
+      }
+    ],
+    "samples": [
+      "St",
+      "Kansas City, Missouri",
+      "Austin, Texas",
+      "St",
+      "Dayton, Ohio",
+      "Columbus, Ohio",
+      "Minneapolis",
+      "Springfield, Massachusetts",
+      "Columbus, Ohio",
+      "Ann Arbor, Michigan"
+    ]
+  },
+  {
+    "question": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+    "gold_answers": [
+      "Scotch Collie"
+    ],
+    "prediction": "The Manchester Terrier",
+    "entropy": 0.3345220487142839,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "Scotch Collie",
+        "prob": 0.10434299834653629
+      },
+      {
+        "text": "The Manchester Terrier",
+        "prob": 0.8956570016534637
+      }
+    ],
+    "samples": [
+      "Scotch Collie",
+      "The Manchester Terrier",
+      "The Scotch Collie",
+      "The Manchester Terrier",
+      "The Manchester Terrier",
+      "Manchester Terrier",
+      "The Manchester Terrier",
+      "The Manchester Terrier",
+      "Scotch Collie",
+      "Manchester Terrier"
+    ]
+  },
+  {
+    "question": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+    "gold_answers": [
+      "Mumbai"
+    ],
+    "prediction": "Palo Alto, California",
+    "entropy": 1.266125349807856,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 5,
+    "clusters": [
+      {
+        "text": "Mountain View, California",
+        "prob": 0.23746784613112515
+      },
+      {
+        "text": "San Francisco, California",
+        "prob": 0.27013738503081003
+      },
+      {
+        "text": "Palo Alto, California",
+        "prob": 0.4310501162270285
+      },
+      {
+        "text": "New York City",
+        "prob": 0.043282256373780276
+      },
+      {
+        "text": "Pune, India",
+        "prob": 0.018062396237256164
+      }
+    ],
+    "samples": [
+      "Mountain View, California",
+      "San Francisco, California",
+      "Palo Alto, California",
+      "New York City",
+      "San Francisco, California",
+      "Palo Alto, California",
+      "Palo Alto, California",
+      "Pune, India",
+      "Palo Alto, California",
+      "San Francisco, California"
+    ]
+  },
+  {
+    "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+    "gold_answers": [
+      "1962"
+    ],
+    "prediction": "1964",
+    "entropy": 2.057763025816504,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 9,
+    "clusters": [
+      {
+        "text": "1978",
+        "prob": 0.14102813900268293
+      },
+      {
+        "text": "1975",
+        "prob": 0.12343445087637732
+      },
+      {
+        "text": "1965",
+        "prob": 0.1369511557766793
+      },
+      {
+        "text": "1977",
+        "prob": 0.08636381310545839
+      },
+      {
+        "text": "1968",
+        "prob": 0.18013286494764055
+      },
+      {
+        "text": "1961",
+        "prob": 0.09066893998642409
+      },
+      {
+        "text": "1953",
+        "prob": 0.02850913156644621
+      },
+      {
+        "text": "1964",
+        "prob": 0.18521212208666785
+      },
+      {
+        "text": "1985",
+        "prob": 0.027699382651623486
+      }
+    ],
+    "samples": [
+      "1978",
+      "1975",
+      "1965",
+      "1978",
+      "1977",
+      "1968",
+      "1961",
+      "1953",
+      "1964",
+      "1985"
+    ]
+  },
+  {
+    "question": "The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?",
+    "gold_answers": [
+      "sovereignty"
+    ],
+    "prediction": "its independence",
+    "entropy": 0.4110101530434749,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 3,
+    "clusters": [
+      {
+        "text": "its independence",
+        "prob": 0.8610843558699448
+      },
+      {
+        "text": "independence from Italy",
+        "prob": 0.13747393531106714
+      },
+      {
+        "text": "the sovereignty of Ethiopia",
+        "prob": 0.0014417088189880684
+      }
+    ],
+    "samples": [
+      "its independence",
+      "independence from Italy",
+      "its independence",
+      "independence",
+      "independence from Italy",
+      "independence",
+      "independence",
+      "the sovereignty of Ethiopia",
+      "independence from Italy",
+      "independence"
+    ]
+  },
+  {
+    "question": "Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?",
+    "gold_answers": [
+      "Nelson Rockefeller"
+    ],
+    "prediction": "Lyndon B",
+    "entropy": 0.8242456211539275,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 5,
+    "clusters": [
+      {
+        "text": "Vice President Spiro T",
+        "prob": 0.00019736005485726277
+      },
+      {
+        "text": "Richard Nixon",
+        "prob": 0.14482987269325265
+      },
+      {
+        "text": "Lyndon B",
+        "prob": 0.7302257031105539
+      },
+      {
+        "text": "Henry A",
+        "prob": 0.019147652295409275
+      },
+      {
+        "text": "Hubert Humphrey",
+        "prob": 0.10559941184592675
+      }
+    ],
+    "samples": [
+      "Vice President Spiro T",
+      "Richard Nixon",
+      "Lyndon B",
+      "Lyndon B",
+      "Richard Nixon",
+      "Lyndon B",
+      "Henry A",
+      "Lyndon B",
+      "Hubert Humphrey",
+      "Hubert Humphrey"
+    ]
+  },
+  {
+    "question": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+    "gold_answers": [
+      "Yellowcraig"
+    ],
+    "prediction": "Firth of Forth",
+    "entropy": -2.220446049250313e-16,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "Firth of Forth",
+        "prob": 1.0000000000000002
+      }
+    ],
+    "samples": [
+      "Firth of Forth",
+      "Firth of Forth",
+      "Firth of Forth",
+      "Firth of Forth",
+      "Firth of Forth",
+      "Firth of Forth",
+      "Firth of Forth",
+      "Firth of Forth",
+      "Firth of Forth",
+      "Firth of Forth"
+    ]
+  },
+  {
+    "question": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+    "gold_answers": [
+      "Phil Spector"
+    ],
+    "prediction": "Paul McCartney",
+    "entropy": 1.1600877096273756,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "Brian Wilson",
+        "prob": 0.10390864669883162
+      },
+      {
+        "text": "Al Green",
+        "prob": 0.001284893127025176
+      },
+      {
+        "text": "Mark Knopfler",
+        "prob": 0.09119595661348895
+      },
+      {
+        "text": "Stevie Nicks",
+        "prob": 0.009508584447787476
+      },
+      {
+        "text": "Stephen Lawrence",
+        "prob": 0.008934255974859397
+      },
+      {
+        "text": "Bruce Springsteen",
+        "prob": 0.06849359431631163
+      },
+      {
+        "text": "Paul McCartney",
+        "prob": 0.6759711121022802
+      },
+      {
+        "text": "Dan Penn",
+        "prob": 0.006043716180941885
+      },
+      {
+        "text": "Neil Finn",
+        "prob": 0.028831964005737128
+      },
+      {
+        "text": "Bill Callahan",
+        "prob": 0.005827276532736575
+      }
+    ],
+    "samples": [
+      "Brian Wilson",
+      "Al Green",
+      "Mark Knopfler",
+      "Stevie Nicks",
+      "Stephen Lawrence",
+      "Bruce Springsteen",
+      "Paul McCartney",
+      "Dan Penn",
+      "Neil Finn",
+      "Bill Callahan"
+    ]
+  },
+  {
+    "question": "What type of forum did a former Soviet statesman initiate?",
+    "gold_answers": [
+      "Organizations could come together to address global issues"
+    ],
+    "prediction": "a public forum",
+    "entropy": 0.9317386527825409,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 9,
+    "clusters": [
+      {
+        "text": "a public policy research and debate forum",
+        "prob": 3.4931354894081377e-06
+      },
+      {
+        "text": "political",
+        "prob": 0.4237482377020472
+      },
+      {
+        "text": "a public forum",
+        "prob": 0.5208164088611967
+      },
+      {
+        "text": "a congress",
+        "prob": 0.021749347980642916
+      },
+      {
+        "text": "Congress of People's Deputies",
+        "prob": 0.006167316590935997
+      },
+      {
+        "text": "The Non-Aligned Movement",
+        "prob": 0.004470181307456996
+      },
+      {
+        "text": "a dialogue between Russia and other nations",
+        "prob": 1.0712552555550115e-05
+      },
+      {
+        "text": "A multinational forum",
+        "prob": 0.00046934389654431204
+      },
+      {
+        "text": "The Bilderberg Group",
+        "prob": 0.02256495797313086
+      }
+    ],
+    "samples": [
+      "a public policy research and debate forum",
+      "political",
+      "a public forum",
+      "a congress",
+      "Congress of People's Deputies",
+      "The Non-Aligned Movement",
+      "a public forum",
+      "a dialogue between Russia and other nations",
+      "A multinational forum",
+      "The Bilderberg Group"
+    ]
+  },
+  {
+    "question": "Are Ferocactus and Silene both types of plant?",
+    "gold_answers": [
+      "yes"
+    ],
+    "prediction": "yes",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes",
+      "yes"
+    ]
+  },
+  {
+    "question": "Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?",
+    "gold_answers": [
+      "English Electric Canberra"
+    ],
+    "prediction": "de Havilland Mosquito",
+    "entropy": 1.6359654605175211,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 7,
+    "clusters": [
+      {
+        "text": "English Electric Canberra",
+        "prob": 0.05120111294943007
+      },
+      {
+        "text": "de Havilland Mosquito",
+        "prob": 0.34539431130673093
+      },
+      {
+        "text": "Handley Page Halifax",
+        "prob": 0.043605592693779546
+      },
+      {
+        "text": "Bristol Beaufort",
+        "prob": 0.21752829548056518
+      },
+      {
+        "text": "de Havilland DH",
+        "prob": 0.16336106184671578
+      },
+      {
+        "text": "The Avro Manchester",
+        "prob": 0.012124848829864768
+      },
+      {
+        "text": "The Avro Lancaster",
+        "prob": 0.16678477689291382
+      }
+    ],
+    "samples": [
+      "English Electric Canberra",
+      "de Havilland Mosquito",
+      "Handley Page Halifax",
+      "Bristol Beaufort",
+      "de Havilland DH",
+      "The Avro Manchester",
+      "De Havilland DH",
+      "The English Electric Canberra",
+      "The Avro Lancaster",
+      "Avro Lancaster"
+    ]
+  },
+  {
+    "question": "Which year and which conference was the 14th season for this conference as part of the NCAA Division that the Colorado Buffaloes played in with a record of 2-6 in conference play?",
+    "gold_answers": [
+      "2009 Big 12 Conference"
+    ],
+    "prediction": "2015\u201316 season",
+    "entropy": 1.8026864990668316,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "2014\u201315 season, Mountain West Conference",
+        "prob": 0.0765580272416742
+      },
+      {
+        "text": "2016\u201317 Mountain West Conference",
+        "prob": 0.057066111611205964
+      },
+      {
+        "text": "2015\u201316 season",
+        "prob": 0.2976327313477702
+      },
+      {
+        "text": "2005\u201306, Mountain West Conference",
+        "prob": 0.015901513120297913
+      },
+      {
+        "text": "2013 and the Mountain West Conference",
+        "prob": 0.02810519688922288
+      },
+      {
+        "text": "1953-54 and Mountain West Conference",
+        "prob": 1.780134991298083e-06
+      },
+      {
+        "text": "2005\u201306 season",
+        "prob": 0.14078308202869802
+      },
+      {
+        "text": "2009 Mountain West Conference",
+        "prob": 0.16244417918188392
+      },
+      {
+        "text": "1985\u201386 Big Eight Conference",
+        "prob": 0.0018015705313617336
+      },
+      {
+        "text": "2012\u201313 season",
+        "prob": 0.2197058079128939
+      }
+    ],
+    "samples": [
+      "2014\u201315 season, Mountain West Conference",
+      "2016\u201317 Mountain West Conference",
+      "2015\u201316 season",
+      "2005\u201306, Mountain West Conference",
+      "2013 and the Mountain West Conference",
+      "1953-54 and Mountain West Conference",
+      "2005\u201306 season",
+      "2009 Mountain West Conference",
+      "1985\u201386 Big Eight Conference",
+      "2012\u201313 season"
+    ]
+  },
+  {
+    "question": "In 1991 Euromarch\u00e9 was bought by a chain that operated how any hypermarkets at the end of 2016?",
+    "gold_answers": [
+      "1,462"
+    ],
+    "prediction": "11",
+    "entropy": 2.0573825290474157,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "100",
+        "prob": 0.16169415598350625
+      },
+      {
+        "text": "145",
+        "prob": 0.05313940111478681
+      },
+      {
+        "text": "250",
+        "prob": 0.10668216449658209
+      },
+      {
+        "text": "400",
+        "prob": 0.0526084320858057
+      },
+      {
+        "text": "117",
+        "prob": 0.05094993307351762
+      },
+      {
+        "text": "64",
+        "prob": 0.043188928351199626
+      },
+      {
+        "text": "514",
+        "prob": 0.0017012637013927973
+      },
+      {
+        "text": "11",
+        "prob": 0.20709404426015965
+      },
+      {
+        "text": "13",
+        "prob": 0.16381110539769791
+      },
+      {
+        "text": "30",
+        "prob": 0.15913057153535137
+      }
+    ],
+    "samples": [
+      "100",
+      "145",
+      "250",
+      "400",
+      "117",
+      "64",
+      "514",
+      "11",
+      "13",
+      "30"
+    ]
+  },
+  {
+    "question": "What race track in the midwest hosts a 500 mile race eavery May?",
+    "gold_answers": [
+      "Indianapolis Motor Speedway"
+    ],
+    "prediction": "Indianapolis Motor Speedway",
+    "entropy": 0.26879805731650547,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 3,
+    "clusters": [
+      {
+        "text": "Indianapolis Motor Speedway",
+        "prob": 0.9246857516076743
+      },
+      {
+        "text": "Michigan International Speedway",
+        "prob": 0.07507329235436389
+      },
+      {
+        "text": "The Brickyard",
+        "prob": 0.00024095603796164955
+      }
+    ],
+    "samples": [
+      "Indianapolis Motor Speedway",
+      "Indianapolis Motor Speedway",
+      "Indianapolis Motor Speedway",
+      "Indianapolis Motor Speedway",
+      "Michigan International Speedway",
+      "Indianapolis Motor Speedway",
+      "Michigan International Speedway",
+      "The Brickyard",
+      "Indianapolis Motor Speedway",
+      "Indianapolis Motor Speedway"
+    ]
+  },
+  {
+    "question": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+    "gold_answers": [
+      "Rome"
+    ],
+    "prediction": "New York City",
+    "entropy": 0.6889335710654393,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "New York City",
+        "prob": 0.545867679213704
+      },
+      {
+        "text": "Milan",
+        "prob": 0.45413232078629595
+      }
+    ],
+    "samples": [
+      "New York City",
+      "Milan",
+      "Milan",
+      "New York City",
+      "Milan",
+      "New York City",
+      "New York City",
+      "New York City",
+      "Milan",
+      "Milan"
+    ]
+  },
+  {
+    "question": "Ellie Goulding worked with what other writers on her third studio album, Delirium?",
+    "gold_answers": [
+      "Max Martin, Savan Kotecha and Ilya Salmanzadeh"
+    ],
+    "prediction": "Mike Will Made It",
+    "entropy": 1.1483736463028482,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "Jacob Kasher and Joel Little",
+        "prob": 0.015342096022260485
+      },
+      {
+        "text": "Ian Kirkpatrick and Emily Warren",
+        "prob": 0.04481015330843002
+      },
+      {
+        "text": "Adam Lambert and Max Martin",
+        "prob": 0.023357895440715863
+      },
+      {
+        "text": "Ryan Tedder and Kiiara",
+        "prob": 0.001196549283568411
+      },
+      {
+        "text": "Ian Kirkpatrick and Andrew Goldstein",
+        "prob": 0.021722076506905046
+      },
+      {
+        "text": "Amy Wadge",
+        "prob": 0.40034732875178713
+      },
+      {
+        "text": "Julia Michaels and Alex Noble",
+        "prob": 0.008936573475054445
+      },
+      {
+        "text": "Emily Warren, and Kina Grannis",
+        "prob": 0.0008532119317604588
+      },
+      {
+        "text": "Martin Johnson, John Hill, and John Ryan",
+        "prob": 8.113209209143773e-06
+      },
+      {
+        "text": "Mike Will Made It",
+        "prob": 0.48342600207030906
+      }
+    ],
+    "samples": [
+      "Jacob Kasher and Joel Little",
+      "Ian Kirkpatrick and Emily Warren",
+      "Adam Lambert and Max Martin",
+      "Ryan Tedder and Kiiara",
+      "Ian Kirkpatrick and Andrew Goldstein",
+      "Amy Wadge",
+      "Julia Michaels and Alex Noble",
+      "Emily Warren, and Kina Grannis",
+      "Martin Johnson, John Hill, and John Ryan",
+      "Mike Will Made It"
+    ]
+  },
+  {
+    "question": "Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.",
+    "gold_answers": [
+      "Marion, South Australia"
+    ],
+    "prediction": "Melbourne",
+    "entropy": 0.49279223701331265,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 3,
+    "clusters": [
+      {
+        "text": "Hobart",
+        "prob": 0.02405453112295563
+      },
+      {
+        "text": "Melbourne",
+        "prob": 0.8478721677792662
+      },
+      {
+        "text": "Adelaide",
+        "prob": 0.1280733010977781
+      }
+    ],
+    "samples": [
+      "Hobart",
+      "Melbourne",
+      "Hobart",
+      "Melbourne",
+      "Adelaide",
+      "Melbourne",
+      "Melbourne",
+      "Melbourne",
+      "Melbourne",
+      "Adelaide"
+    ]
+  },
+  {
+    "question": "D1NZ is a series based on what oversteering technique?",
+    "gold_answers": [
+      "Drifting"
+    ],
+    "prediction": "Drift",
+    "entropy": 3.330669073875469e-16,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "Drift",
+        "prob": 0.9999999999999997
+      }
+    ],
+    "samples": [
+      "Drift",
+      "drifting",
+      "drift",
+      "Drift",
+      "Drift",
+      "Drift",
+      "drifting",
+      "Drift",
+      "Drift",
+      "drifting"
+    ]
+  },
+  {
+    "question": "who is younger Keith Bostic or Jerry Glanville ?",
+    "gold_answers": [
+      "Keith Bostic"
+    ],
+    "prediction": "Keith Bostic",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "Keith Bostic",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "Keith Bostic",
+      "Keith Bostic",
+      "Keith Bostic",
+      "Keith Bostic",
+      "Keith Bostic",
+      "Keith Bostic",
+      "Keith Bostic",
+      "Keith Bostic",
+      "Keith Bostic",
+      "Keith Bostic"
+    ]
+  },
+  {
+    "question": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+    "gold_answers": [
+      "35,124"
+    ],
+    "prediction": "11,000",
+    "entropy": 0.9945722755006987,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "34,599",
+        "prob": 0.00966372567548728
+      },
+      {
+        "text": "14,057",
+        "prob": 0.03711997875727747
+      },
+      {
+        "text": "101,600",
+        "prob": 0.044222776259920576
+      },
+      {
+        "text": "22,782",
+        "prob": 0.02815413452775912
+      },
+      {
+        "text": "4,667",
+        "prob": 0.011086829008607045
+      },
+      {
+        "text": "16,289",
+        "prob": 0.021556397593856014
+      },
+      {
+        "text": "21,889",
+        "prob": 0.015273361852993415
+      },
+      {
+        "text": "11,000",
+        "prob": 0.7757801536193376
+      },
+      {
+        "text": "12,832",
+        "prob": 0.042931851262228635
+      },
+      {
+        "text": "3,321",
+        "prob": 0.014210791442532747
+      }
+    ],
+    "samples": [
+      "34,599",
+      "14,057",
+      "101,600",
+      "22,782",
+      "4,667",
+      "16,289",
+      "21,889",
+      "11,000",
+      "12,832",
+      "3,321"
+    ]
+  },
+  {
+    "question": "Are both Cypress and Ajuga genera?",
+    "gold_answers": [
+      "no"
+    ],
+    "prediction": "yes",
+    "entropy": 0.6891769617904049,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.5445250590634367
+      },
+      {
+        "text": "no",
+        "prob": 0.4554749409365632
+      }
+    ],
+    "samples": [
+      "yes",
+      "yes",
+      "no",
+      "no",
+      "no",
+      "yes",
+      "yes",
+      "yes",
+      "no",
+      "no"
+    ]
+  },
+  {
+    "question": "What distinction is held by the former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting?",
+    "gold_answers": [
+      "shortest player ever to play in the National Basketball Association"
+    ],
+    "prediction": "first African American player in the NBA",
+    "entropy": 1.3233338070689977,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.26666666666666666
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "First African-American woman to coach a men's professional basketball team",
+        "prob": 0.0029904731357135225
+      },
+      {
+        "text": "the first African-American player in the league",
+        "prob": 0.018601120321391617
+      },
+      {
+        "text": "first woman to coach a professional basketball team",
+        "prob": 0.006130550472813586
+      },
+      {
+        "text": "youngest player to score 10,000 points",
+        "prob": 0.009992111401253518
+      },
+      {
+        "text": "first African-American player to be drafted in the NBA",
+        "prob": 0.009053808436010266
+      },
+      {
+        "text": "only person to coach both the NBA and WNBA",
+        "prob": 0.01997899644913396
+      },
+      {
+        "text": "the only player in history to be inducted into both the National Collegiate Basketball Hall of Fame and the Naismith Memorial Basketball Hall of Fame",
+        "prob": 2.728005491646349e-05
+      },
+      {
+        "text": "first African American player in the NBA",
+        "prob": 0.39942412456706966
+      },
+      {
+        "text": "first African American coach in the WNBA",
+        "prob": 0.36656242577498965
+      },
+      {
+        "text": "first African American woman coach in the WNBA",
+        "prob": 0.16723910938670764
+      }
+    ],
+    "samples": [
+      "First African-American woman to coach a men's professional basketball team",
+      "the first African-American player in the league",
+      "first woman to coach a professional basketball team",
+      "youngest player to score 10,000 points",
+      "first African-American player to be drafted in the NBA",
+      "only person to coach both the NBA and WNBA",
+      "the only player in history to be inducted into both the National Collegiate Basketball Hall of Fame and the Naismith Memorial Basketball Hall of Fame",
+      "first African American player in the NBA",
+      "first African American coach in the WNBA",
+      "first African American woman coach in the WNBA"
+    ]
+  },
+  {
+    "question": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+    "gold_answers": [
+      "Ronald Shusett"
+    ],
+    "prediction": "Stanley Kubrick",
+    "entropy": 1.853818597217374,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "Michael Mann",
+        "prob": 0.23138408454523057
+      },
+      {
+        "text": "Francis Ford Coppola",
+        "prob": 0.07922413183153991
+      },
+      {
+        "text": "Stanley Kubrick",
+        "prob": 0.25424811957916765
+      },
+      {
+        "text": "Joel Silver",
+        "prob": 0.13417385924096456
+      },
+      {
+        "text": "Ron Howard",
+        "prob": 0.014942491935415176
+      },
+      {
+        "text": "Michael Dee Lay",
+        "prob": 0.0020121191351361576
+      },
+      {
+        "text": "Michael Dee Chik",
+        "prob": 0.008469443687390743
+      },
+      {
+        "text": "Terry Semel",
+        "prob": 0.016412116091889955
+      },
+      {
+        "text": "Jeffrey Katzenberg",
+        "prob": 0.1747941333507611
+      },
+      {
+        "text": "Warren Beatty",
+        "prob": 0.08433950060250407
+      }
+    ],
+    "samples": [
+      "Michael Mann",
+      "Francis Ford Coppola",
+      "Stanley Kubrick",
+      "Joel Silver",
+      "Ron Howard",
+      "Michael Dee Lay",
+      "Michael Dee Chik",
+      "Terry Semel",
+      "Jeffrey Katzenberg",
+      "Warren Beatty"
+    ]
+  },
+  {
+    "question": "Who was born earlier, Emma Bull or Virginia Woolf?",
+    "gold_answers": [
+      "Adeline Virginia Woolf"
+    ],
+    "prediction": "Virginia Woolf",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.8
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "Virginia Woolf",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "Virginia Woolf",
+      "Virginia Woolf",
+      "Virginia Woolf",
+      "Virginia Woolf",
+      "Virginia Woolf",
+      "Virginia Woolf",
+      "Virginia Woolf",
+      "Virginia Woolf",
+      "Virginia Woolf",
+      "Virginia Woolf"
+    ]
+  },
+  {
+    "question": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+    "gold_answers": [
+      "821"
+    ],
+    "prediction": "The Roud Folk Song Index",
+    "entropy": 0.04899193704045987,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 8,
+    "clusters": [
+      {
+        "text": "The Twelve Days of Christmas",
+        "prob": 0.005678767464818784
+      },
+      {
+        "text": "The Woman Who Was Married to Three Men",
+        "prob": 7.382756517672161e-07
+      },
+      {
+        "text": "The Roud Folk Song Index",
+        "prob": 0.9926826949070932
+      },
+      {
+        "text": "The Big Ball",
+        "prob": 3.750662169764074e-05
+      },
+      {
+        "text": "\"The Little Brown Jug\"",
+        "prob": 0.000277310388262485
+      },
+      {
+        "text": "the \"Little Girl\" rhyme",
+        "prob": 0.0005561862779442555
+      },
+      {
+        "text": "The Jack and Jill",
+        "prob": 0.0007663489078385593
+      },
+      {
+        "text": "a collection of 160 English and Scottish traditional songs",
+        "prob": 4.4715669317669955e-07
+      }
+    ],
+    "samples": [
+      "The Twelve Days of Christmas",
+      "The Woman Who Was Married to Three Men",
+      "The Roud Folk Song Index",
+      "The Big Ball",
+      "\"The Little Brown Jug\"",
+      "the \"Little Girl\" rhyme",
+      "The Roud Folk Song Index",
+      "The Jack and Jill",
+      "a collection of 160 English and Scottish traditional songs",
+      "the Roud Folk Song Index"
+    ]
+  },
+  {
+    "question": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+    "gold_answers": [
+      "more than 70 countries"
+    ],
+    "prediction": "130",
+    "entropy": 1.7018323107173001,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 9,
+    "clusters": [
+      {
+        "text": "185",
+        "prob": 0.012666651235360081
+      },
+      {
+        "text": "130",
+        "prob": 0.35049273340203013
+      },
+      {
+        "text": "60",
+        "prob": 0.08724953458141357
+      },
+      {
+        "text": "116",
+        "prob": 0.009454161271272642
+      },
+      {
+        "text": "100",
+        "prob": 0.2168016141017549
+      },
+      {
+        "text": "83",
+        "prob": 0.021953403393187677
+      },
+      {
+        "text": "150",
+        "prob": 0.1527116944751906
+      },
+      {
+        "text": "122",
+        "prob": 0.009959786041217035
+      },
+      {
+        "text": "80",
+        "prob": 0.13871042149857346
+      }
+    ],
+    "samples": [
+      "185",
+      "130",
+      "60",
+      "116",
+      "100",
+      "83",
+      "150",
+      "122",
+      "60",
+      "80"
+    ]
+  },
+  {
+    "question": "What WB supernatrual drama series was Jawbreaker star Rose Mcgowan best known for being in?",
+    "gold_answers": [
+      "Charmed"
+    ],
+    "prediction": "Charmed",
+    "entropy": 0.09196369916109834,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "Supernatural",
+        "prob": 0.01845498490074377
+      },
+      {
+        "text": "Charmed",
+        "prob": 0.9815450150992565
+      }
+    ],
+    "samples": [
+      "Supernatural",
+      "Charmed",
+      "Charmed",
+      "Charmed",
+      "Charmed",
+      "Charmed",
+      "Charmed",
+      "Charmed",
+      "Charmed",
+      "Charmed"
+    ]
+  },
+  {
+    "question": "Vince Phillips held a junior welterweight title by an organization recognized by what larger Hall of Fame?",
+    "gold_answers": [
+      "International Boxing Hall of Fame"
+    ],
+    "prediction": "International Boxing Hall of Fame",
+    "entropy": 0.0,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "International Boxing Hall of Fame",
+        "prob": 1.0
+      }
+    ],
+    "samples": [
+      "International Boxing Hall of Fame",
+      "International Boxing Hall of Fame",
+      "International Boxing Hall of Fame",
+      "International Boxing Hall of Fame",
+      "International Boxing Hall of Fame",
+      "International Boxing Hall of Fame",
+      "International Boxing Hall of Fame",
+      "International Boxing Hall of Fame",
+      "International Boxing Hall of Fame",
+      "International Boxing Hall of Fame"
+    ]
+  },
+  {
+    "question": "What is the name of the singer who's song was released as the lead single from the album \"Confessions\", and that had popular song stuck behind for eight consecutive weeks?",
+    "gold_answers": [
+      "Usher"
+    ],
+    "prediction": "Justin Bieber",
+    "entropy": 0.5304633205728196,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 6,
+    "clusters": [
+      {
+        "text": "Sakura Goto",
+        "prob": 0.0001668578631483554
+      },
+      {
+        "text": "Eminem",
+        "prob": 0.003987202326592135
+      },
+      {
+        "text": "Beyonc\u00e9",
+        "prob": 0.004131443443457721
+      },
+      {
+        "text": "Akon",
+        "prob": 0.013449727999871534
+      },
+      {
+        "text": "Justin Bieber",
+        "prob": 0.8364634843662415
+      },
+      {
+        "text": "Jay-Z",
+        "prob": 0.14180128400068867
+      }
+    ],
+    "samples": [
+      "Sakura Goto",
+      "Eminem",
+      "Beyonc\u00e9",
+      "Akon",
+      "Justin Bieber",
+      "Justin Bieber",
+      "Justin Bieber",
+      "Jay-Z",
+      "Justin Bieber",
+      "Jay-Z"
+    ]
+  },
+  {
+    "question": "who is the younger brother of The episode guest stars of The Hard Easy ",
+    "gold_answers": [
+      "Bill Murray"
+    ],
+    "prediction": "George Clooney",
+    "entropy": 1.913253283251549,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "Aaron Paul",
+        "prob": 0.11026048537998387
+      },
+      {
+        "text": "Jeff Daniels",
+        "prob": 0.02650964933132044
+      },
+      {
+        "text": "Tim Matheson",
+        "prob": 0.06884165533706964
+      },
+      {
+        "text": "Brian Lynch",
+        "prob": 0.002135806215623666
+      },
+      {
+        "text": "Adam Scott",
+        "prob": 0.1325466389519857
+      },
+      {
+        "text": "George Clooney",
+        "prob": 0.2439495645795071
+      },
+      {
+        "text": "Jim Carrey",
+        "prob": 0.2386151333511992
+      },
+      {
+        "text": "Jay Kordich",
+        "prob": 0.00047917037282578046
+      },
+      {
+        "text": "Trey Parker",
+        "prob": 0.11738502640435225
+      },
+      {
+        "text": "John Oliver",
+        "prob": 0.05927687007613253
+      }
+    ],
+    "samples": [
+      "Aaron Paul",
+      "Jeff Daniels",
+      "Tim Matheson",
+      "Brian Lynch",
+      "Adam Scott",
+      "George Clooney",
+      "Jim Carrey",
+      "Jay Kordich",
+      "Trey Parker",
+      "John Oliver"
+    ]
+  },
+  {
+    "question": "The 2017\u201318 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as what for sponsorship reasons?",
+    "gold_answers": [
+      "Carabao Cup"
+    ],
+    "prediction": "Carabao Cup",
+    "entropy": 0.7601843490268726,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 3,
+    "clusters": [
+      {
+        "text": "EFL Cup",
+        "prob": 0.4722086718447236
+      },
+      {
+        "text": "Carabao Cup",
+        "prob": 0.5126813185731867
+      },
+      {
+        "text": "EFL Trophy",
+        "prob": 0.01511000958208954
+      }
+    ],
+    "samples": [
+      "EFL Cup",
+      "Carabao Cup",
+      "EFL Cup",
+      "Carabao Cup",
+      "Carabao Cup",
+      "Carabao Cup",
+      "EFL Cup",
+      "Carabao Cup",
+      "EFL Trophy",
+      "EFL Cup"
+    ]
+  },
+  {
+    "question": "Which of Tara Strong major voice role in animated series is an American animated television series based on the DC Comics fictional superhero team, the \"Teen Titans\"?",
+    "gold_answers": [
+      "Teen Titans Go!"
+    ],
+    "prediction": "Starfire",
+    "entropy": 0.7977935457870144,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 3,
+    "clusters": [
+      {
+        "text": "Starfire",
+        "prob": 0.5302039505889646
+      },
+      {
+        "text": "Robin",
+        "prob": 0.028130939901453853
+      },
+      {
+        "text": "Raven",
+        "prob": 0.4416651095095814
+      }
+    ],
+    "samples": [
+      "Starfire",
+      "Robin",
+      "Raven",
+      "Starfire",
+      "Raven",
+      "Starfire",
+      "Raven",
+      "Starfire",
+      "Starfire",
+      "Raven"
+    ]
+  },
+  {
+    "question": "What is the inhabitant of the city where  122nd SS-Standarte was formed in2014",
+    "gold_answers": [
+      "276,170 inhabitants"
+    ],
+    "prediction": "Bavarian",
+    "entropy": 1.313605167602686,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 9,
+    "clusters": [
+      {
+        "text": "the population is approximately 4,400",
+        "prob": 5.12062173235213e-07
+      },
+      {
+        "text": "Frankfurter",
+        "prob": 0.02043909410291422
+      },
+      {
+        "text": "Ukrainian",
+        "prob": 0.021206441149812096
+      },
+      {
+        "text": "Germans",
+        "prob": 0.2952899026581481
+      },
+      {
+        "text": "Dutch",
+        "prob": 0.2104125270984726
+      },
+      {
+        "text": "Albanian",
+        "prob": 0.015754432397365455
+      },
+      {
+        "text": "Bavarian",
+        "prob": 0.43053271284011896
+      },
+      {
+        "text": "L\u00fcneburger",
+        "prob": 0.004548669341534805
+      },
+      {
+        "text": "a citizen of Belgium",
+        "prob": 0.0018157083494604218
+      }
+    ],
+    "samples": [
+      "the population is approximately 4,400",
+      "Frankfurter",
+      "Ukrainian",
+      "Germans",
+      "Dutch",
+      "Albanian",
+      "Bavarian",
+      "L\u00fcneburger",
+      "Austrian",
+      "a citizen of Belgium"
+    ]
+  },
+  {
+    "question": "What color clothing do people of the Netherlands wear during Oranjegekte or to celebrate the national holiday Koningsdag? ",
+    "gold_answers": [
+      "orange"
+    ],
+    "prediction": "orange",
+    "entropy": 2.2204460492503126e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "orange",
+        "prob": 0.9999999999999998
+      }
+    ],
+    "samples": [
+      "orange",
+      "orange",
+      "Orange",
+      "Orange",
+      "Orange",
+      "Orange",
+      "Orange",
+      "orange",
+      "orange",
+      "Orange"
+    ]
+  },
+  {
+    "question": "What was the name of the 1996 loose adaptation of William Shakespeare's \"Romeo & Juliet\" written by James Gunn?",
+    "gold_answers": [
+      "Tromeo and Juliet"
+    ],
+    "prediction": "Romeo Must Die",
+    "entropy": 0.7516918778914823,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 4,
+    "clusters": [
+      {
+        "text": "Romeo Must Die",
+        "prob": 0.7857576783613617
+      },
+      {
+        "text": "She's the Man",
+        "prob": 0.08359891140088024
+      },
+      {
+        "text": "Clueless",
+        "prob": 0.07577698760247148
+      },
+      {
+        "text": "10 Things I Hate About You",
+        "prob": 0.05486642263528667
+      }
+    ],
+    "samples": [
+      "Romeo Must Die",
+      "She's the Man",
+      "Romeo Must Die",
+      "Romeo Must Die",
+      "Romeo Must Die",
+      "Clueless",
+      "Romeo Must Die",
+      "10 Things I Hate About You",
+      "Romeo Must Die",
+      "10 Things I Hate About You"
+    ]
+  },
+  {
+    "question": "Robert Suettinger was the national intelligence officer under which former Governor of Arkansas?",
+    "gold_answers": [
+      "William Jefferson Clinton"
+    ],
+    "prediction": "Bill Clinton",
+    "entropy": -2.220446049250313e-16,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.4
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "Bill Clinton",
+        "prob": 1.0000000000000002
+      }
+    ],
+    "samples": [
+      "Bill Clinton",
+      "Bill Clinton",
+      "Bill Clinton",
+      "Bill Clinton",
+      "Bill Clinton",
+      "Bill Clinton",
+      "Bill Clinton",
+      "Bill Clinton",
+      "Bill Clinton",
+      "Bill Clinton"
+    ]
+  },
+  {
+    "question": "What American professional Hawaiian surfer born 18 October 1992 won the Rip Curl Pro Portugal?",
+    "gold_answers": [
+      "John John Florence"
+    ],
+    "prediction": "Kelly Slater",
+    "entropy": 1.2056247042898274,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 6,
+    "clusters": [
+      {
+        "text": "Kelly Slater",
+        "prob": 0.6071997686404693
+      },
+      {
+        "text": "Kolohe Andolong",
+        "prob": 0.1341694214113311
+      },
+      {
+        "text": "John Florence",
+        "prob": 0.008968980515507445
+      },
+      {
+        "text": "Kanoa Igarashi",
+        "prob": 0.11726504731448303
+      },
+      {
+        "text": "Gabby Thomas",
+        "prob": 0.03085155289248751
+      },
+      {
+        "text": "Carissa Moore",
+        "prob": 0.10154522922572154
+      }
+    ],
+    "samples": [
+      "Kelly Slater",
+      "Kolohe Andolong",
+      "Kelly Slater",
+      "Kelly Slater",
+      "John Florence",
+      "Kanoa Igarashi",
+      "Gabby Thomas",
+      "Carissa Moore",
+      "Kanoa Igarashi",
+      "Carissa Moore"
+    ]
+  },
+  {
+    "question": "What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?",
+    "gold_answers": [
+      "Ann"
+    ],
+    "prediction": "Marie",
+    "entropy": 1.4706184013211312,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 9,
+    "clusters": [
+      {
+        "text": "Beth",
+        "prob": 0.05659593886069112
+      },
+      {
+        "text": "Marie",
+        "prob": 0.4423597811074068
+      },
+      {
+        "text": "Martha",
+        "prob": 0.05050939482698776
+      },
+      {
+        "text": "Lester",
+        "prob": 0.0022701617440519717
+      },
+      {
+        "text": "Lynn",
+        "prob": 0.1695066725319406
+      },
+      {
+        "text": "Sue",
+        "prob": 0.007087353200577291
+      },
+      {
+        "text": "Jeniffer",
+        "prob": 0.0003485664796121143
+      },
+      {
+        "text": "Jean",
+        "prob": 0.24335118247928883
+      },
+      {
+        "text": "Jeanne",
+        "prob": 0.02797094876944338
+      }
+    ],
+    "samples": [
+      "Beth",
+      "Marie",
+      "Martha",
+      "Lester",
+      "Margaret",
+      "Lynn",
+      "Sue",
+      "Jeniffer",
+      "Jean",
+      "Jeanne"
+    ]
+  },
+  {
+    "question": "Alvaro Mexia had a diplomatic mission with which tribe of indigenous people?",
+    "gold_answers": [
+      "Apalachees"
+    ],
+    "prediction": "Apache",
+    "entropy": 0.9427619002426242,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 9,
+    "clusters": [
+      {
+        "text": "the Tucano",
+        "prob": 0.0039961131430781725
+      },
+      {
+        "text": "Tupinamba",
+        "prob": 0.04514202539469514
+      },
+      {
+        "text": "Hidatsa",
+        "prob": 0.06340698995175521
+      },
+      {
+        "text": "Tarahumara",
+        "prob": 0.0030545383675974836
+      },
+      {
+        "text": "Apache",
+        "prob": 0.7647527155004935
+      },
+      {
+        "text": "the M\u0101ori",
+        "prob": 0.006953479558306532
+      },
+      {
+        "text": "Mescalero Apache",
+        "prob": 0.07127835587785793
+      },
+      {
+        "text": "the Seminole",
+        "prob": 0.022863583316956013
+      },
+      {
+        "text": "the Lenape",
+        "prob": 0.018552198889260175
+      }
+    ],
+    "samples": [
+      "the Tucano",
+      "Tupinamba",
+      "Hidatsa",
+      "Tarahumara",
+      "Apache",
+      "The Cherokee",
+      "the M\u0101ori",
+      "Mescalero Apache",
+      "the Seminole",
+      "the Lenape"
+    ]
+  },
+  {
+    "question": "What nationality were social anthropologists Alfred Gell and Edmund Leach?",
+    "gold_answers": [
+      "British"
+    ],
+    "prediction": "British",
+    "entropy": -2.220446049250313e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "British",
+        "prob": 1.0000000000000002
+      }
+    ],
+    "samples": [
+      "British",
+      "British",
+      "English",
+      "British",
+      "British",
+      "British",
+      "British",
+      "British",
+      "English",
+      "English"
+    ]
+  },
+  {
+    "question": "In which year was the King who made the 1925 Birthday Honours born?",
+    "gold_answers": [
+      "1865"
+    ],
+    "prediction": "1863",
+    "entropy": 0.3064920984406736,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 4,
+    "clusters": [
+      {
+        "text": "1865",
+        "prob": 0.01565605378718815
+      },
+      {
+        "text": "1863",
+        "prob": 0.9355814165979754
+      },
+      {
+        "text": "1895",
+        "prob": 0.01746816710711858
+      },
+      {
+        "text": "1871",
+        "prob": 0.03129436250771789
+      }
+    ],
+    "samples": [
+      "1865",
+      "1863",
+      "1863",
+      "1863",
+      "1895",
+      "1863",
+      "1863",
+      "1871",
+      "1871",
+      "1863"
+    ]
+  },
+  {
+    "question": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+    "gold_answers": [
+      "Newport"
+    ],
+    "prediction": "Concord",
+    "entropy": 0.4385825848204345,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 6,
+    "clusters": [
+      {
+        "text": "Meredith",
+        "prob": 0.0207250788914026
+      },
+      {
+        "text": "Concord",
+        "prob": 0.8989905445901656
+      },
+      {
+        "text": "Amherst",
+        "prob": 0.005648655942489488
+      },
+      {
+        "text": "Lebanon",
+        "prob": 0.0075329562484453445
+      },
+      {
+        "text": "Epping",
+        "prob": 0.004005261752843583
+      },
+      {
+        "text": "Berlin",
+        "prob": 0.06309750257465328
+      }
+    ],
+    "samples": [
+      "Meredith",
+      "Concord",
+      "Concord",
+      "Amherst",
+      "Lebanon",
+      "Epping",
+      "Concord",
+      "Berlin",
+      "Concord",
+      "Concord"
+    ]
+  },
+  {
+    "question": "The Album Against the Wind was the 11th Album of a Rock singer Robert C Seger born may 6 1945. What was the Rock singers stage name ?",
+    "gold_answers": [
+      "Bob Seger"
+    ],
+    "prediction": "Robbie Seger",
+    "entropy": 0.07110083192518973,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    "num_clusters": 4,
+    "clusters": [
+      {
+        "text": "Robbie Seger",
+        "prob": 0.9873777116905725
+      },
+      {
+        "text": "Rodney C",
+        "prob": 0.0003942830031628464
+      },
+      {
+        "text": "The Seger Ballad",
+        "prob": 0.0003576376097239234
+      },
+      {
+        "text": "\"The Seger\"",
+        "prob": 0.011870367696540774
+      }
+    ],
+    "samples": [
+      "Robbie Seger",
+      "Rodney C",
+      "Bob Seger",
+      "The Seger Ballad",
+      "Bob Seger",
+      "\"The Seger\"",
+      "Bob Seger",
+      "Bob Seger",
+      "The Seger",
+      "Bob Seger"
+    ]
+  },
+  {
+    "question": "Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?",
+    "gold_answers": [
+      "Conscription"
+    ],
+    "prediction": "The practice of using a draft",
+    "entropy": 0.5123404365467705,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 7,
+    "clusters": [
+      {
+        "text": "using women to fill the positions of women",
+        "prob": 9.736375237865448e-06
+      },
+      {
+        "text": "women's exclusion from combat roles",
+        "prob": 0.03022820613026142
+      },
+      {
+        "text": "The practice of using a draft",
+        "prob": 0.8757787157917105
+      },
+      {
+        "text": "woman can be excluded from employment solely on the basis of sex",
+        "prob": 9.67752138907082e-10
+      },
+      {
+        "text": "selecting only men",
+        "prob": 0.0577355439535503
+      },
+      {
+        "text": "the military draft",
+        "prob": 0.0012366616070920132
+      },
+      {
+        "text": "volunteer",
+        "prob": 0.035011135174395754
+      }
+    ],
+    "samples": [
+      "using women to fill the positions of women",
+      "women's exclusion from combat roles",
+      "The practice of using a draft",
+      "woman can be excluded from employment solely on the basis of sex",
+      "non-voluntary conscription",
+      "conscription",
+      "selecting only men",
+      "the military draft",
+      "limited to male registrants",
+      "volunteer"
+    ]
+  },
+  {
+    "question": "Handi-Snacks are a snack food product line sold by what American multinational confectionery, food, and beverage company that is based in Illinois?",
+    "gold_answers": [
+      "Mondelez International, Inc."
+    ],
+    "prediction": "The Hershey Company",
+    "entropy": 0.5330709472598161,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 7,
+    "clusters": [
+      {
+        "text": "Cadbury",
+        "prob": 0.024000074630243565
+      },
+      {
+        "text": "The Hershey Company",
+        "prob": 0.8777626615370351
+      },
+      {
+        "text": "General Mills, Inc",
+        "prob": 0.0033278784026867206
+      },
+      {
+        "text": "Ferrara Candy Company",
+        "prob": 0.0004968227114972845
+      },
+      {
+        "text": "Mars, Inc",
+        "prob": 0.05912253776589525
+      },
+      {
+        "text": "General Mills",
+        "prob": 0.025191439914062162
+      },
+      {
+        "text": "Kraft Foods",
+        "prob": 0.010098585038579756
+      }
+    ],
+    "samples": [
+      "Cadbury",
+      "The Hershey Company",
+      "The Hershey Company",
+      "General Mills, Inc",
+      "Ferrara Candy Company",
+      "Mars, Inc",
+      "The Hershey Company",
+      "Mars Inc",
+      "General Mills",
+      "Kraft Foods"
+    ]
+  },
+  {
+    "question": "What was the name of a woman from the book titled \"Their Lives: The Women Targeted by the Clinton Machine \" and was also a former white house intern?",
+    "gold_answers": [
+      "Monica Lewinsky"
+    ],
+    "prediction": "Vicki Iseman",
+    "entropy": 0.3075063271564854,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 5,
+    "clusters": [
+      {
+        "text": "Vicki Iseman",
+        "prob": 0.9206885746223487
+      },
+      {
+        "text": "Anna Nicole Smith",
+        "prob": 0.004594493581352754
+      },
+      {
+        "text": "Mandy Rice-Davies",
+        "prob": 0.0023044400291908325
+      },
+      {
+        "text": "Tawana Brawley",
+        "prob": 0.00042165805797168485
+      },
+      {
+        "text": "Monica Lewinsky",
+        "prob": 0.07199083370913607
+      }
+    ],
+    "samples": [
+      "Vicki Iseman",
+      "Vicki Iseman",
+      "Anna Nicole Smith",
+      "Vicki Iseman",
+      "Mandy Rice-Davies",
+      "Vicki Iseman",
+      "Vicki Iseman",
+      "Vicki Iseman",
+      "Tawana Brawley",
+      "Monica Lewinsky"
+    ]
+  },
+  {
+    "question": "When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born?",
+    "gold_answers": [
+      "April 1, 1949"
+    ],
+    "prediction": "March 1, 1943",
+    "entropy": 2.248091666783886,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.3333333333333333
+    },
+    "num_clusters": 10,
+    "clusters": [
+      {
+        "text": "February 16, 1948",
+        "prob": 0.06348553480812584
+      },
+      {
+        "text": "August 22, 1954",
+        "prob": 0.11783244726408978
+      },
+      {
+        "text": "January 16, 1954",
+        "prob": 0.11886096532066612
+      },
+      {
+        "text": "March 27, 1943",
+        "prob": 0.11835194827071611
+      },
+      {
+        "text": "December 16, 1947",
+        "prob": 0.08111928178614564
+      },
+      {
+        "text": "June 27, 1943",
+        "prob": 0.06325817063524448
+      },
+      {
+        "text": "October 1, 1945",
+        "prob": 0.05963369148531747
+      },
+      {
+        "text": "October 18, 1954",
+        "prob": 0.09268510850527042
+      },
+      {
+        "text": "March 1, 1943",
+        "prob": 0.1731605918966781
+      },
+      {
+        "text": "October 11, 1954",
+        "prob": 0.11161226002774599
+      }
+    ],
+    "samples": [
+      "February 16, 1948",
+      "August 22, 1954",
+      "January 16, 1954",
+      "March 27, 1943",
+      "December 16, 1947",
+      "June 27, 1943",
+      "October 1, 1945",
+      "October 18, 1954",
+      "March 1, 1943",
+      "October 11, 1954"
+    ]
+  },
+  {
+    "question": "In what year was the novel that Louren\u00e7o Mutarelli based \"Nina\" on based first published?",
+    "gold_answers": [
+      "1866"
+    ],
+    "prediction": "1938",
+    "entropy": 1.6943614709884607,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 9,
+    "clusters": [
+      {
+        "text": "1905",
+        "prob": 0.031762300157572684
+      },
+      {
+        "text": "1924",
+        "prob": 0.0278887980924141
+      },
+      {
+        "text": "1960",
+        "prob": 0.07029944871711577
+      },
+      {
+        "text": "1923",
+        "prob": 0.08488771051318666
+      },
+      {
+        "text": "1845",
+        "prob": 0.006601436777131676
+      },
+      {
+        "text": "1938",
+        "prob": 0.4486939873323232
+      },
+      {
+        "text": "1925",
+        "prob": 0.17632952565329177
+      },
+      {
+        "text": "1919",
+        "prob": 0.09400181303105165
+      },
+      {
+        "text": "1911",
+        "prob": 0.059534979725912415
+      }
+    ],
+    "samples": [
+      "1905",
+      "1924",
+      "1960",
+      "1923",
+      "1845",
+      "1938",
+      "1938",
+      "1925",
+      "1919",
+      "1911"
+    ]
+  },
+  {
+    "question": "Where are Teide National Park and Garajonay National Park located?",
+    "gold_answers": [
+      "Canary Islands, Spain"
+    ],
+    "prediction": "Tenerife and La Gomera",
+    "entropy": 0.3435355493140059,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 3,
+    "clusters": [
+      {
+        "text": "Tenerife and La Gomera",
+        "prob": 0.9073200498543308
+      },
+      {
+        "text": "Tenerife",
+        "prob": 0.08113514296100356
+      },
+      {
+        "text": "Spain",
+        "prob": 0.011544807184665391
+      }
+    ],
+    "samples": [
+      "Tenerife and La Gomera",
+      "Tenerife and La Gomera",
+      "Tenerife and La Gomera",
+      "Tenerife and La Gomera",
+      "Tenerife and La Gomera",
+      "Tenerife",
+      "Tenerife and La Gomera",
+      "Tenerife",
+      "Spain",
+      "Tenerife and La Gomera"
+    ]
+  },
+  {
+    "question": "How many copies of Roald Dahl's variation on a popular anecdote sold?",
+    "gold_answers": [
+      "250 million"
+    ],
+    "prediction": "20 million",
+    "entropy": 1.5465708564892284,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    "num_clusters": 8,
+    "clusters": [
+      {
+        "text": "4",
+        "prob": 0.043977876289345255
+      },
+      {
+        "text": "20 million",
+        "prob": 0.5486517481692409
+      },
+      {
+        "text": "2",
+        "prob": 0.05899017181418556
+      },
+      {
+        "text": "45 million",
+        "prob": 0.09976319765745123
+      },
+      {
+        "text": "5 million",
+        "prob": 0.06435763027485786
+      },
+      {
+        "text": "3 million",
+        "prob": 0.0871270185170272
+      },
+      {
+        "text": "10 million copies",
+        "prob": 0.04673202965127765
+      },
+      {
+        "text": "15 million copies",
+        "prob": 0.05040032762661433
+      }
+    ],
+    "samples": [
+      "4",
+      "20 million",
+      "2",
+      "45 million",
+      "5 million",
+      "3 million",
+      "20 million",
+      "10 million copies",
+      "15 million copies",
+      "3 million"
+    ]
+  },
+  {
+    "question": "What occupation do Chris Menges and Aram Avakian share?",
+    "gold_answers": [
+      "director"
+    ],
+    "prediction": "producer",
+    "entropy": 0.47061193213026103,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "producer",
+        "prob": 0.8205148266885601
+      },
+      {
+        "text": "film director",
+        "prob": 0.17948517331143962
+      }
+    ],
+    "samples": [
+      "producer",
+      "producer",
+      "producer",
+      "film director",
+      "film director",
+      "producer",
+      "film director",
+      "producer",
+      "producer",
+      "producer"
+    ]
+  },
+  {
+    "question": "Andrew Jaspan was the co-founder of what not-for-profit media outlet?",
+    "gold_answers": [
+      "The Conversation"
+    ],
+    "prediction": "The Intercept",
+    "entropy": 0.15972717426563232,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 5,
+    "clusters": [
+      {
+        "text": "The Intercept",
+        "prob": 0.9725530557038057
+      },
+      {
+        "text": "Al Jazeera English",
+        "prob": 0.008615707820340145
+      },
+      {
+        "text": "The Atlantic Monthly",
+        "prob": 0.0013336010028979195
+      },
+      {
+        "text": "The New York Times Company",
+        "prob": 0.009388675814085017
+      },
+      {
+        "text": "The Daily Beast",
+        "prob": 0.008108959658871151
+      }
+    ],
+    "samples": [
+      "The Intercept",
+      "The Intercept",
+      "Al Jazeera English",
+      "The Atlantic Monthly",
+      "The New York Times Company",
+      "The Daily Beast",
+      "The Intercept",
+      "The Intercept",
+      "The Intercept",
+      "The Intercept"
+    ]
+  },
+  {
+    "question": "Which American film director hosted the 18th Independent Spirit Awards in 2002?",
+    "gold_answers": [
+      "John Waters"
+    ],
+    "prediction": "Quentin Tarantino",
+    "entropy": 0.47199437658016297,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 7,
+    "clusters": [
+      {
+        "text": "Steven Soderbergh",
+        "prob": 0.014497631902714789
+      },
+      {
+        "text": "Quentin Tarantino",
+        "prob": 0.9000397099439565
+      },
+      {
+        "text": "Paul Thomas Anderson",
+        "prob": 0.020603051369714902
+      },
+      {
+        "text": "Robert Redford",
+        "prob": 0.045631054001427855
+      },
+      {
+        "text": "Dennis Hopper",
+        "prob": 0.002503822422219894
+      },
+      {
+        "text": "Richard Linklater",
+        "prob": 0.008951311782068334
+      },
+      {
+        "text": "Tim Burton",
+        "prob": 0.007773418577897674
+      }
+    ],
+    "samples": [
+      "Steven Soderbergh",
+      "Quentin Tarantino",
+      "Paul Thomas Anderson",
+      "Robert Redford",
+      "Quentin Tarantino",
+      "Quentin Tarantino",
+      "Dennis Hopper",
+      "Quentin Tarantino",
+      "Richard Linklater",
+      "Tim Burton"
+    ]
+  },
+  {
+    "question": "Where does the hotel and casino located in which Bill Cosby's third album was recorded?",
+    "gold_answers": [
+      "Las Vegas Strip in Paradise"
+    ],
+    "prediction": "Las Vegas Strip",
+    "entropy": 0.5893181796390823,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.7499999999999999
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "Las Vegas Strip",
+        "prob": 0.7238106603423574
+      },
+      {
+        "text": "Las Vegas, Nevada",
+        "prob": 0.27618933965764253
+      }
+    ],
+    "samples": [
+      "Las Vegas Strip",
+      "Las Vegas Strip",
+      "Las Vegas Strip",
+      "Las Vegas, Nevada",
+      "Las Vegas, Nevada",
+      "Las Vegas, Nevada",
+      "Las Vegas, Nevada",
+      "Las Vegas Strip",
+      "Las Vegas Strip",
+      "Las Vegas Strip"
+    ]
+  },
+  {
+    "question": "Do the drinks Gibson and Zurracapote both contain gin?",
+    "gold_answers": [
+      "no"
+    ],
+    "prediction": "no",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "no",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no"
+    ]
+  },
+  {
+    "question": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
+    "gold_answers": [
+      "March and April"
+    ],
+    "prediction": "October",
+    "entropy": 1.7951178235209955,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 7,
+    "clusters": [
+      {
+        "text": "June",
+        "prob": 0.13579688431690806
+      },
+      {
+        "text": "March",
+        "prob": 0.22384977496947217
+      },
+      {
+        "text": "April",
+        "prob": 0.0467897061794221
+      },
+      {
+        "text": "October",
+        "prob": 0.27598172748213157
+      },
+      {
+        "text": "January",
+        "prob": 0.05257761409658809
+      },
+      {
+        "text": "September",
+        "prob": 0.13660472331524703
+      },
+      {
+        "text": "May",
+        "prob": 0.12839956964023105
+      }
+    ],
+    "samples": [
+      "June",
+      "March",
+      "April",
+      "October",
+      "June",
+      "January",
+      "September",
+      "March",
+      "October",
+      "May"
+    ]
+  },
+  {
+    "question": "Tysons Galleria is located in what county?",
+    "gold_answers": [
+      "Fairfax County"
+    ],
+    "prediction": "Fairfax County",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "Fairfax County",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "Fairfax County",
+      "Fairfax County",
+      "Fairfax County",
+      "Fairfax County",
+      "Fairfax County",
+      "Fairfax County",
+      "Fairfax County",
+      "Fairfax County",
+      "Fairfax County",
+      "Fairfax County"
+    ]
+  },
+  {
+    "question": "Bordan Tkachuk was the CEO of a company that provides what sort of products?",
+    "gold_answers": [
+      "IT products and services"
+    ],
+    "prediction": "consumer electronics",
+    "entropy": 1.0121231276727785,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    "num_clusters": 8,
+    "clusters": [
+      {
+        "text": "consumer electronics",
+        "prob": 0.5968196008879143
+      },
+      {
+        "text": "security products",
+        "prob": 0.08273170483121121
+      },
+      {
+        "text": "products for the personal care industry",
+        "prob": 0.034121614103091745
+      },
+      {
+        "text": "business software and services",
+        "prob": 0.0012450497578712502
+      },
+      {
+        "text": "consumer products",
+        "prob": 0.28233701092231417
+      },
+      {
+        "text": "digital publishing and media products",
+        "prob": 5.5801237618881484e-05
+      },
+      {
+        "text": "retail and services",
+        "prob": 0.00023394820044586842
+      },
+      {
+        "text": "industrial, commercial, and consumer products",
+        "prob": 0.002455270059532418
+      }
+    ],
+    "samples": [
+      "consumer electronics",
+      "security products",
+      "products for the personal care industry",
+      "business software and services",
+      "consumer products",
+      "digital publishing and media products",
+      "personal care",
+      "retail and services",
+      "products for the consumer market",
+      "industrial, commercial, and consumer products"
+    ]
+  },
+  {
+    "question": "Which filmmaker was known for animation, Lev Yilmaz or Pamela B. Green?",
+    "gold_answers": [
+      "Levni Yilmaz"
+    ],
+    "prediction": "Lev Yilmaz",
+    "entropy": 0.2703171045609248,
+    "metrics": {
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    "num_clusters": 2,
+    "clusters": [
+      {
+        "text": "Pamela B",
+        "prob": 0.07657239923298002
+      },
+      {
+        "text": "Lev Yilmaz",
+        "prob": 0.9234276007670201
+      }
+    ],
+    "samples": [
+      "Pamela B",
+      "Lev Yilmaz",
+      "Lev Yilmaz",
+      "Lev Yilmaz",
+      "Lev Yilmaz",
+      "Lev Yilmaz",
+      "Lev Yilmaz",
+      "Lev Yilmaz",
+      "Lev Yilmaz",
+      "Pamela B"
+    ]
+  },
+  {
+    "question": "In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?",
+    "gold_answers": [
+      "Beijing"
+    ],
+    "prediction": "Beijing",
+    "entropy": 1.1102230246251564e-16,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "Beijing",
+        "prob": 0.9999999999999999
+      }
+    ],
+    "samples": [
+      "Beijing",
+      "Beijing",
+      "Beijing",
+      "Beijing",
+      "Beijing",
+      "Beijing",
+      "Beijing",
+      "Beijing",
+      "Beijing",
+      "Beijing"
+    ]
+  },
+  {
+    "question": "Are Yingkou and Fuding the same level of city?",
+    "gold_answers": [
+      "no"
+    ],
+    "prediction": "no",
+    "entropy": 0.0,
+    "metrics": {
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    "num_clusters": 1,
+    "clusters": [
+      {
+        "text": "no",
+        "prob": 1.0
+      }
+    ],
+    "samples": [
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no",
+      "no"
+    ]
+  }
+]
