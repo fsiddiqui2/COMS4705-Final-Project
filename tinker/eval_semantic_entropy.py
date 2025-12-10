@@ -16,23 +16,33 @@ load_dotenv()
 # 1. Configuration
 # ==========================================
 
-# Model to Evaluate
-ADAPTER_PATH = "tinker://0c59c24e-9098-51ca-b421-192c15a5a1f3:train:0/sampler_weights/qwen-hotpot-adapter"
+# Load Model Registry
+with open("tinker_models.json", "r") as f:
+    MODEL_REGISTRY = json.load(f)
+
+# SELECT MODEL HERE
+# Options: "qwen_hotpot_finetune_v2", "qwen_cot_distilled_v1"
+SELECTED_MODEL_KEY = "qwen_cot_distilled_v1" 
+
+ADAPTER_PATH = MODEL_REGISTRY[SELECTED_MODEL_KEY]["uri"]
 BASE_MODEL = "Qwen/Qwen3-8B"
+
+print(f"Loaded Adapter: {SELECTED_MODEL_KEY}")
+print(f"URI: {ADAPTER_PATH}")
 
 # Data
 DATASET_NAME = "hotpot_qa"
 SUBSET_NAME = "distractor"
 SPLIT = "validation"
 NUM_SAMPLES_PER_QUESTION = 10  # Number of generations to estimate entropy
-TOTAL_EVAL_SAMPLES = 1000       # Limit total questions for speed (set to None for full)
+TOTAL_EVAL_SAMPLES = 1000      # Limit total questions for speed (set to None for full)
 
 # NLI Model (Local)
 # User requested larger model for better accuracy (requires GPU)
 NLI_MODEL_NAME = "microsoft/deberta-large-mnli" 
 
-OUTPUT_FILE = "tinker_sem_entropy_results.json"
-METRICS_FILE = "tinker_sem_entropy_metrics.json"
+OUTPUT_FILE = f"tinker_sem_entropy_results_{SELECTED_MODEL_KEY}.json"
+METRICS_FILE = f"tinker_sem_entropy_metrics_{SELECTED_MODEL_KEY}.json"
 
 import re
 import string
