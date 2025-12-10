@@ -1,7 +1,7 @@
 {
   "metrics": {
-    "EM": 24.0,
-    "F1": 36.231818181818184
+    "EM": 25.99594868332208,
+    "F1": 35.80577101475947
   },
   "model": "tinker://a13a33af-9a99-51bf-8447-722ab7aef0d4:train:0/sampler_weights/qwen-cot-distilled"
 }

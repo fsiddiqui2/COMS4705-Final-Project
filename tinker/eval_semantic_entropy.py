@@ -28,14 +28,49 @@ NUM_SAMPLES_PER_QUESTION = 10  # Number of generations to estimate entropy
 TOTAL_EVAL_SAMPLES = 100       # Limit total questions for speed (set to None for full)
 
 # NLI Model (Local)
-# using a small efficient model that runs fast on CPU/MPS
-NLI_MODEL_NAME = "cross-encoder/nli-deberta-v3-xsmall" 
+# User requested larger model for better accuracy (requires GPU)
+NLI_MODEL_NAME = "microsoft/deberta-large-mnli" 
 
 OUTPUT_FILE = "tinker_sem_entropy_results.json"
 METRICS_FILE = "tinker_sem_entropy_metrics.json"
 
+import re
+import string
+from collections import Counter
+
 # ==========================================
-# 2. NLI Clustering Logic
+# 2. Metric Utils (Copied from tinker_eval.py)
+# ==========================================
+
+def normalize_answer(s):
+    def remove_articles(text): return re.sub(r'\b(a|an|the)\b', ' ', text)
+    def white_space_fix(text): return ' '.join(text.split())
+    def remove_punc(text): return ''.join(ch for ch in text if ch not in set(string.punctuation))
+    def lower(text): return text.lower()
+    return white_space_fix(remove_articles(remove_punc(lower(s))))
+
+def f1_score(prediction, ground_truth):
+    normalized_prediction = normalize_answer(prediction)
+    normalized_ground_truth = normalize_answer(ground_truth)
+    if normalized_prediction in ['yes', 'no', 'noanswer'] and normalized_prediction != normalized_ground_truth:
+        return 0.0, 0.0, 0.0
+    if normalized_ground_truth in ['yes', 'no', 'noanswer'] and normalized_prediction != normalized_ground_truth:
+        return 0.0, 0.0, 0.0
+    prediction_tokens = normalized_prediction.split()
+    ground_truth_tokens = normalized_ground_truth.split()
+    common = Counter(prediction_tokens) & Counter(ground_truth_tokens)
+    num_same = sum(common.values())
+    if num_same == 0: return 0.0, 0.0, 0.0
+    precision = 1.0 * num_same / len(prediction_tokens)
+    recall = 1.0 * num_same / len(ground_truth_tokens)
+    f1 = (2 * precision * recall) / (precision + recall)
+    return f1, precision, recall
+
+def exact_match_score(prediction, ground_truth):
+    return (normalize_answer(prediction) == normalize_answer(ground_truth))
+
+# ==========================================
+# 3. NLI Clustering Logic
 # ==========================================
 
 class SemanticClusterer:
@@ -55,12 +90,24 @@ class SemanticClusterer:
         self.model = AutoModelForSequenceClassification.from_pretrained(model_name).to(self.device)
         self.model.eval()
         
-        # Mapping from label index to 'entailment', 'neutral', 'contradiction'
-        # Check config to be sure, but usually: 0: contradiction, 1: entailment, 2: neutral (or similar)
-        # For cross-encoder/nli-deberta-v3-xsmall:
-        # id2label: {0: 'contradiction', 1: 'entailment', 2: 'neutral'}
-        self.entailment_idx = 1 
-
+        # Dynamic Label Mapping
+        # Different models have different mappings (e.g., Entailment can be 1 or 2)
+        self.entailment_idx = -1
+        
+        # Try finding "entailment" (case-insensitive) in id2label
+        if hasattr(self.model.config, "id2label"):
+            for idx, label in self.model.config.id2label.items():
+                if "entailment" in str(label).lower():
+                    self.entailment_idx = int(idx)
+                    break
+        
+        # Fallback/Default if not found (Warn user)
+        if self.entailment_idx == -1:
+            print("⚠️ WARNING: Could not find 'entailment' label in model config. Defaulting to index 2 (common for MNLI).")
+            print(f"Labels found: {self.model.config.id2label}")
+            self.entailment_idx = 2 
+        else:
+            print(f"✅ Found Entailment label at index: {self.entailment_idx} ({self.model.config.id2label[self.entailment_idx]})")
     def predict_entailment(self, premise, hypothesis):
         inputs = self.tokenizer(
             premise, hypothesis, return_tensors="pt", truncation=True, max_length=512
@@ -111,7 +158,7 @@ class SemanticClusterer:
         return clusters
 
 # ==========================================
-# 3. Tinker Generation & Metrics
+# 4. Tinker Generation & Metrics
 # ==========================================
 
 def calculate_sequence_prob(token_ids, logprobs):
@@ -154,7 +201,10 @@ def main():
     
     for i, item in tqdm(enumerate(dataset), total=len(dataset)):
         question = item['question']
-        
+        gold_answers = item['answer']
+        if not isinstance(gold_answers, list):
+             gold_answers = [gold_answers]
+
         # 1. Prepare Prompt
         messages = [
             {"role": "system", "content": "You are a concise encyclopedia. Answer the question directly with a short phrase or entity name. Do not explain."},
@@ -214,15 +264,38 @@ def main():
             # 4. Calculate Entropy
             # SE = - sum( P(C) * log(P(C)) )
             entropy = 0.0
+            
+            # Best Cluster Logic for Accuracy
+            best_cluster = None
+            max_cluster_prob = -1.0
+            
             for c in clusters:
                 p_c = c['prob']
+                
+                if p_c > max_cluster_prob:
+                    max_cluster_prob = p_c
+                    best_cluster = c
+                
                 if p_c > 0:
                     entropy -= p_c * np.log(p_c)
+
+            # 5. Calculate Accuracy (EM/F1) on Best Cluster
+            # Use the representative text from the best cluster
+            best_answer = best_cluster['text'] if best_cluster else ""
+            
+            sample_em = max([float(exact_match_score(best_answer, gold)) for gold in gold_answers])
+            sample_f1 = max([f1_score(best_answer, gold)[0] for gold in gold_answers])
                     
             # Store result
             results.append({
                 "question": question,
+                "gold_answers": gold_answers,
+                "prediction": best_answer,
                 "entropy": entropy,
+                "metrics": {
+                    "exact_match": sample_em,
+                    "f1_score": sample_f1
+                },
                 "num_clusters": len(clusters),
                 "clusters": [{"text": c['text'], "prob": c['prob']} for c in clusters],
                 "samples": [s[0] for s in samples]
@@ -236,7 +309,13 @@ def main():
 
     # Stats
     avg_se = np.mean([r['entropy'] for r in results]) if results else 0
-    print(f"\nAverage Semantic Entropy: {avg_se:.4f}")
+    avg_em = np.mean([r['metrics']['exact_match'] for r in results]) * 100 if results else 0
+    avg_f1 = np.mean([r['metrics']['f1_score'] for r in results]) * 100 if results else 0
+    
+    print(f"\nResults ({len(results)} samples):")
+    print(f"  Avg Semantic Entropy: {avg_se:.4f}")
+    print(f"  Avg Exact Match:      {avg_em:.2f}%")
+    print(f"  Avg F1 Score:         {avg_f1:.2f}%")
     
     with open(OUTPUT_FILE, 'w') as f:
         json.dump(results, f, indent=2)
