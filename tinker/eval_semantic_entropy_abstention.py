@@ -101,7 +101,7 @@ def robust_parse_abstention_model(output_text):
 # 1. Configuration
 # ==========================================
 
-with open("tinker_models.json", "r") as f:
+with open("tinker/tinker_models.json", "r") as f:
     MODEL_REGISTRY = json.load(f)
 
 # Model to Evaluate (Abstention Adapter)
@@ -114,7 +114,7 @@ SUBSET_NAME = "distractor"
 SPLIT = "validation"
 # 10 Samples for Entropy Calculation (Standard)
 NUM_SAMPLES_PER_QUESTION = 10  
-TOTAL_EVAL_SAMPLES = 50 # Speed setting (Increase for full run)
+TOTAL_EVAL_SAMPLES = 1000 # Speed setting (Increase for full run)
 
 # ABSTENTION FORMATTING
 DELIMITER_PROMPT = " ###\n"
