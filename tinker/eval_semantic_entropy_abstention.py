@@ -114,7 +114,7 @@ SUBSET_NAME = "distractor"
 SPLIT = "validation"
 # 10 Samples for Entropy Calculation (Standard)
 NUM_SAMPLES_PER_QUESTION = 10  
-TOTAL_EVAL_SAMPLES = 1000 # Speed setting (Increase for full run)
+TOTAL_EVAL_SAMPLES = 400 # Speed setting (Increase for full run)
 
 # ABSTENTION FORMATTING
 DELIMITER_PROMPT = " ###\n"
@@ -268,10 +268,10 @@ def main():
                 parsed = robust_parse_abstention_model(text)
                 final_text = parsed if parsed else "NO_ANSWER_FOUND"
                 
-                if hasattr(seq, 'logprobs') and seq.logprobs:
-                    prob = calculate_sequence_prob(seq.tokens, seq.logprobs)
-                else:
-                    prob = 1.0 / NUM_SAMPLES_PER_QUESTION
+                # FIXED: Use UNIFORM weighting for Monte Carlo approximation.
+                # Using exp(logprobs) here would be double-counting the probability 
+                # (Sampling already draws proportional to P).
+                prob = 1.0 
                 
                 samples.append((final_text, prob))
                 raw_texts.append(final_text)

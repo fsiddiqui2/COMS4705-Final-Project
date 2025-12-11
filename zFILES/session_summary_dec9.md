@@ -53,12 +53,24 @@
     *   **Prompt Formatting:** The original `tinker_eval.py` failed to use `apply_chat_template`, sending raw strings instead of formatted chat messages.
     *   **Special Tokens:** The model output included `<|im_end|>`, which wasn't being stripped, causing Exact Match failures.
 *   **Fix Implementation:**
-    *   Updated `tinker/tinker_eval.py` to use `tokenizer.apply_chat_template`.
-    *   Added explicit stripping of `<|im_end|>` to mirror the `skip_special_tokens=True` behavior of local scripts.
-*   **Verification:**
     *   **Baseline:** Validated the "Vanilla" Tinker Baseline achieved **22.35% EM**, matching the local target.
     *   **CoT Model:**
         *   Discovered a mismatch in output format ("Therefore, the answer is..." vs expected `-->`).
         *   **Tracing:** Confirmed this was due to using a different training dataset (`fsiddiqui2/hotpot-qa-cot-reasoning` vs `fsiddiqui2/hotpot-qa-closedbook-cot-reasoning`) which contained natural language traces.
         *   **Resolution:** Updated `tinker/evaluate_cot.py` to support both formats.
         *   **Result:** CoT model achieved ~24% EM on a validation subset, confirming the distillation worked.
+
+## 7. Analysis & Verification of SE/Abstention (Dec 11 - Evening)
+*   **Objective:** Comprehensive analysis of the Abstention Model's uncertainty using Semantic Entropy.
+*   **Critical Bug Fix (Probability Weighting):**
+    *   **Problem:** "I don't know" clusters were receiving artificially high probability (0.99+) even when they only appeared 1/10 times in sampling. This crushed Entropy values to near-zero.
+    *   **Analysis:** The script was engaging in "Double Counting": calculating counts of samples (Monte Carlo) BUT THEN weighting them again by the model's raw token log-probabilities (which are extremely high for short, common phrases like "I don't know").
+    *   **Fix:** Enforced **Uniform Weighting** ($1.0$ per sample) in `tinker/eval_semantic_entropy_abstention.py`. This aligns with the "Discrete Semantic Entropy" method.
+*   **Verification:**
+    *   Validated mathematically against the *Nature* paper (Farquhar et al., 2024), confirming that "Discrete Semantic Entropy" uses raw counts (uniform weights) when token probabilities are unavailable or unreliable.
+*   **Visualization:**
+    *   Updated `tinker/sem_entropy_filter.py` to generate a full suite of diagnostic plots:
+        1.  **Rejection Curves:** Full and Selective populations (measuring Efficiency vs Risk).
+        2.  **Box Plots:** Distribution of Entropy for Answered vs Abstained.
+        3.  **Violin Plots:** Distribution of Entropy for Correct vs Incorrect answers.
+*   **Conclusion:** The fixed script correctly captures the uncertainty, with Std SE and Cond SE converging when the model is decisive, and diverging only when it is split between Answering and Abstaining.
