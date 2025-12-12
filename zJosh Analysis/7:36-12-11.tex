@@ -1,0 +1,493 @@
+\documentclass{article}
+
+\usepackage[final]{neurips_2019}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{amsmath}
+\usepackage{graphicx}   % For images
+\usepackage{float}      % For [H] positioning
+\usepackage{booktabs}   % For table lines (toprule, midrule)
+\usepackage{caption}    % For caption formatting
+% \usepackage{subcaption} % (Optional) If you revert to using 'subfigure' instead of minipage
+\newcommand{\note}[1]{\textcolor{blue}{{#1}}}
+
+\title{
+  Title of your project \\
+  \vspace{1em}
+  \small{\normalfont Columbia COMS4705 Final Project Report} \\
+  \small{\normalfont \textbf{Keywords:} \textit{keyword1, keyword2, ...}}
+}
+
+\author{
+  Joshua Hegstad \\
+  Department of Computer Science \\
+  Columbia University \\
+  \texttt{jlh2288@columbia.edu} \\
+  \And
+  Ahmed Jaber \\
+  Department of Computer Science \\
+  Columbia University \\
+  \texttt{amj2234@columbia.edu} \\
+  \And
+  Farhaan Siddiqui \\
+  Department of Computer Science \\
+  Columbia University \\
+  \texttt{fs2872@columbia.edu} \\
+}
+
+\begin{document}
+
+\maketitle
+
+% \begin{center}
+%     \note{This template is built on NeurIPS 2019 template\footnote{\url{https://www.overleaf.com/latex/templates/neurips-2019/tprktwxmqmgk}} and adapted from Stanford CS224N Natural Language Processing with Deep Learning 
+%     }
+% \end{center}
+
+\begin{abstract}
+Closed-book question answering (QA) systems must answer questions using only parametric knowledge, which makes them prone to \emph{closed-book hallucination}: confident but factually incorrect answers with no supporting evidence \cite{ji2023survey}. We view this behavior as arising from two failure modes: (1) the model lacks the relevant knowledge, and (2) the knowledge is implicitly present in its parameters, but the model does not reliably retrieve or apply it at inference time \cite{kadavath2022language,lin2022teaching}. We study these failure modes on HotPotQA using Qwen2.5-Instruct-7B and propose a two-part mitigation pipeline.
+
+To address the ``no knowledge'' case, we train the model to abstain instead of hallucinating. We run a chain-of-thought (CoT) teacher on the training split, replace each incorrect prediction with the phrase ``I don't know,'' and finetune Qwen2.5-7B on an 80/20 mix of correct answers and abstentions. We then apply verifier-based reward learning that combines an NLI-derived factuality score with an entropy-based confidence term, encouraging calibrated abstention and discouraging confident errors. To address the ``cannot access knowledge'' case, we perform CoT distillation from a larger Qwen3-235B teacher, following recent work showing that CoT distillation can transfer reasoning behavior to smaller models \cite{li2023cotdistill}. On HotPotQA, this pipeline reduces hallucinated responses, increases appropriate ``I don't know'' answers, and yields modest EM/F1 gains over a supervised-only baseline, suggesting that jointly training when to answer and when to abstain improves closed-book reliability.
+\end{abstract}
+
+
+
+
+\section{Key Information to include}
+\begin{itemize}
+    \item Mentor: Melody Ma
+    \item External Collaborators (if you have any): None
+    \item Sharing project: N/A
+\end{itemize}
+
+% {\color{red} This template does not contain the full instruction set for this assignment; please refer back to the milestone instructions PDF.}
+
+\section{Introduction}
+The introduction explains the problem, why it's difficult, interesting, or important, how and why current methods succeed/fail at the problem, and explains the key ideas of your approach and results. Though an introduction covers similar material as an abstract, the introduction gives more space for motivation, detail, references to existing work, and to capture the reader's interest.
+
+\section{Related Work}
+This section helps the reader understand the research context of your work, by providing an overview of existing work in the area.
+
+\section{Approach}
+This section details your approach(es) to the problem. 
+For example, this is where you describe the architecture of your neural network(s), and any other key methods or algorithms.
+
+\textbf{Key Models:}
+\begin{itemize}
+\item Qwen2.5-7B-Instruct \cite{qwen2025qwen25technicalreport}: Referred to as\textbf{ Qwen2.5-Instruct}.
+\item Qwen2.5-7B-Instruct (SFT): Referred to as \textbf{Qwen2.5-SFT}. Finetuned using LoRA on 10,000 question-answer pairs in HotPotQA 
+\item Qwen2.5-7B-Instruct (Finetune-CoT): Referred to as \textbf{Qwen2.5-FCoT}. Finetuned on Dataset B to generate a reasoning trace and answer for each question, without the context of supporting paragraphs. 
+\item Qwen2.5-7B-Instruct (Abstention Finetuned): Referred to as \textbf{Qwen2.5-Abstain}. Finetuned using LoRA on the question-answer/abstention pairs in Dataset C. The dataset is imbalanced to 80\% correct answers and 20\% abstentions to prevent the model from collapsing to constant abstention.
+\end{itemize}
+
+\subsection{Finetune-CoT} \label{sec:finetune-cot}
+To enable complex reasoning capabilities in our smaller student model, we employed Fine-tune-CoT \cite{ho2023largelanguagemodelsreasoning}, a framework that leverages the capabilities of large language models (LLMs) to supervise the training of smaller models. While massive LLMs can solve complex tasks using Chain-of-Thought (CoT) prompting, they are often computationally prohibitive to deploy. Fine-tune-CoT circumvents this by using a large "Teacher" model to generate synthetic reasoning traces, which are then used to fine-tune a "Student" model. This effectively transfers the reasoning ability, allowing the smaller model to learn how to solve the problem.
+
+The standard Fine-tune-CoT pipeline consists of three stages: (1) prompting the teacher to generate step-by-step rationales, (2) curating the data by filtering out samples with incorrect answers, and (3) fine-tuning the student on the validated reasoning traces.
+
+In our implementation, we adapted the Generation and Curation stages to create a specialized "Internalized Knowledge" dataset (Dataset B). We utilized Qwen3-235B as our teacher model. To address the common issue of hallucination during reasoning generation, we provided the teacher with the ground-truth paragraphs as context. However, to ensure the student model learns to function in a closed-book setting, we imposed strict constraints on the teacher's output: it was prompted to frame its reasoning as a step-by-step recall of facts, explicitly forbidding citation markers (e.g., "according to the passage"). We then implemented a validation loop that filtered samples not only for answer correctness (as in standard Fine-tune-CoT ) but also for adherence to this "internalized" stylistic constraint.
+
+\subsection{Abstention-Aware Fine-Tuning} \label{sec:abstension}
+\textbf{Abstention-Aware Fine-Tuning: }To mitigate hallucinations, we employed a specialized fine-tuning strategy designed to calibrate the model's confidence. Rather than forcing the model to answer every query—which encourages hallucination on out-of-distribution or forgotten knowledge—we fine-tuned the model to explicitly output a refusal phrase ("I don't know") when it lacks the internal knowledge to answer correctly. 
+
+We first aimed to map the "knowledge boundary" of our baseline model (Qwen2.5-FCoT). We hypothesize that if the model generates an incorrect answer for a training example $x$ despite having access to its internal weights, that example represents a "known unknown" or a hallucination-prone region. We performed inference on the first $N=40,000$ examples of the HotpotQA training set. For every example, we compared the model's predicted answer $\hat{y}$ against the ground truth $y$ using Exact Match (EM) scoring. This effectively partitioned our training data into two sets: 
+\begin{itemize}
+    \item Correct Set ($S_{correct}$): Samples where the model's internal knowledge was sufficient ($\text{EM}(\hat{y}, y) = 1$). 
+    \item Hallucination Set ($S_{hallucination}$): Samples where the model confidently generated an incorrect answer ($\text{EM}(\hat{y}, y) = 0$)
+\end{itemize}
+
+Using the partitioned data, we constructed a new supervised fine-tuning dataset (Dataset C) designed to reinforce known knowledge while penalizing hallucinations.
+
+\textbf{Target Relabeling:} We applied a transformation function $T(x, \hat{y})$ to the targets based on the evaluation results:
+
+$$T(x) =
+\begin{cases}
+\hat{y} & \text{if } x \in S_{correct} \quad \text{(Reinforcement)} \\
+\text{"I don't know."} & \text{if } x \in S_{hallucination} \quad \text{(Abstention)}
+\end{cases}$$
+
+\note{Note: For the reinforcement targets, we utilized the model's own generated answers (Self-Training) to ensure the training distribution matched the model's preferred output style.}
+
+\textbf{Class Balancing (80/20 Strategy)}: A significant risk in abstention training is the "laziness" objective, where a model learns that outputting "I don't know" is a global minimum for loss reduction. To prevent the model from defaulting to refusal, we enforced a strict class balance. We sampled a final dataset of 10,000 examples with a fixed ratio:
+\begin{itemize}
+    \item 80\% Reasoning Samples: Queries the model previously answered correctly.
+    \item 20\% Refusal Samples: Queries where the model was taught to abstain.
+\end{itemize}
+
+This 4:1 ratio ensures the model prioritizes answering when confident, treating abstention as a fallback mechanism rather than a primary strategy. We then fine-tuned the Qwen2.5-7B-Instruct model using QLoRA (Quantized Low-Rank Adaptation) to maintain computational efficiency
+
+-------------------------------------------------------------------------------\newline
+\textbf{Reinforcement Learning from Verifier Feedback (RLVF):} To further improve the calibration of our abstention mechanism, we applied policy gradient reinforcement learning on top of the supervised abstention model (Qwen2.5-Abstain). While supervised fine-tuning teaches the model \textit{when} to abstain based on static training labels, we hypothesized that reinforcement learning could dynamically optimize the trade-off between attempting answers and abstaining based on reward signals tied to both correctness and confidence.
+
+\textbf{Reward Architecture:} We designed a multi-component reward function $R(x, \hat{y}, y)$ that balances three objectives:
+
+\begin{equation}
+R(x, \hat{y}, y) = \begin{cases}
++10.0 & \text{if } \text{EM}(\hat{y}, y) = 1 \quad \text{(Correct Answer)} \\
+-5.0 & \text{if } \hat{y} \neq y \text{ and } \hat{y} \neq \text{``I don't know''} \quad \text{(Hallucination)} \\
+-1.0 & \text{if } \hat{y} = \text{``I don't know''} \quad \text{(Abstention Cost)}
+\end{cases}
+\end{equation}
+
+This reward structure creates a natural hierarchy: correct answers are strongly rewarded ($+10$), hallucinations are heavily penalized ($-5$), and abstentions incur a small penalty ($-1$) to prevent the model from becoming overly conservative. The 10:5:1 ratio was calibrated to maintain the model's willingness to attempt questions while discouraging confident errors.
+
+\textbf{Verifier-Based Factuality Check:} To detect hallucinations during training, we employed an NLI-based factuality verifier adapted from \cite{factualityverifier}. For each generated answer $\hat{y}$, we compute:
+\begin{itemize}
+    \item $p_{\text{entail}}$: Probability that $\hat{y}$ is entailed by the question context
+    \item $p_{\text{contradict}}$: Probability that $\hat{y}$ contradicts known information
+    \item Factuality score: $f = p_{\text{entail}} - p_{\text{contradict}}$
+\end{itemize}
+
+Answers with low factuality scores ($f < \theta$) trigger the hallucination penalty even if they superficially match formatting expectations. This prevents the model from learning to confidently output plausible-sounding but incorrect answers.
+\textbf{Key Design Choices:} 
+\begin{enumerate}
+    \item \textbf{Warm-start from Supervised Model:} Rather than training from the base model, we initialized RLVF from Qwen2.5-Abstain. This allowed the model to start with a reasonable abstention boundary and focus RL on refining the decision threshold.
+    \item \textbf{Asymmetric Penalties:} The 2× difference between hallucination penalty ($-5$) and abstention cost ($-1$) reflects our priority: it is better to abstain than to hallucinate, but the model should not default to constant abstention.
+    \item \textbf{NLI-Based Verification:} Unlike reward models trained on human preferences, our verifier provides a deterministic, interpretable signal. This reduces the risk of reward hacking and ensures the model optimizes for factual correctness rather than stylistic preferences.
+\end{enumerate}
+---------------------------------------------------------------------------
+
+Josh Outline: 
+\begin{itemize}
+    \item Was using qwen 2.5 instruct 7B on GCP VM, but switched to qwen3-8b on Tinker due to continual errors and much better speed on Tinker.
+    \item Re-trained SFT Model using the same dataset used for the 2.5 SFT, but now on all 80,000 samples in Hotpot.
+    \item Re-distilled the CoT model using the same teacher data as the qwen 2.5 CoT model, achieving similar results.
+    \item Re-trained abstention model, achieving similar results.
+    \item Switched from RAUQ score calculation to Semantic Entropy because RAUQ requires access to hidden states which are not available in Tinker. Semantic entropy is slow and expensive, but it's effective as an evaluation of hallucination, and especially interesting to compare with the abstention model's results.
+    \item (Working on it) Evaluated the abstention model's semantic entropy, both including and excluding abstained answers (based on if 5 or more out of 10 sampled answers == ``I don't know''), to see if we can get meaningful improvements in hallucination.
+\end{itemize}
+\section{Experiments}
+This section contains the following.
+
+\subsection{Data}
+Describe the dataset(s) you are using (provide references). If it's not already clear, make sure the associated task is clearly described.
+Being precise about the exact form of the input and output can be very useful for readers attempting to understand your work, especially if you've defined your own task.
+
+We use the the training and validation splits of the HotPotQA \cite{yang2018hotpotqadatasetdiverseexplainable} distractor dataset. The distractor setting has question-answer pairs with ten paragraphs as context, two of which are relevant to answering the question. Since we ran our tests in a closed-book setting, we discarded all ten context paragraphs for our finetuning, RL, and evaluation methods.
+
+We define 3 training datasets:
+
+\textbf{Dataset A: } The first 10,000 question-answer pairs of HotPotQA (distractor setting, train split).
+
+\textbf{Dataset B:} The first 10,000 question-answer pairs of HotPotQA (distractor/train) with reasoning traces generated by the teacher model Qwen3-235B-A22B-Instruct-2507. The teacher model was given the two relevant paragraphs as context to reduce hallucinations in the generated reasoning traces. We prompted, filtered, and verified reasoning traces according to our "Finetune-CoT" section \ref{sec:finetune-cot}.
+% Since this data is used to finetune the student model in a closed book setting, strict constraints were applied to the teacher's output to simulate "internalized knowledge." Specifically, the teacher model was prompted to avoid citation-style language (e.g., "according to the passage," "the text says") and instead frame the reasoning as a step-by-step recall of facts from memory. A robust validation loop was implemented to automatically reject and regenerate any traces that contained forbidden source-referencing phrases or failed to conclude with the exact ground truth answer.
+\begin{itemize}
+    \item \textbf{Q: } Which magazine was started first Arthur's Magazine or First for Women?
+    \item \textbf{R: } 
+    \begin{itemize} 
+        \item Step 1: The question asks which magazine was started first between Arthur's Magazine and First for Women.
+        \item Step 2: Arthur's Magazine was published starting in 1844, while First for Women, a modern woman's magazine, was launched much later, in the 1980s.
+        \item Step 3: Since 1844 is earlier than the 1980s, Arthur's Magazine was started first. Therefore, the answer is Arthur's Magazine.
+        \end{itemize}
+    \item \textbf{A: } Arthur's Magazine
+
+
+\end{itemize}
+
+\textbf{Dataset C:} 10,000 question-answer or question-abstion pairs in the first 40,000 samples of HotPotQA (distractor/train). See our "Abstention-Aware Fine-Tuning" section \ref{sec:abstension} for details on generation.
+\begin{itemize}
+    \item \textbf{Q: } Who wrote the 1971 drama which stars the winner of the 1997 BAFTA Fellowship?
+    
+    \textbf{A: } I don't know.
+    
+    \item \textbf{Q: } Do Joshua Dugdale and Carlos Saldanha both work with films?
+    
+    \textbf{A: }yes
+\end{itemize}
+
+\subsection{Evaluation method}
+Describe the evaluation metric(s) you use, plus any other details necessary to understand your evaluation.
+Some projects will have clear metrics from prior work on given datasets, but we realize that other projects will define their own metrics.
+If you're defining your own metrics, be clear as to what you're hoping to measure with each evaluation method (whether quantitative or qualitative, automatic or human-defined!), and how it's defined.
+
+We use Exact Match and F1 between gold answers and the model's predicted answers to gauge performance. For abstention models, we also calculate Selective EM and Selective F1 by considering only the answers not abstained on. We also gauge the uncertainty of our models via RAUQ and semantic entropy during inference. By sorting model responses by their RAUQ score \cite{vazhentsev2025rauq} and iteratively rejecting the most uncertain samples, we use this as a target performance for our model's abstention.
+
+calculated RAUQ, 
+
+\subsection{Experimental details}
+Report how you ran your experiments (e.g. model configurations, learning rate, training time, etc.)
+
+\textbf{Model Configuration:} 
+\begin{itemize}
+    \item Qwen2.5-Instruct: Evaluated Qwen2.5-Instruct in its original, pre-trained state without any additional fine-tuning. The model was loaded using bfloat16 precision to optimize memory usage while maintaining numerical stability.
+    \item Qwen2.5-SFT \& Qwen2.5-FCoT \& Qwen2.5-Abstain: To maintain computational efficiency, we utilized QLoRA (Quantized Low-Rank Adaptation). The base model was loaded in 4-bit NormalFloat (NF4) precision with double quantization, while the LoRA adapters were trained in FP16.
+\end{itemize}
+
+\textbf{Hyperparameters \& Training Configuration}
+\begin{itemize}
+    \item Qwen2.5-SFT \& Qwen2.5-FCoT \& Qwen2.5-Abstain: 
+        \begin{itemize}
+            \item LoRA Config: We applied LoRA adapters to all linear projection layers $(q_{proj}, k_{proj}, v_{proj}, o_{proj}, gate_{proj}, up_{proj}, down_{proj})$ with a rank $r=16$, alpha $\alpha=32$, and a dropout rate of $0.05$. 
+            \item Optimization: The model was trained using the adamw\_torch optimizer with a learning rate of 2e-4. We used a cosine learning rate scheduler with a 3\% warmup ratio.
+            \item Batching: Training was performed with a per-device batch size of 4 and gradient accumulation of 4 steps, resulting in an effective batch size of 16.
+        \end{itemize}
+
+    \item \textbf{Qwen2.5-SFT:}
+        \begin{itemize}
+            \item Formatting: Standard Q\&A pairs using the chat template.
+            \item Max Length: 512 tokens.
+            \item Masking: System prompt and user question were masked; loss was calculated only on the answer.
+        \end{itemize}
+    
+    \item \textbf{Qwen2.5-FCoT \& Qwen2.5-Abstain:}
+        
+        \begin{itemize}
+            \item Formatting: We adopted the delimiter style from "Language Models are Reasoning Teachers" to minimize token overhead. 
+            \item Structure: \texttt{Question \#\#\# Rationale --> Answer END}.
+            \item Max Length: Increased to 2048 tokens to accommodate full reasoning traces.
+            \item Masking: The prompt (\texttt{Question \#\#\#}) was masked. The model was trained to generate both the reasoning trace and the final answer.
+        \end{itemize}
+    \item \textbf{REINFORCE Qwen2.5-Abstain}
+    
+    \begin{itemize}
+        \item \textbf{Policy Initialization:} Started from the supervised abstention checkpoint to leverage its learned abstention boundary.
+        \item \textbf{Optimization:} Used AdamW with learning rate $\eta = 1\times10^{-5}$ and weight decay $0.01$.
+        \item \textbf{LoRA Configuration:} Applied rank-16 LoRA adapters to all linear layers with $\alpha=32$, maintaining the same adapter structure as the supervised models.
+        \item \textbf{Training Data:} Sampled from the HotPotQA training split (distractor setting), using on-policy generation to maintain distribution alignment.
+        \item \textbf{Training Duration:} 1 epoch over 9,992 gradient steps with batch size 4 and gradient accumulation of 4 steps (effective batch size 16).
+    \end{itemize}
+    
+
+        
+
+\end{itemize}
+
+\textbf{Inference Setup: } All experiments were conducted in a strictly closed-book setting (no supporting paragraphs provided). 
+\begin{itemize}
+    \item Qwen2.5-Instruct and Qwen2.5-SFT were provided with the following system prompt:
+        \begin{quote}
+            You are a concise encyclopedia. Answer the question directly with a short phrase or entity name. Do not explain.
+        \end{quote}
+    This enforced brevity.
+    
+    \item Qwen2.5-FCoT \& Qwen2.5-Abstain: Prompted with the question followed by the delimiter \texttt{ \#\#\#}. The model generated a reasoning trace followed by \texttt{-->} and the answer. We programmatically parsed the final answer by splitting the output at the \texttt{-->} token
+\end{itemize}
+
+\textbf{Inference Configuration:} During evaluation, we used greedy decoding to ensure deterministic outputs. 
+\begin{itemize} 
+    \item For standard models (Instruct/SFT/Abstain), the maximum generation length was 50 tokens. \item For the CoT model, the maximum generation length was increased to 512 tokens to allow for reasoning generation. 
+\end{itemize} 
+To enable the RAUQ calculation, we forced the model to output full attention weights and used the eager attention implementation. Inference was run with a batch size of 4 to accommodate the significant VRAM overhead incurred by storing full attention matrices.
+
+
+
+
+
+\subsection{Results}
+Report the quantitative results that you have found so far. Use a table or plot to compare results and compare against baselines.
+
+\begin{itemize}
+    \item Comment on your quantitative results. Are they what you expected? Better than you expected? Worse than you expected? Why do you think that is? What does that tell you about your approach?
+\end{itemize}
+
+\textbf{Generation Performance and Error Correction:} Our fine-tuning experiments demonstrate clear improvements over the Qwen2.5-Instruct baseline across all metrics. As shown in Table \ref{tab:model_performance}, the Chain-of-Thought (CoT) model achieved the highest exact match accuracy of 24.31\%, a significant gain over the Base model's 18.87\%. Notably, the CoT approach proved superior in error correction, successfully rectifying 697 questions that the Base model originally answered incorrectly, compared to 477 corrections by the SFT model. While both fine-tuning methods introduced regressions—breaking a smaller number of previously correct answers (249 for SFT and 294 for CoT)—the net performance gain validates the efficacy of distilling reasoning traces over standard supervised fine-tuning for this domain.
+
+\textbf{Abstention Mechanism and Reliability:} To mitigate hallucinations, we evaluated the performance of our specialized Abstention model using Precision and Recall metrics, detailed in Table \ref{tab:abstention_analysis}. In this context, Precision measures the percentage of the model's abstentions that corresponded to actually incorrect answers (i.e., verifying that the model only stays silent when it is truly wrong). Recall measures the percentage of all incorrect answers that the model successfully abstained from (i.e., how many errors were successfully caught).
+
+The results indicate that our mechanism is highly conservative and precise. Against the Base model, it achieved a Precision of 97.49\%, meaning that when the model chose to abstain, it was almost invariably because the answer would have been wrong. While the Recall ranged between 55\% and 60\% across reference models, the system notably performed best on the "Hardest" subset—questions where Base, SFT, and CoT models all failed—achieving a peak Recall of 60.85\%. This suggests the abstention mechanism is most active exactly where it is needed most: on the most difficult queries.
+
+The practical benefit of this high-precision behavior is evident in Table \ref{tab:hotpotqa_comparison}. While the Abstention model's raw Exact Match (EM) score was 19.84\%, its Selective EM—the accuracy calculated only on questions where the model chose to answer—surged to 37.72\%. By exercising an abstention rate of 47.40\%, the model effectively filters out low-confidence responses, delivering a system that is nearly twice as reliable as the baseline when it chooses to provide an answer.
+
+
+% \begin{table}[h]
+% \centering
+% \caption{Head-to-Head Comparison: Qwen2.5-SFT vs. Qwen2.5-FCoT}
+% \label{tab:sft_vs_cot}
+% \begin{tabular}{lr}
+% \toprule
+% \textbf{Comparison Case} & \textbf{Count} \\
+% \midrule
+% Both Correct & 1,244 \\
+% Both Wrong & 5,224 \\
+% CoT Corrected (SFT Wrong $\to$ CoT Right) & 556 \\
+% SFT Prevailed (SFT Right $\to$ CoT Wrong) & 381 \\
+% \bottomrule
+% \end{tabular}   
+% \end{table}
+\begin{table}[H]
+\centering
+\caption{Comparison of Experimental and State-of-the-Art Results on the HotpotQA Dataset (EM and F1 scores are percentages).}
+\label{tab:hotpotqa_comparison}
+\begin{tabular}{lrrrrrr}
+    \toprule
+    \textbf{Model} & \textbf{EM} & \textbf{F1} & \textbf{Abs. Rate} & \textbf{Sel. EM} & \textbf{Sel. F1} & \textbf{Avg. RAUQ} \\
+    \midrule
+    \multicolumn{7}{l}{\textbf{Experimental Results ($N=7405$ Samples)}} \\
+    \cmidrule(lr){1-7}
+    Qwen2.5-Instruct & 18.86 & 27.02 & -- & -- & -- & 1.25 \\
+    Qwen2.5-SFT & 21.94 & 31.41 & -- & -- & -- & 1.62 \\
+    Qwen2.5-FCoT & 24.31 & 33.87 & -- & -- & -- & -- \\
+    Qwen2.5-Abstain & 20.37 & 26.04 & 46.34 & 37.98 & 48.46 & 1.32 \\
+    Qwen2.5-RLVF & \textbf{20.37} & 26.24 & 41.17 & \textbf{34.62} & \textbf{44.60} & 1.40 \\
+    \midrule
+    \multicolumn{7}{l}{\textbf{SOTA Closed-Book Results (RECITE Paper)}} \\
+    \cmidrule(lr){1-7}
+    Codex-002 & 37.11 & 48.37 & N/A & N/A & N/A & N/A \\
+    PaLM-62B & 26.46 & 35.67 & N/A & N/A & N/A & N/A \\
+    \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Performance Analysis of Abstention Mechanism Across Reference Models}
+\label{tab:abstention_analysis}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model} & \textbf{Ref. Model} & \textbf{Precision} & \textbf{Recall} & \textbf{TP} & \textbf{FP} & \textbf{FN} \\
+ & & & & (Good Abs) & (Bad Abs) & (Missed) \\
+\midrule
+\multirow{}{Qwen2.5-Abstain} 
+    & Base & \textbf{97.49\%} & 55.69\% & 3,346 & \textbf{86} & 2,662 \\
+    & SFT & 95.72\% & 56.83\% & 3,285 & 147 & 2,495 \\
+    & CoT & 93.97\% & 57.54\% & 3,225 & 207 & 2,380 \\
+    & Hardest & 90.53\% & \textbf{60.85\%} & 3,107 & 325 & \textbf{1,999} \\
+\midrule
+\multirow{Qwen2.5-RLVF}
+    & Base & \textbf{97.84\%} & 49.65\% & 2,983 & \textbf{66} & 3,025 \\
+    & SFT & 96.23\% & 50.76\% & 2,934 & 115 & 2,846 \\
+    & CoT & 94.19\% & 51.24\% & 2,872 & 177 & 2,733 \\
+    & Hardest & 91.21\% & 54.47\% & 2,781 & 268 & 2,325 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+
+
+
+% \begin{table*}[h]
+% \centering
+% \caption{Combined Performance Analysis: Generation Accuracy vs. Abstention Efficacy}
+% \label{tab:combined_performance}
+% \resizebox{\textwidth}{!}{% Ensures table fits within text width
+% \begin{tabular}{lccccc}
+% \toprule
+%  & \multicolumn{3}{c}{\textbf{Generation Performance}} & \multicolumn{2}{c}{\textbf{Abstention Performance}} \\
+% \cmidrule(lr){2-4} \cmidrule(lr){5-6}
+% \textbf{Model / Setting} & \textbf{Accuracy} & \textbf{Corrected} & \textbf{Regressed} & \textbf{Precision} & \textbf{Recall} \\
+%  & (Exact Match) & (vs Base) & (vs Base) & & \\
+% \midrule
+% \textbf{Base Model} & 18.87\% & -- & -- & \textbf{97.49\%} & 55.69\% \\
+% \textbf{SFT Model} & 21.94\% & 477 & \textbf{249} & 95.72\% & 56.83\% \\
+% \textbf{CoT Model} & \textbf{24.31\%} & \textbf{697} & 294 & 93.97\% & 57.54\% \\
+% \textbf{Hardest Subset} & -- & -- & -- & 90.53\% & \textbf{60.85\%} \\
+% \bottomrule
+% \end{tabular}%
+% }
+% \end{table*}
+
+\begin{table}[h]
+\centering
+\caption{Overall Model Performance and Error Analysis Relative to Base Model}
+\label{tab:model_performance}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Metric} & \textbf{Base Model} & \textbf{SFT Model} & \textbf{CoT Model} \\
+\midrule
+Overall Accuracy (Exact Match) & 18.87\% & 21.94\% & \textbf{24.31\%} \\
+Corrections (Base Wrong $\to$ Right) & -- & 477 & \textbf{697} \\
+Regressions (Base Right $\to$ Wrong) & -- & \textbf{249} & 294 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Semantic Entropy and Abstention Results}
+
+% Row 1: Distributions (Box/Violin Plots)
+\begin{figure}[H]
+    \centering
+    \setlength{\abovecaptionskip}{2pt} % Reduce caption padding
+    \begin{minipage}{0.32\textwidth}
+        \centering
+        \includegraphics[height=3.5cm, keepaspectratio]{Semantic Entropy/SE ABS fixed SE (400)/se_correlation_boxplot_std.png}
+        \caption*{Std SE: Abstained vs Answered}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.32\textwidth}
+        \centering
+        \includegraphics[height=3.5cm, keepaspectratio]{Semantic Entropy/SE ABS fixed SE (400)/se_correlation_boxplot_cond.png}
+        \caption*{Cond SE: Abstained vs Answered}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.32\textwidth}
+        \centering
+        \includegraphics[height=3.5cm, keepaspectratio]{Semantic Entropy/SE ABS fixed SE (400)/se_correctness_violin.png}
+        \caption*{Std SE: Correct vs Incorrect}
+    \end{minipage}
+    \caption{Distribution of Uncertainty (Entropy) across outcomes.}
+    \label{fig:se_distributions}
+    \vspace{-10pt} % Pull next content up
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \setlength{\abovecaptionskip}{2pt}
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[height=5cm, keepaspectratio]{Semantic Entropy/SE ABS fixed SE (400)/se_curves_full_f1_score.png}
+        \caption*{Full Population (Efficiency)}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[height=5cm, keepaspectratio]{Semantic Entropy/SE ABS fixed SE (400)/se_curves_selective_f1_score.png}
+        \caption*{Selective Population (Risk Mitigation)}
+    \end{minipage}
+    \caption{F1 Score Rejection Curves: Comparing efficiency on the full dataset vs risk mitigation on answered questions.}
+    \label{fig:se_f1_curves}
+    \vspace{-10pt}
+\end{figure}
+
+\section{Analysis}
+Your report should include \textit{qualitative evaluation}. That is, try to understand your system (e.g. how it works, when it succeeds and when it fails) by inspecting key characteristics or outputs of your model.
+
+\section{Conclusion}
+Summarize the main findings of your project, and what you have learnt. Highlight your achievements, and note the primary limitations of your work. If you like, you can describe avenues for future work.
+
+\section{Team Contributions}
+We ask that you include a brief summary of what each team member did for the project (about 1 or 2 sentences per person).
+
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\appendix
+
+\section{Appendix (optional)}
+If you wish, you can include an appendix, which should be part of the main PDF, and does not count towards the 6-8 page limit.
+Appendices can be useful to supply extra details, examples, figures, results, visualizations, etc., that you couldn't fit into the main paper. However, your grader \textit{does not} have to read your appendix, and you should assume that you will be graded based on the content of the main part of your paper only.
+
+\section{Appendix: Additional Rejection Curves}
+
+\begin{figure}[H]
+    \centering
+    \setlength{\abovecaptionskip}{2pt}
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[height=5cm, keepaspectratio]{Semantic Entropy/SE ABS fixed SE (400)/se_curves_full_exact_match.png}
+        \caption*{Full Population (Efficiency)}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[height=5cm, keepaspectratio]{Semantic Entropy/SE ABS fixed SE (400)/se_curves_selective_exact_match.png}
+        \caption*{Selective Population (Risk Mitigation)}
+    \end{minipage}
+    \caption{Exact Match (EM) Rejection Curves.}
+    \label{fig:se_em_curves}
+    \vspace{-10pt}
+\end{figure}
+
+\end{document}
