@@ -1,0 +1,3858 @@
+[
+  {
+    "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+    "gold": "yes",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "yes",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "yes",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+    "gold": "Chief of Protocol",
+    "entropy": 1.0888999753452235,
+    "conditional_entropy": 1.0397207708399179,
+    "decisions": {
+      "greedy": {
+        "text": "First Lady of the United States",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.25
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.6
+      },
+      {
+        "text": "U.S. Representative",
+        "prob": 0.2
+      },
+      {
+        "text": "United States Representative",
+        "prob": 0.1
+      },
+      {
+        "text": "U.S. Senator from California",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+    "gold": "Animorphs",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "Illuminatus!",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "The Red Rising",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+    "gold": "no",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "yes",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "no",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "no",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+    "gold": "Greenwich Village, New York City",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "New York City",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.7499999999999999
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+    "gold": "YG Entertainment",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.9,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "S.M. Entertainment",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+    "gold": "Eenasul Fateh",
+    "entropy": 1.0888999753452235,
+    "conditional_entropy": 1.0397207708399179,
+    "decisions": {
+      "greedy": {
+        "text": "Al Ries",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.6
+      },
+      {
+        "text": "Alain de Botton",
+        "prob": 0.2
+      },
+      {
+        "text": "Alain Decaux",
+        "prob": 0.1
+      },
+      {
+        "text": "Peter Drucker",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+    "gold": "3,677 seated",
+    "entropy": 0.639031859650177,
+    "conditional_entropy": 0.6931471805599453,
+    "decisions": {
+      "greedy": {
+        "text": "2,000",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.8,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "6,000",
+        "prob": 0.1
+      },
+      {
+        "text": "4,500",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Who is older, Annie Morton or Terry Richardson?",
+    "gold": "Terry Richardson",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.32508297339144826,
+    "decisions": {
+      "greedy": {
+        "text": "Annie Morton",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Annie Morton",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Annie Morton",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "Terry Richardson",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Are Local H and For Against both from the United States?",
+    "gold": "yes",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "yes",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "yes",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+    "gold": "Kansas Song",
+    "entropy": 1.0888999753452235,
+    "conditional_entropy": 1.0397207708399179,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Bleeding Kansas",
+        "is_abstain": false,
+        "idk_prob": 0.3,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.5
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.6
+      },
+      {
+        "text": "Bleeding Kansas",
+        "prob": 0.2
+      },
+      {
+        "text": "Bleed Blue, Bleed Jayhawk",
+        "prob": 0.1
+      },
+      {
+        "text": "\"Lawrence, Kansas\"",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and T\u00e9a Leoni?",
+    "gold": "David Weissman",
+    "entropy": 1.4978661367769952,
+    "conditional_entropy": 1.6094379124341005,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.5,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.5
+      },
+      {
+        "text": "Peter Berg",
+        "prob": 0.1
+      },
+      {
+        "text": "David Zaslav",
+        "prob": 0.1
+      },
+      {
+        "text": "David Koepp",
+        "prob": 0.1
+      },
+      {
+        "text": "Robert Mark Kamen",
+        "prob": 0.1
+      },
+      {
+        "text": "David S. Goyer",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+    "gold": "1999",
+    "entropy": 1.366158847569202,
+    "conditional_entropy": 1.0821955300387673,
+    "decisions": {
+      "greedy": {
+        "text": "1991",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "1990",
+        "is_abstain": false,
+        "idk_prob": 0.2,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "1990",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "1987",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "1991",
+        "prob": 0.2
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+    "gold": "no",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.32508297339144826,
+    "decisions": {
+      "greedy": {
+        "text": "yes",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "yes",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "no",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+    "gold": "from 1986 to 2013",
+    "entropy": 0.8979457248567797,
+    "conditional_entropy": 0.410116318288409,
+    "decisions": {
+      "greedy": {
+        "text": "1986 to 2013",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.8571428571428571
+        }
+      },
+      "consensus": {
+        "text": "1986 to 2013",
+        "is_abstain": false,
+        "idk_prob": 0.3,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.8571428571428571
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "1986 to 2013",
+        "prob": 0.6
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "1990 to 2013",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+    "gold": "9,984",
+    "entropy": 0.8018185525433372,
+    "conditional_entropy": 0.6365141682948128,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.7,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7
+      },
+      {
+        "text": "331,000,000",
+        "prob": 0.2
+      },
+      {
+        "text": "331,449,281",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+    "gold": "the North Atlantic Conference",
+    "entropy": 1.1682824501765625,
+    "conditional_entropy": 0.9502705392332345,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.5,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.5
+      },
+      {
+        "text": "Eastern Collegiate Athletic Conference",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "Eastern Collegiate Conference",
+        "prob": 0.1
+      },
+      {
+        "text": "America East Collegiate Conference",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+    "gold": "yes",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "yes",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "yes",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+    "gold": "1969 until 1974",
+    "entropy": 0.8018185525433372,
+    "conditional_entropy": 0.8018185525433372,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "1963 to 1969",
+        "is_abstain": false,
+        "idk_prob": 0.4,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.3333333333333333
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "1963 to 1969",
+        "prob": 0.7
+      },
+      {
+        "text": "1981 to 1989",
+        "prob": 0.2
+      },
+      {
+        "text": "1969 to 1974",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+    "gold": "Robert Erskine Childers DSC",
+    "entropy": 0.500402423538188,
+    "conditional_entropy": 0.500402423538188,
+    "decisions": {
+      "greedy": {
+        "text": "Robert Erskine Childers",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.8571428571428571
+        }
+      },
+      "consensus": {
+        "text": "Robert Erskine Childers",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.8571428571428571
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Robert Erskine Childers",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "Henry Roth",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+    "gold": "Pedro Rodr\u00edguez",
+    "entropy": 0.8979457248567797,
+    "conditional_entropy": 0.5623351446188083,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.6
+      },
+      {
+        "text": "Sergio P\u00e9rez",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "Adrian Sutil",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+    "gold": "Sonic",
+    "entropy": 0.6730116670092565,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "Sonic the Hedgehog",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.6666666666666666
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.6
+      },
+      {
+        "text": "Sonic the Hedgehog",
+        "prob": 0.4
+      }
+    ]
+  },
+  {
+    "question": "Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",
+    "gold": "keyboard function keys",
+    "entropy": 1.4978661367769952,
+    "conditional_entropy": 1.6094379124341005,
+    "decisions": {
+      "greedy": {
+        "text": "iPhone",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Apple TV remote",
+        "is_abstain": false,
+        "idk_prob": 0.2,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.5
+      },
+      {
+        "text": "Apple TV remote",
+        "prob": 0.1
+      },
+      {
+        "text": "Bluetooth keyboard",
+        "prob": 0.1
+      },
+      {
+        "text": "Apple TV remote control",
+        "prob": 0.1
+      },
+      {
+        "text": "QuickTime",
+        "prob": 0.1
+      },
+      {
+        "text": "Apple TV Remote",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+    "gold": "Badly Drawn Boy",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Wolf Alice",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Wolf Alice",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+    "gold": "World's Best Goalkeeper",
+    "entropy": 0.500402423538188,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.8,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "world's best goalkeeper",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+    "gold": "Barton Lee Hazlewood",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.32508297339144826,
+    "decisions": {
+      "greedy": {
+        "text": "Nancy Sinatra",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Nancy Sinatra",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Nancy Sinatra",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "Lee Hazlewood",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "The 2011\u201312 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+    "gold": "1838",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "1838",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "1838",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "Are both Dictyosperma, and Huernia described as a genus?",
+    "gold": "yes",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "yes",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "yes",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+    "gold": "Henry J. Kaiser",
+    "entropy": 0.6108643020548935,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Henry J. Kaiser",
+        "is_abstain": false,
+        "idk_prob": 0.3,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Henry J. Kaiser",
+        "prob": 0.7
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.30000000000000004
+      }
+    ]
+  },
+  {
+    "question": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+    "gold": "Arena of Khazan",
+    "entropy": 1.6094379124341,
+    "conditional_entropy": 1.5607104090414063,
+    "decisions": {
+      "greedy": {
+        "text": "Tunnels and Trolls",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "The Lost City of Zin",
+        "is_abstain": false,
+        "idk_prob": 0.4,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.28571428571428575
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.4
+      },
+      {
+        "text": "The Lost City of Zin",
+        "prob": 0.2
+      },
+      {
+        "text": "The Lost City of Zant",
+        "prob": 0.1
+      },
+      {
+        "text": "Tunnels and Trolls: The Adventure Begins",
+        "prob": 0.1
+      },
+      {
+        "text": "The Lost City of Zorak",
+        "prob": 0.1
+      },
+      {
+        "text": "The Tower of the Forgotten King",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "When was Poison's album \"Shut Up, Make Love\" released?",
+    "gold": "2000",
+    "entropy": 0.8018185525433372,
+    "conditional_entropy": 0.6365141682948128,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.7,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7
+      },
+      {
+        "text": "1989",
+        "prob": 0.2
+      },
+      {
+        "text": "1991",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+    "gold": "Fujioka, Gunma",
+    "entropy": 0.500402423538188,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "Japan",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Japan",
+        "is_abstain": false,
+        "idk_prob": 0.2,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Japan",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+    "gold": "Charles Eug\u00e8ne",
+    "entropy": 0.8979457248567797,
+    "conditional_entropy": 0.410116318288409,
+    "decisions": {
+      "greedy": {
+        "text": "Louis Perrier",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Louis Bl\u00e9riot",
+        "is_abstain": false,
+        "idk_prob": 0.3,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Louis Bl\u00e9riot",
+        "prob": 0.6
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "Henri Fournier",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+    "gold": "no",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "yes",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "yes",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+    "gold": "Letters to Cleo",
+    "entropy": 0.500402423538188,
+    "conditional_entropy": 0.500402423538188,
+    "decisions": {
+      "greedy": {
+        "text": "Screaming Trees",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Screaming Trees",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Screaming Trees",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "Letters to Cleo",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
+    "gold": "October 1922",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "the defeat of the White Army",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "the establishment of the Soviet Union",
+        "is_abstain": false,
+        "idk_prob": 0.1,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "the establishment of the Soviet Union",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+    "gold": "2000",
+    "entropy": 0.9404479886553263,
+    "conditional_entropy": 1.0986122886681096,
+    "decisions": {
+      "greedy": {
+        "text": "1982",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7
+      },
+      {
+        "text": "1989",
+        "prob": 0.1
+      },
+      {
+        "text": "1985",
+        "prob": 0.1
+      },
+      {
+        "text": "1980",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+    "gold": "World War II",
+    "entropy": 0.8979457248567797,
+    "conditional_entropy": 0.8979457248567797,
+    "decisions": {
+      "greedy": {
+        "text": "World War II",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "World War I",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.6666666666666666
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "World War I",
+        "prob": 0.6
+      },
+      {
+        "text": "First World War",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "World War II",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+    "gold": "no",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "no",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "no",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "no",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+    "gold": "New York City",
+    "entropy": 1.2275294114572126,
+    "conditional_entropy": 1.2275294114572126,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Los Angeles",
+        "is_abstain": false,
+        "idk_prob": 0.4,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Los Angeles",
+        "prob": 0.6
+      },
+      {
+        "text": "Minneapolis",
+        "prob": 0.1
+      },
+      {
+        "text": "Chapel Hill, North Carolina",
+        "prob": 0.1
+      },
+      {
+        "text": "San Diego",
+        "prob": 0.1
+      },
+      {
+        "text": "Albuquerque, New Mexico",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+    "gold": "Scotch Collie",
+    "entropy": 1.0888999753452235,
+    "conditional_entropy": 1.0888999753452235,
+    "decisions": {
+      "greedy": {
+        "text": "Scotch Collie",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "Scotch Collie",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Scotch Collie",
+        "prob": 0.6
+      },
+      {
+        "text": "Manchester Terrier",
+        "prob": 0.2
+      },
+      {
+        "text": "Scottish Terrier",
+        "prob": 0.1
+      },
+      {
+        "text": "Scottish Collie",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+    "gold": "Mumbai",
+    "entropy": 0.8979457248567797,
+    "conditional_entropy": 0.5623351446188083,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.6
+      },
+      {
+        "text": "Redmond, Washington",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "Mountain View, California",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+    "gold": "1962",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.9,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "1979",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?",
+    "gold": "sovereignty",
+    "entropy": 0.6108643020548935,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "independence",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "independence",
+        "is_abstain": false,
+        "idk_prob": 0.3,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "independence",
+        "prob": 0.7
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.30000000000000004
+      }
+    ]
+  },
+  {
+    "question": "Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?",
+    "gold": "Nelson Rockefeller",
+    "entropy": 1.2206072645530173,
+    "conditional_entropy": 1.0549201679861442,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.5,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.5
+      },
+      {
+        "text": "Hubert Humphrey",
+        "prob": 0.2
+      },
+      {
+        "text": "Hubert H. Humphrey",
+        "prob": 0.2
+      },
+      {
+        "text": "Lyndon B. Johnson",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+    "gold": "Yellowcraig",
+    "entropy": 0.6730116670092565,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.6
+      },
+      {
+        "text": "Firth of Forth",
+        "prob": 0.4
+      }
+    ]
+  },
+  {
+    "question": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+    "gold": "Phil Spector",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 1.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "What type of forum did a former Soviet statesman initiate?",
+    "gold": "Organizations could come together to address global issues",
+    "entropy": 0.500402423538188,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "forum",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "Are Ferocactus and Silene both types of plant?",
+    "gold": "yes",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "yes",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "yes",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?",
+    "gold": "English Electric Canberra",
+    "entropy": 0.9502705392332347,
+    "conditional_entropy": 0.5623351446188084,
+    "decisions": {
+      "greedy": {
+        "text": "Hawker Typhoon",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Gloster Meteor",
+        "is_abstain": false,
+        "idk_prob": 0.2,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Gloster Meteor",
+        "prob": 0.6
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.2
+      },
+      {
+        "text": "de Havilland Mosquito",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "Which year and which conference was the 14th season for this conference as part of the NCAA Division that the Colorado Buffaloes played in with a record of 2-6 in conference play?",
+    "gold": "2009 Big 12 Conference",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 1.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "In 1991 Euromarch\u00e9 was bought by a chain that operated how any hypermarkets at the end of 2016?",
+    "gold": "1,462",
+    "entropy": 0.639031859650177,
+    "conditional_entropy": 0.6931471805599453,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.8,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "1,200",
+        "prob": 0.1
+      },
+      {
+        "text": "1,400",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What race track in the midwest hosts a 500 mile race eavery May?",
+    "gold": "Indianapolis Motor Speedway",
+    "entropy": 0.500402423538188,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Indianapolis Motor Speedway",
+        "is_abstain": false,
+        "idk_prob": 0.2,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Indianapolis Motor Speedway",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+    "gold": "Rome",
+    "entropy": 0.6730116670092565,
+    "conditional_entropy": 0.6730116670092565,
+    "decisions": {
+      "greedy": {
+        "text": "Rome",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "Rome",
+        "is_abstain": false,
+        "idk_prob": 0.1,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Rome",
+        "prob": 0.6
+      },
+      {
+        "text": "New York City",
+        "prob": 0.4
+      }
+    ]
+  },
+  {
+    "question": "Ellie Goulding worked with what other writers on her third studio album, Delirium?",
+    "gold": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+    "entropy": 0.639031859650177,
+    "conditional_entropy": 0.6931471805599453,
+    "decisions": {
+      "greedy": {
+        "text": "Sophie Ellis-Bextor",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.8,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "Ola Salo and Tove Lo",
+        "prob": 0.1
+      },
+      {
+        "text": "Greg Kurstin",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.",
+    "gold": "Marion, South Australia",
+    "entropy": 1.2798542258336674,
+    "conditional_entropy": 1.0114042647073516,
+    "decisions": {
+      "greedy": {
+        "text": "Adelaide",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Melbourne",
+        "is_abstain": false,
+        "idk_prob": 0.4,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.4
+      },
+      {
+        "text": "Melbourne",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "Adelaide",
+        "prob": 0.2
+      },
+      {
+        "text": "Geelong",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "D1NZ is a series based on what oversteering technique?",
+    "gold": "Drifting",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.32508297339144826,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.7,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "drift",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "drifting",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "who is younger Keith Bostic or Jerry Glanville ?",
+    "gold": "Keith Bostic",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "Keith Bostic",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "Keith Bostic",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Keith Bostic",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+    "gold": "35,124",
+    "entropy": 1.2275294114572126,
+    "conditional_entropy": 1.3862943611198906,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.6
+      },
+      {
+        "text": "286,500",
+        "prob": 0.1
+      },
+      {
+        "text": "108,000",
+        "prob": 0.1
+      },
+      {
+        "text": "272,000",
+        "prob": 0.1
+      },
+      {
+        "text": "271,000",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Are both Cypress and Ajuga genera?",
+    "gold": "no",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "yes",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "yes",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "yes",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "What distinction is held by the former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting?",
+    "gold": "shortest player ever to play in the National Basketball Association",
+    "entropy": 0.500402423538188,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "shortest NBA player ever to appear in a game",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.5882352941176471
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.8,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "former NBA player",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+    "gold": "Ronald Shusett",
+    "entropy": 0.639031859650177,
+    "conditional_entropy": 0.6931471805599453,
+    "decisions": {
+      "greedy": {
+        "text": "Michael Deeley",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.8,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "Robert Wise",
+        "prob": 0.1
+      },
+      {
+        "text": "Robert Zemeckis",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Who was born earlier, Emma Bull or Virginia Woolf?",
+    "gold": "Adeline Virginia Woolf",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "Virginia Woolf",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.8
+        }
+      },
+      "consensus": {
+        "text": "Virginia Woolf",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.8
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Virginia Woolf",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+    "gold": "821",
+    "entropy": 1.7480673485460891,
+    "conditional_entropy": 1.7480673485460891,
+    "decisions": {
+      "greedy": {
+        "text": "104",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "212",
+        "is_abstain": false,
+        "idk_prob": 0.3,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "212",
+        "prob": 0.4
+      },
+      {
+        "text": "Roud Folk Song Index number 1058",
+        "prob": 0.1
+      },
+      {
+        "text": "1248",
+        "prob": 0.1
+      },
+      {
+        "text": "1400",
+        "prob": 0.1
+      },
+      {
+        "text": "1444",
+        "prob": 0.1
+      },
+      {
+        "text": "184",
+        "prob": 0.1
+      },
+      {
+        "text": "Roud 175",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+    "gold": "more than 70 countries",
+    "entropy": 1.0888999753452235,
+    "conditional_entropy": 1.0888999753452235,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "over 90",
+        "is_abstain": false,
+        "idk_prob": 0.4,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "over 90",
+        "prob": 0.6
+      },
+      {
+        "text": "110",
+        "prob": 0.2
+      },
+      {
+        "text": "120",
+        "prob": 0.1
+      },
+      {
+        "text": "88",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What WB supernatrual drama series was Jawbreaker star Rose Mcgowan best known for being in?",
+    "gold": "Charmed",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "Charmed",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "Buffy the Vampire Slayer",
+        "is_abstain": false,
+        "idk_prob": 0.3,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "Buffy the Vampire Slayer",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Vince Phillips held a junior welterweight title by an organization recognized by what larger Hall of Fame?",
+    "gold": "International Boxing Hall of Fame",
+    "entropy": 0.639031859650177,
+    "conditional_entropy": 0.6931471805599453,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.8,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "Ring magazine Hall of Fame",
+        "prob": 0.1
+      },
+      {
+        "text": "World Boxing Hall of Fame",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What is the name of the singer who's song was released as the lead single from the album \"Confessions\", and that had popular song stuck behind for eight consecutive weeks?",
+    "gold": "Usher",
+    "entropy": 1.0549201679861442,
+    "conditional_entropy": 0.6365141682948128,
+    "decisions": {
+      "greedy": {
+        "text": "Justin Bieber",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Usher",
+        "is_abstain": false,
+        "idk_prob": 0.4,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Usher",
+        "prob": 0.4
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.4
+      },
+      {
+        "text": "Rihanna",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "who is the younger brother of The episode guest stars of The Hard Easy ",
+    "gold": "Bill Murray",
+    "entropy": 0.639031859650177,
+    "conditional_entropy": 0.6931471805599453,
+    "decisions": {
+      "greedy": {
+        "text": "John Hamm",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.8,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "John Travolta",
+        "prob": 0.1
+      },
+      {
+        "text": "Richard Kline",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "The 2017\u201318 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as what for sponsorship reasons?",
+    "gold": "Carabao Cup",
+    "entropy": 1.0888999753452238,
+    "conditional_entropy": 0.6829081047004717,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Carabao Cup",
+        "is_abstain": false,
+        "idk_prob": 0.3,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Carabao Cup",
+        "prob": 0.4
+      },
+      {
+        "text": "EFL Cup",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.30000000000000004
+      }
+    ]
+  },
+  {
+    "question": "Which of Tara Strong major voice role in animated series is an American animated television series based on the DC Comics fictional superhero team, the \"Teen Titans\"?",
+    "gold": "Teen Titans Go!",
+    "entropy": 0.6730116670092565,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "Raven",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Teen Titans",
+        "is_abstain": false,
+        "idk_prob": 0.4,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.8
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Teen Titans",
+        "prob": 0.6
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.4
+      }
+    ]
+  },
+  {
+    "question": "What is the inhabitant of the city where  122nd SS-Standarte was formed in2014",
+    "gold": "276,170 inhabitants",
+    "entropy": 0.8018185525433372,
+    "conditional_entropy": 0.6365141682948128,
+    "decisions": {
+      "greedy": {
+        "text": "M\u00fcnsteraner",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.7,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7
+      },
+      {
+        "text": "Hallescher",
+        "prob": 0.2
+      },
+      {
+        "text": "German",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What color clothing do people of the Netherlands wear during Oranjegekte or to celebrate the national holiday Koningsdag? ",
+    "gold": "orange",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "orange",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "orange",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "orange",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "What was the name of the 1996 loose adaptation of William Shakespeare's \"Romeo & Juliet\" written by James Gunn?",
+    "gold": "Tromeo and Juliet",
+    "entropy": 1.0296530140645737,
+    "conditional_entropy": 0.6730116670092563,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.5,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.5
+      },
+      {
+        "text": "She's the Man",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "Romeo + Juliet",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "Robert Suettinger was the national intelligence officer under which former Governor of Arkansas?",
+    "gold": "William Jefferson Clinton",
+    "entropy": 0.639031859650177,
+    "conditional_entropy": 0.6931471805599453,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "Mike Huckabee",
+        "prob": 0.1
+      },
+      {
+        "text": "George H. W. Bush",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What American professional Hawaiian surfer born 18 October 1992 won the Rip Curl Pro Portugal?",
+    "gold": "John John Florence",
+    "entropy": 1.2798542258336674,
+    "conditional_entropy": 1.0114042647073516,
+    "decisions": {
+      "greedy": {
+        "text": "Kanoa\u02bbi Kanoa",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Kolohe Andino",
+        "is_abstain": false,
+        "idk_prob": 0.4,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.4
+      },
+      {
+        "text": "Kolohe Andino",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "Kelly Slater",
+        "prob": 0.2
+      },
+      {
+        "text": "Kanoa Igarashi",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?",
+    "gold": "Ann",
+    "entropy": 0.639031859650177,
+    "conditional_entropy": 0.6931471805599453,
+    "decisions": {
+      "greedy": {
+        "text": "Ann",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.8,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "Jill",
+        "prob": 0.1
+      },
+      {
+        "text": "Marie",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Alvaro Mexia had a diplomatic mission with which tribe of indigenous people?",
+    "gold": "Apalachees",
+    "entropy": 1.2275294114572126,
+    "conditional_entropy": 1.3862943611198906,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.6
+      },
+      {
+        "text": "Creek Nation",
+        "prob": 0.1
+      },
+      {
+        "text": "Pueblo",
+        "prob": 0.1
+      },
+      {
+        "text": "Lipan Apache",
+        "prob": 0.1
+      },
+      {
+        "text": "Apache",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What nationality were social anthropologists Alfred Gell and Edmund Leach?",
+    "gold": "British",
+    "entropy": 0.500402423538188,
+    "conditional_entropy": 0.500402423538188,
+    "decisions": {
+      "greedy": {
+        "text": "English",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "English",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "English",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "British",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "In which year was the King who made the 1925 Birthday Honours born?",
+    "gold": "1865",
+    "entropy": 0.6730116670092565,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "1865",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "1865",
+        "is_abstain": false,
+        "idk_prob": 0.4,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "1865",
+        "prob": 0.6
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.4
+      }
+    ]
+  },
+  {
+    "question": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+    "gold": "Newport",
+    "entropy": 1.4978661367769952,
+    "conditional_entropy": 1.303092403761719,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Keene",
+        "is_abstain": false,
+        "idk_prob": 0.1,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Keene",
+        "prob": 0.5
+      },
+      {
+        "text": "Gilford",
+        "prob": 0.1
+      },
+      {
+        "text": "Manchester",
+        "prob": 0.1
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.1
+      },
+      {
+        "text": "Sullivan",
+        "prob": 0.1
+      },
+      {
+        "text": "Berlin",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "The Album Against the Wind was the 11th Album of a Rock singer Robert C Seger born may 6 1945. What was the Rock singers stage name ?",
+    "gold": "Bob Seger",
+    "entropy": 1.8866967846580782,
+    "conditional_entropy": 1.7328679513998633,
+    "decisions": {
+      "greedy": {
+        "text": "Rod Stewart",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Rodney",
+        "is_abstain": false,
+        "idk_prob": 0.2,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Rodney",
+        "prob": 0.2
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.2
+      },
+      {
+        "text": "Robbie",
+        "prob": 0.2
+      },
+      {
+        "text": "Robert Plant",
+        "prob": 0.1
+      },
+      {
+        "text": "Rodney Crowell",
+        "prob": 0.1
+      },
+      {
+        "text": "Robert Seger",
+        "prob": 0.1
+      },
+      {
+        "text": "Bob Seger",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?",
+    "gold": "Conscription",
+    "entropy": 1.4708084763221112,
+    "conditional_entropy": 1.4708084763221112,
+    "decisions": {
+      "greedy": {
+        "text": "single-sex registries",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "draft",
+        "is_abstain": false,
+        "idk_prob": 0.1,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "draft",
+        "prob": 0.4
+      },
+      {
+        "text": "draft lottery",
+        "prob": 0.2
+      },
+      {
+        "text": "exempting women from the Selective Service Act",
+        "prob": 0.2
+      },
+      {
+        "text": "male-only draft",
+        "prob": 0.1
+      },
+      {
+        "text": "drafting",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Handi-Snacks are a snack food product line sold by what American multinational confectionery, food, and beverage company that is based in Illinois?",
+    "gold": "Mondelez International, Inc.",
+    "entropy": 1.1682824501765625,
+    "conditional_entropy": 0.9502705392332345,
+    "decisions": {
+      "greedy": {
+        "text": "Mars, Inc",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.4
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.5,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.5
+      },
+      {
+        "text": "Mars, Inc",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "Mondel\u0113z International",
+        "prob": 0.1
+      },
+      {
+        "text": "Mondelez International",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What was the name of a woman from the book titled \"Their Lives: The Women Targeted by the Clinton Machine \" and was also a former white house intern?",
+    "gold": "Monica Lewinsky",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 1.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born?",
+    "gold": "April 1, 1949",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "December 7, 1943",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.7,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "September 12, 1949",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "In what year was the novel that Louren\u00e7o Mutarelli based \"Nina\" on based first published?",
+    "gold": "1866",
+    "entropy": 0.639031859650177,
+    "conditional_entropy": 0.6931471805599453,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.6,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "1943",
+        "prob": 0.1
+      },
+      {
+        "text": "1949",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Where are Teide National Park and Garajonay National Park located?",
+    "gold": "Canary Islands, Spain",
+    "entropy": 0.639031859650177,
+    "conditional_entropy": 0.639031859650177,
+    "decisions": {
+      "greedy": {
+        "text": "Tenerife, Canary Islands",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.6666666666666666
+        }
+      },
+      "consensus": {
+        "text": "Canary Islands",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.8
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Canary Islands",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "Atlantic Ocean",
+        "prob": 0.1
+      },
+      {
+        "text": "Tenerife",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "How many copies of Roald Dahl's variation on a popular anecdote sold?",
+    "gold": "250 million",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "over 90 million",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.4
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.7,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "over 12 million",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "What occupation do Chris Menges and Aram Avakian share?",
+    "gold": "director",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "film director",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.6666666666666666
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "film director",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "Andrew Jaspan was the co-founder of what not-for-profit media outlet?",
+    "gold": "The Conversation",
+    "entropy": 1.2798542258336674,
+    "conditional_entropy": 1.0114042647073516,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "The Intercept",
+        "is_abstain": false,
+        "idk_prob": 0.4,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.4
+      },
+      {
+        "text": "The Intercept",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "Democracy Now!",
+        "prob": 0.2
+      },
+      {
+        "text": "Al Jazeera",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Which American film director hosted the 18th Independent Spirit Awards in 2002?",
+    "gold": "John Waters",
+    "entropy": 0.8979457248567797,
+    "conditional_entropy": 0.410116318288409,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "Quentin Tarantino",
+        "is_abstain": false,
+        "idk_prob": 0.3,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Quentin Tarantino",
+        "prob": 0.6
+      },
+      {
+        "text": "I don't know",
+        "prob": 0.30000000000000004
+      },
+      {
+        "text": "Richard Linklater",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Where does the hotel and casino located in which Bill Cosby's third album was recorded?",
+    "gold": "Las Vegas Strip in Paradise",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.9,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "Las Vegas, Nevada",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Do the drinks Gibson and Zurracapote both contain gin?",
+    "gold": "no",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "no",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "no",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "no",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
+    "gold": "March and April",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "January",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 1.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "Tysons Galleria is located in what county?",
+    "gold": "Fairfax County",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "Fairfax County",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "Fairfax County",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Fairfax County",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "Bordan Tkachuk was the CEO of a company that provides what sort of products?",
+    "gold": "IT products and services",
+    "entropy": 0.3250829733914483,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consensus": {
+        "text": "I don't know",
+        "is_abstain": true,
+        "idk_prob": 0.9,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "is_abstention_decision": true,
+    "clusters": [
+      {
+        "text": "I don't know",
+        "prob": 0.8999999999999999
+      },
+      {
+        "text": "software solutions",
+        "prob": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Which filmmaker was known for animation, Lev Yilmaz or Pamela B. Green?",
+    "gold": "Levni Yilmaz",
+    "entropy": 0.500402423538188,
+    "conditional_entropy": 0.500402423538188,
+    "decisions": {
+      "greedy": {
+        "text": "Lev Yilmaz",
+        "is_abstain": false,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.5
+        }
+      },
+      "consensus": {
+        "text": "Lev Yilmaz",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 0.0,
+          "f1": 0.5
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Lev Yilmaz",
+        "prob": 0.7999999999999999
+      },
+      {
+        "text": "Pamela B. Green",
+        "prob": 0.2
+      }
+    ]
+  },
+  {
+    "question": "In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?",
+    "gold": "Beijing",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "Beijing",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "Beijing",
+        "is_abstain": false,
+        "idk_prob": 0.2,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "Beijing",
+        "prob": 0.9999999999999999
+      }
+    ]
+  },
+  {
+    "question": "Are Yingkou and Fuding the same level of city?",
+    "gold": "no",
+    "entropy": 1.1102230246251564e-16,
+    "conditional_entropy": 0.0,
+    "decisions": {
+      "greedy": {
+        "text": "no",
+        "is_abstain": false,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      },
+      "consensus": {
+        "text": "no",
+        "is_abstain": false,
+        "idk_prob": 0.0,
+        "metrics": {
+          "em": 1.0,
+          "f1": 1.0
+        }
+      }
+    },
+    "is_abstention_decision": false,
+    "clusters": [
+      {
+        "text": "no",
+        "prob": 0.9999999999999999
+      }
+    ]
+  }
+]
