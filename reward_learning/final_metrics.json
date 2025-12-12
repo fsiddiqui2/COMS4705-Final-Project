@@ -1,9 +1,0 @@
-{
-  "model": "checkpoints/checkpoint_epoch_0_step_9992",
-  "dataset": "hotpot_qa",
-  "samples": 1000,
-  "EM": 67.60000000000001,
-  "F1": 72.08075383947346,
-  "Avg_RAUQ": 1.252978422164917,
-  "Abstention_Rate": 55.900000000000006
-}
