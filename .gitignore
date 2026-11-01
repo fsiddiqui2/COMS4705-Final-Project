@@ -1,3 +1,31 @@
+# environments
 venv/
+.venv/
+env/
 __pycache__/
+*.pyc
 .env
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# large generated data (hosted on the Hugging Face Hub, see README)
+*.jsonl
+*.safetensors
+*.bin
+*.pth
+*.pt
+*/qwen_abstention_finetuned/*/checkpoint-*/
+*/qwen_abstention_finetuned/*/adapter_model*
+*/qwen_abstention_finetuned/*/runs/
+
+# course material and scratch (not part of the project)
+zFILES/
+COMS4705_source.zip
+checklist.md
+checklist_answers.md
+template912pm.tex
+fintune-cot/

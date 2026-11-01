@@ -1,0 +1,106 @@
+{
+  "instruct": {
+    "comparison": {
+      "count": 1487,
+      "em": 53.26,
+      "f1": 61.05,
+      "sel_count": 1487,
+      "sel_em": 53.26,
+      "sel_f1": 61.05
+    },
+    "bridge": {
+      "count": 5918,
+      "em": 10.22,
+      "f1": 18.48,
+      "sel_count": 5918,
+      "sel_em": 10.22,
+      "sel_f1": 18.48
+    },
+    "overall": {
+      "count": 7405,
+      "em": 18.87,
+      "f1": 27.03,
+      "sel_count": 7405,
+      "sel_em": 18.87,
+      "sel_f1": 27.03
+    }
+  },
+  "sft": {
+    "comparison": {
+      "count": 1487,
+      "em": 58.98,
+      "f1": 67.06,
+      "sel_count": 1487,
+      "sel_em": 58.98,
+      "sel_f1": 67.06
+    },
+    "bridge": {
+      "count": 5918,
+      "em": 12.64,
+      "f1": 22.46,
+      "sel_count": 5918,
+      "sel_em": 12.64,
+      "sel_f1": 22.46
+    },
+    "overall": {
+      "count": 7405,
+      "em": 21.94,
+      "f1": 31.42,
+      "sel_count": 7405,
+      "sel_em": 21.94,
+      "sel_f1": 31.42
+    }
+  },
+  "cot": {
+    "comparison": {
+      "count": 1487,
+      "em": 61.0,
+      "f1": 69.17,
+      "sel_count": 1487,
+      "sel_em": 61.0,
+      "sel_f1": 69.17
+    },
+    "bridge": {
+      "count": 5918,
+      "em": 15.09,
+      "f1": 25.01,
+      "sel_count": 5918,
+      "sel_em": 15.09,
+      "sel_f1": 25.01
+    },
+    "overall": {
+      "count": 7405,
+      "em": 24.31,
+      "f1": 33.88,
+      "sel_count": 7405,
+      "sel_em": 24.31,
+      "sel_f1": 33.88
+    }
+  },
+  "abstention sft": {
+    "comparison": {
+      "count": 1487,
+      "em": 59.38,
+      "f1": 66.84,
+      "sel_count": 1430,
+      "sel_em": 61.75,
+      "sel_f1": 69.51
+    },
+    "bridge": {
+      "count": 5918,
+      "em": 10.58,
+      "f1": 15.79,
+      "sel_count": 2543,
+      "sel_em": 24.62,
+      "sel_f1": 36.64
+    },
+    "overall": {
+      "count": 7405,
+      "em": 20.38,
+      "f1": 26.04,
+      "sel_count": 3973,
+      "sel_em": 37.98,
+      "sel_f1": 48.47
+    }
+  }
+}

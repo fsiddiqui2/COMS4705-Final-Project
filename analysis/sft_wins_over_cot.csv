@@ -1,0 +1,382 @@
+id,question,sft_em,sft_pred,gold_answers,cot_em,cot_pred
+5a8db19d5542994ba4e3dd00,Are Local H and For Against both from the United States?,1.0,yes,['yes'],0.0,no
+5ae22b8d554299234fd0440f,What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?,1.0,world's best goalkeeper,"[""World's Best Goalkeeper""]",0.0,best goalkeeper of the 20th century
+5a87c13f5542996e4f30890c,"In what city did the ""Prince of tenors"" star in a film based on an opera by Giacomo Puccini?",1.0,Rome,['Rome'],0.0,New York City
+5ae73acb5542991e8301cc07,D1NZ is a series based on what oversteering technique?,1.0,drifting,['Drifting'],0.0,drift racing
+5a80840f554299485f59863b,What WB supernatrual drama series was Jawbreaker star Rose Mcgowan best known for being in?,1.0,Charmed,['Charmed'],0.0,Buffy the Vampire Slayer
+5a8979f4554299669944a52e,What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?,1.0,Ann,['Ann'],0.0,Love
+5a879adb5542996e4f30887f,What other political position did the person who introduced the DISCLOSE Act hold?,1.0,United States Senator,['United States Senator'],0.0,U.S. Representative
+5a738d27554299623ed4abf3,"Who was born first, Erika Jayne or Marco Da Silva",1.0,Erika Jayne,['Erika Jayne'],0.0,Marco Da Silva
+5a7a8a9c554299042af8f666,The lamp used in many lighthouses is similiar to this type of lamp patented in 1780 by Aimé Argand?,1.0,Argand lamp,['Argand lamp'],0.0,Fresnel lens
+5ab642845542995eadeeff8e,Are Broughtonia and Laeliocattleya both orchids?,1.0,yes,['yes'],0.0,no
+5a88dcf9554299206df2b383,"What country does Hatton Hill and Hatton Castle, Angus have in common?",1.0,Scotland,['Scotland'],0.0,United Kingdom
+5ac02e31554299294b218f3f,Which post DC Extended Universe actress will also play a role in what is intended to be the fifth installment of the DC Extended Universe?,1.0,Gal Gadot,['Gal Gadot'],0.0,Margot Robbie
+5ab7e4dc5542995dae37e9df,"The Polar Bears featuring the voice of Armie Hammer, is also the same voice actor for which character in Cars 3?",1.0,Jackson Storm,['Jackson Storm'],0.0,Cruz Ramirez
+5a8c65a1554299585d9e3680,What is the name of the ethnic group who settled in Canada in the 17th century that participated in a conflict with Irish Catholic immigrants in the Shiners' War?,1.0,French Canadians,['French Canadians'],0.0,Scots-Irish
+5a7a3a945542996a35c17147,One Raffles Place is one of the tallest skyscrapers in the city of Singapore and tallest in the wolrd outside North America until it was succeeded by a Building in city?,1.0,Hong Kong,['Hong Kong'],0.0,Petronas Towers
+5ac1795f5542994ab5c67d5f,Who is known for producing the documentary television series based on the book by science historian James Burke?,1.0,James Burke,['James Burke'],0.0,David Attenborough
+5a7cb9b95542990527d55515,"What is the year of the event that occured first, Making Today a Perfect Day was produced, or Frozen was produced?",1.0,2013,['2013'],0.0,1978
+5a85ab905542994c784ddb35,"Two positions were filled in The Voice of Ireland b which British-Irish girl group based in London, England?",1.0,The Saturdays,['The Saturdays'],0.0,Little Mix
+5a8c66db554299585d9e3683,"What year was the film ""Mom"" released, starring the voice of Shashaa Tirupati?",1.0,2017,['2017'],0.0,2016
+5ae75a4c5542997b22f6a6f1,"The Bart the Fink episode of The Simpsons aired in February of 1996, and involves the host of which kiddie show?",1.0,The Itchy & Scratchy Show,['The Itchy & Scratchy Show'],0.0,Full House
+5ae4ec1e5542990ba0bbb19b,"In between The Bears and I and Oceans which was released on July 31, 1974, by Buena Vista Distribution?",1.0,The Bears and I,['The Bears and I'],0.0,Oceans
+5add311b5542994ed6169cc5,"What kind of dinosaur does Raymond Ochoa voice in the Pixar film ""The Good Dinosaur""?",1.0,Apatosaurus,['Apatosaurus'],0.0,sauropod
+5ac19d4c55429963665198bb,The Argentine National Anthem was adopted 3 years after which event that led to the removal of Viceroy Baltasar Hildalgo de Cisneros?,1.0,May Revolution,['May Revolution'],0.0,1810
+5abdd08d5542991f6610604c,"Which movie directed by James Gunn portrayed the fictional character, Ego the Living Planet?",1.0,Guardians of the Galaxy Vol. 2,['Guardians of the Galaxy Vol. 2'],0.0,Guardians of the Galaxy
+5ade190f55429975fa854e40,"The Government of Canada, which is the federal administration of Canada, is involved in what scandal in the province of Quebec?",1.0,Sponsorship scandal,['The sponsorship scandal'],0.0,Canada–Quebec scandal
+5ac1b5de5542994d76dccec6,Rex Riot is known for a remix of the Kanye West song that was from which album?,1.0,My Beautiful Dark Twisted Fantasy,['My Beautiful Dark Twisted Fantasy'],0.0,The College Dropout
+5a798f8c5542994bb9457023,What city and nation was the location of the 2015 Pacific Games where the Kiribati national basketball team finished with a 0-4 record?,1.0,"Port Moresby, Papua New Guinea","['Port Moresby, Papua New Guinea']",0.0,"Apia, Samoa"
+5ae533535542993aec5ec173,Watercliffe Meadow Primary Schools name change is an example of what term generally used to describe the avoidance of certain language?,1.0,political correctness,['political correctness'],0.0,euphemism
+5a726b0f5542997f827839be,"Who was born first, Samantha Cristoforetti or Jean-Loup Chrétien",1.0,Jean-Loup Jacques Marie Chrétien,['Jean-Loup Jacques Marie Chrétien'],0.0,Jean-Loup Chrétien
+5ae1465855429920d5234373,Berk Communication and Marketing Group  best known for representing an American professional baseball pitcher for what team?,1.0,New York Yankees,['New York Yankees'],0.0,Los Angeles Dodgers
+5ae7eb3c5542994a481bbe20,The Panel with striding lion  was one of many that lined the way north of the gate to the inner city of what location?,1.0,Babylon,['Babylon'],0.0,Constantinople
+5a80956e5542996402f6a579,What was the proper name of the husband of Lollia Paullina?,1.0,Gaius Julius Caesar Augustus Germanicus,['Gaius Julius Caesar Augustus Germanicus'],0.0,Lucius Domitius Ahenobarbus
+5ade6b67554299728e26c71c,"Michael Pollock was was a senior officer in the United Kingdom's naval warfare force, also known as the what?",1.0,Royal Navy,['Royal Navy'],0.0,RN
+5ae18d615542997283cd2229,To what sport does the Atomweight class belong?,1.0,mixed martial arts,['mixed martial arts'],0.0,MMA
+5abfa9745542997ec76fd426,"Young Sheldon, the tv series that follows the character Sheldon Cooper at the age of 9, is a spin-off from what prequel?",1.0,The Big Bang Theory,"['""The Big Bang Theory""']",0.0,The Good Times
+5adccf645542990d50227d32,"From which city in Oklahoma is the singer of a song that peaked at number 24 on ""Billboard"" magazine's pop chart in December 1953?",1.0,Oklahoma City,['Oklahoma City'],0.0,Okmulgee
+5a7cdcbf55429907fabef04f,"Which film came out first, Still Kicking: Six Artistic Women of Project Arts & Longevity or Time Bombs?",1.0,Still Kicking: Six Artistic Women of Project Arts & Longevity,['Still Kicking: Six Artistic Women of Project Arts & Longevity'],0.0,Time Bombs
+5addfc425542997dc7907101," Force India VJM10 is a Formula One racing car previous driven by Nico Hülkenberg, and is now driven by which driver born 17 September 1996?",1.0,Esteban Ocon,['Esteban Ocon'],0.0,Sergio Pérez
+5a8cee9b554299441c6b9f87,"Haier has North American rights to which appliance company headquartered in Louisville, Kentucky?",1.0,GE Appliances,['GE Appliances'],0.0,Whirlpool Corporation
+5a7f5ab65542995d8a8dde43,Cheek to cheek tour played shows at what place that is located on the Las Vegas strip that began their tour?,1.0,The Cosmopolitan of Las Vegas,['Cosmopolitan of Las Vegas'],0.0,Venetian Resort
+5ae686535542996d980e7bdc,The Black Belly of the Tarantula starred an actress who married what former member of the Beatles?,1.0,Ringo Starr,['Ringo Starr'],0.0,Paul McCartney
+5a7b81715542997c3ec971d4,"The author of the ""The Dagger and the Coin"" fantasy series was nominated for what award in 2017?",1.0,Hugo Award,['Hugo Award'],0.0,Nebula Award
+5a80b0565542996402f6a5f0,"Which band was formed first, Lit or Adorable?",1.0,Adorable,['Adorable'],0.0,Lit
+5ae4585c5542996836b02c89,Which band has more members Band of Skulls or Live ?,1.0,Live,['Live'],0.0,Band of Skulls
+5abeb0da5542997ec76fd34b,Were both Monkey Kingdom and Anaganaga O Dheerudu connected with Disney?,1.0,yes,['yes'],0.0,no
+5ab344fc55429969a97a811e,Do Bloody Mary and Sidecar share any ingredients in common?,1.0,no,['no'],0.0,lemon juice
+5ae3c0cc5542992f92d82369,"Peter Marc Jacobson is best known as the co-creator of the popular sitcom ""The Nanny"", which he created and wrote with his then wife an actress born in which year ?",1.0,1957,['1957'],0.0,1948
+5ae376a35542990afbd1e163,Are Peter Balakian and James Der Derian both teachers?,1.0,yes,['yes'],0.0,no
+5a85df525542994c784ddb9f,What former president of ABC television is a high ranking officer in the same company as Christine Mccarthy?,1.0,Robert Iger,['Robert A. Iger'],0.0,Bob Iger
+5ab322b1554299194fa93570,"Which type of character is featured by the P.L. Travers's third book and last novel in the ""Mary Poppins"" series?",1.0,fictional character,['fictional character'],0.0,child
+5ab55b0c554299488d4d995e, Billy Preston is an American college basketball player for a team that competes in what?,1.0,the Big 12 Conference,['the Big 12 Conference'],0.0,Southeastern Conference
+5a8091515542996402f6a563,Were Sound Team and Dead by Sunrise both formed before 2010? ,1.0,yes,['yes'],0.0,no
+5a77c4fe55429967ab10527b,What is it called when a piece of media is altered from its original state like when Bubba Sparxxx was featured in the song Oops?,1.0,remix,['Remix'],0.0,sampling
+5ab44ab25542991779162c58,What are both Camel Up and Outrage!?,1.0,board game,['board game'],0.0,game
+5a7199725542994082a3e88f,"Which publication still relies on paper printing, Human Events or Texas Highways? ",1.0,Texas Highways,['Texas Highways'],0.0,Human Events
+5ac09da45542996f0d89cc1d,"What is the main flavor of both soft drinks, Solo from Norway, and Sunkist?",1.0,orange,['orange'],0.0,lemon
+5ab69e8755429954757d3334,"Who is the album ""Look What You Made Me Do"" is on being released through?",1.0,Big Machine Records,['Big Machine Records'],0.0,Republic Records
+5a8b7e9c5542995d1e6f13c1,Psychopsis and Aubrieta are both genuses of which type of plants?,1.0,flowering plants,['flowering plants'],0.0,flowering plant
+5a75e7b255429976ec32bc95,"Which games, Strange Synergy or Qwirkle,  is a card game published by Steve Jackson Games?",1.0,Strange Synergy,['Strange Synergy'],0.0,Qwirkle
+5ae7da705542993210983f96,"What is the name of this New York based American investment management firm founded in 1982, whose co-CEO is Robert Mercer?",1.0,Renaissance Technologies,['Renaissance Technologies'],0.0,Bridgewater Associates
+5a73830d55429908901be2da,"What actress starred in ""The Golden Girls"" and was an animal rights activist?",1.0,Bea Arthur,['Bea Arthur'],0.0,Betty White
+5ab870ed55429934fafe6db9, The Canadian Hot 100 is a music industry record chart in Canada for for a song that is released separately from what?,1.0,album,['an album'],0.0,single
+5a8bde565542995d1e6f1454,Which airport Grand Forks International Airport or El Paso International Airport is closer to their town ?,1.0,El Paso International Airport,['El Paso International Airport'],0.0,Grand Forks International Airport
+5ae5f3bb5542996de7b71a7e,Which star of The Human Stain was born in 1937?,1.0,Anthony Hopkins,['Anthony Hopkins'],0.0,Jessica Lange
+5abf16965542993fe9a41dd3," Hamilton Evans ""Tony"" James is the COO and director of the largest alternative investment firm in what?",1.0,the world,['the world'],0.0,globally
+5a8adc935542992d82986fb0,"Which is headquarter farther south, Jet's Pizza or Chuck E. Cheese's?",1.0,Chuck E. Cheese's,"[""Chuck E. Cheese's""]",0.0,Jet's Pizza
+5a8c7232554299585d9e36a6,What is a Southern European island country that was home to an airline pilot who flew the CASA-212-200 Aviocar before retiring in 2008 for health reasons? ,1.0,Malta,['Malta'],0.0,Lampedusa
+5adf39d45542992d7e9f92e5,"Davy Crockett, King of the Wild Frontier:and Herbie Rides Again were both by which company?",1.0,Disney,['Disney'],0.0,Walt Disney Productions
+5ac294b955429921a00aafd0,"Which magazine was created first, Macworld or Soaps In Depth?",1.0,Macworld,['Macworld'],0.0,Soaps In Depth
+5ae0850055429945ae959396,"Who was older, Andrew Preston or James Taylor?",1.0,James Taylor,['James Taylor'],0.0,Andrew Preston
+5a7b43735542992d025e67cb,what type of media does Ratatouille and PlayStation 3 have in common?,1.0,video game,['video game'],0.0,visual
+5a9068f85542990a98493623,What was the nickname of the 76er who was drafted 3rd in the 2014 draft? ,1.0,The Process,['The Process'],0.0,The Nerlens
+5a8baf4b5542996e8ac889c5,"Which magazine has more issues each month, In These Times or Multinational Monitor?",1.0,Multinational Monitor,['Multinational Monitor'],0.0,In These Times
+5ae5e8c85542996de7b71a69,Name the actor who has acted in the film Arrival and who has been nominated for the Academy Award for Best Supporting Actor for the film `The Town' ?,1.0,Jeremy Renner,['Jeremy Renner'],0.0,Michael Stuhlbarg
+5a7e1a5455429965cec5ea5f,Moonlight starred the actor who played whom on the remake of Hawaii Five-0?,1.0,Steve McGarrett,['Steve McGarrett'],0.0,Detective Danny Williams
+5a7dc7735542990b8f503a93,Born 2 B.R.E.E.D. was co-written by the late singer-songwriter who has sold over how many records worldwide?,1.0,100 million,['100 million'],0.0,350 million
+5adfe0de55429925eb1afae9,"Who produced a song, written and performed by Paul McCartney and Michael Jackson, which was included on an album titled ""Pipes of Peace""?",1.0,George Martin,['George Martin'],0.0,Quincy Jones
+5ab83bd055429919ba4e2279,Vestfold and Telemark each border what other Norwegian county?,1.0,Buskerud,['Buskerud'],0.0,Akershus
+5a8bd9c95542997f31a41de2,At which university does the biographer of John Clare teach English Literature?,1.0,University of Oxford,['University of Oxford'],0.0,University of East Anglia
+5a75e62f5542992d0ec06013,"Johnny Mathis: Wonderful Wonderful aired at what luxury hotel, casino and spa resort located in Atlantic City, New Jersey?",1.0,Tropicana Casino & Resort,['Tropicana Casino & Resort'],0.0,Trump Taj Mahal
+5a7e14505542995ed0d16685,"Which canal is located farther east, Champlain Canal or Warren County Canal?",1.0,Champlain Canal,['Champlain Canal'],0.0,Warren County Canal
+5a74f8bd5542993748c8976a,"Which head coach has led their team for a longer period of time, Tim Cluess or Steve Prohm?",1.0,Tim Cluess,['Tim Cluess'],0.0,Steve Prohm
+5abd1daa55429933744ab72e,Do Singapore Sling and Fish House Punch both contain alcohol?,1.0,yes,['yes'],0.0,no
+5a7b3d565542992d025e67b6,In what mountain range that extends through multiple countries is there a mountain that lies southeast of Jacabamba?,1.0,Andes,['The Andes'],0.0,Cordillera Blanca
+5ae75eb45542991bbc976201,"Norman Buckley is associated with a family drama for what cable network, formerly known as ABC Family?",1.0,Freeform,['Freeform'],0.0,ABC Family
+5ab43b8a5542991779162c22,"Piano Concerto No. 6 in D major, Hess 15 is an unfinished piano concerto by a composer who passed away in which year ?",1.0,1827,['1827'],0.0,1828
+5ae14b5c55429920d52343aa,Luke Rockhold defeated the MMA fighter who was the first to earn a win against which champion in the UFC?,1.0,Anderson Silva,['Anderson Silva'],0.0,Georges St-Pierre
+5ab60aec554299110f2199c3,What type of writing did both Richard Harding Davis and Harry Stephen Keeler write?,1.0,fiction,['fiction'],0.0,novelist
+5abb189e5542996cc5e49fa4,In between Remember the Titans and My Favorite Martian which film film grossed $36.8 million domestically?,1.0,My Favorite Martian,['My Favorite Martian'],0.0,Remember the Titans
+5ab762fb55429928e1fe3857,The rifle cartridge created by the Swedish was also shared by which other nation?,1.0,Norway,['Norway'],0.0,Finland
+5a74feb75542996c70cfae6d,"Which man, Ibn Tufail or Ali Qushji, is best known for the development of astronomical physics independent from natural philosophy?",1.0,Ali Qushji,['Ali Qushji'],0.0,Ibn Tufail
+5a87d8355542993e715abfe4,"Which film was released first, Jawbreaker or Havenhurst?",1.0,Jawbreaker,['Jawbreaker'],0.0,Havenhurst
+5a7543d555429916b01642ce,"Who was born more recently, Flula Borg, or Dirk Nowitzki?",1.0,Flula Borg,['Flula Borg'],0.0,Dirk Nowitzki
+5ac072ef554299294b218fe4,What country of origin does Jerry Barrett and Florence Nightingale have in common?,1.0,English,['English'],0.0,England
+5adce3b95542990d50227d56,What profession is shared by both Monty Banks and George Seaton?,1.0,film director,['film director'],0.0,director
+5ab5ceb65542997d4ad1f1e2,Tui Flower and Julia child were both known for what?,1.0,cooking,['Cooking'],0.0,television
+5a78d06355429974737f78b4,The channel that has interviewed players such as the forward for the French national team is on what platform?,1.0,YouTube,['YouTube'],0.0,print
+5a82d71555429966c78a6a94,Were the Tundra Mine and Negus Mine located in the same country?,1.0,yes,['yes'],0.0,no
+5a74f5155542993748c89750,"What mine was operated by Royal Oak Mines at at earlier date, Kemess Mine or Colomac Mine?",1.0,Colomac Mine,['The Colomac Mine'],0.0,Kemess Mine
+5adce22c5542990d50227d51,In which football league does the son of Souleyman Sané play?,1.0,Premier League,['Premier League'],0.0,Ligue 1
+5a78fe8155429970f5fffe11,"Who was born first, Steve Hogarth or Donnie Munro?",1.0,Donnie Munro,['Donnie Munro'],0.0,Steven John Hogarth
+5a8f9c3f554299458435d69a,"The album ""Mr. 12 String Guitar"" features a singer that hosted a variety show from 1969 to 1972 on what newtork?",1.0,CBS,['CBS'],0.0,ABC
+5a84c4bb5542991dd0999dec,Who was involved in observing the natural progression of untreated syphilis in rural African-American men in Alabama?,1.0,John Charles Cutler,['John Charles Cutler'],0.0,U.S. Public Health Service
+5ab950bd55429970cfb8ea4c,Svíčková is a dish that includes dumplings that are prepared in what way?,1.0,boiled,['boiled'],0.0,boiled in milk
+5ab674b7554299110f219a0c,"What American filmmaker was the co-founder of Troma Entertainment film studio, Stanley Lloyd Kaufman, Jr. or Jay T. Wright?",1.0,"Stanley Lloyd Kaufman, Jr.","['Stanley Lloyd Kaufman, Jr.']",0.0,Jay T. Wright
+5a7e05f75542995f4f402394,"Which was released first, Hot Girls Wanted or China Blue?",1.0,China Blue,['China Blue'],0.0,Hot Girls Wanted
+5a7220f055429971e9dc92ac,What was the Volvo S70 essentially modeled after and was the first all wheel drive Volvo?,1.0,Volvo 850,['Volvo 850'],0.0,Volvo S80
+5a775f8a5542994aec3b72ba,"Who is the American singer-songwriter, who won an award for Best Female Video at the 2009 MTV Video Music Awards, and wrote a song for the 'AT&T Team USA Soundtrack'?",1.0,Taylor Swift,['Taylor Swift'],0.0,Kesha
+5abe024c5542991f661060a2,In what city is the football club that Robin Himmelmann is a goalkeeper for based?,1.0,Hamburg,['Hamburg'],0.0,Gelsenkirchen
+5ae3eeb25542995dadf2425e,Toni Braxton: Revealed was performed at a hotel and casino owned and operated by who?,1.0,Caesars Entertainment Corporation,['Caesars Entertainment Corporation'],0.0,Las Vegas Sands Corporation
+5ab2bc6b554299545a2cfa40,Pablo Jose Ozuna is the cousin of a Dominican professional baseball left fielder who made his MLB debut in what year?,1.0,2013,['2013'],0.0,2010
+5a82e36255429940e5e1a93b,What Manchester United and Portuguese national winger scored a goal in the 2009 FA Community Shield?,1.0,Nani,['Nani'],0.0,Cristiano Ronaldo
+5a84d4555542992a431d1aac,What award was won by the director who directed the eighth musical by the team of Richard Rodgers and Oscar Hammerstein II?,1.0,Tony Award,['Tony Award'],0.0,Academy Award for Best Director
+5a80e468554299260e20a1a9,Was Suzanne Chun Oakland a member of the upper of lower chamber of the Hawaii State Legislature?,1.0,lower chamber,['lower chamber'],0.0,upper
+5ab632aa55429953192ad296,"Trautmann is an upcoming British-German biographical film, starring German actor David Kross as a german footballer who played in which position ?",1.0,goalkeeper,['goalkeeper'],0.0,centre-back
+5a88ba2c554299206df2b34b,What country of origin does Traveling Wilburys and Tom Petty have in common?,1.0,American,['American'],0.0,United States
+5ae705725542995703ce8bbc,Come from the Heart:was first recorded by an artist that sang what genre of music?,1.0,country,['country'],0.0,country music
+5abe369055429976d4830a8a,"What area once connected Great Britain to continental Europe, and is thought to have been submerged around 6,200 BCE by a massive landslide along 290 km of the continental shelf?",1.0,Doggerland,['Doggerland'],0.0,English Channel
+5a7b69b155429927d897bfbc,"The Welsh professional footballer Dan Hanford has association with which club that is based in Clitheroe, Lancashire?",1.0,Clitheroe Football Club,['Clitheroe Football Club'],0.0,Accrington Stanley Football Club
+5a716dc15542994082a3e82b,Who is younger Kirk Humphreys or Tom Coburn?,1.0,Kirk Humphreys,['Kirk Humphreys'],0.0,"Thomas ""Tom"" Coburn"
+5ae74eeb5542991bbc9761e1,"What's the familiar short name of Polyethylene terephthalate, a material used by bottle makers such as Ecopack of Pakistan?",1.0,PET,['PET'],0.0,PET or PETE
+5a7a8d2355429941d65f26a1,Zacarías Ferreira is the uncle of a professional basketball player who played college basketball for who?,1.0,University of Kentucky,['University of Kentucky'],0.0,University of Texas at El Paso
+5ae400ab5542995dadf242be,"Were both the One, Inc. v. Olesen and  Erie Railroad Co. v. Tompkins cases ones that included a ruling by the United States Supreme Court?",1.0,yes,['yes'],0.0,no
+5a7f33115542992e7d278c84,"Who is the mother of Mary, Crown Princess of Denmark's husband?",1.0,Queen Margrethe II,['Queen Margrethe II'],0.0,Princess Benedikte of Denmark
+5a85f4ec5542994775f606c6,"The technique 'panenka' was first used by a player of what nationality against ""Die Katze von Anzing""? ",1.0,Czech,['Czech'],0.0,Czechoslovakian
+5ab3bd7d55429969a97a819f,Which team featured in both the 2012 and 2011 Cops del Rey Finals ?,1.0,Barcelona,['Barcelona'],0.0,Real Madrid and Barcelona
+5ac2509755429951e9e68543,What is the nationality of the man who finished third in the 2016 Pau Grand Prix?,1.0,British,['British'],0.0,Spanish
+5ac546975542993e66e8229a,"What year was the early consumer co-operative, in which a 2012 British biographical feature film tells the story of, formed?",1.0,1844,['1844'],0.0,1863
+5a7a19765542996a35c170cf,Pashto is the main language among a diaspora that has it's largest community in which country ?,1.0,Pakistan,['Pakistan'],0.0,Afghanistan
+5a7905f555429974737f7947,Is Driss Lachgar's birthplace the largest or the second largest city in Morocco?,1.0,second largest,['second largest'],0.0,largest
+5ae0575755429945ae95931f,The 1958 Pro Bowl was played at the California stadium that is the home for which college?,1.0,University of Southern California,['University of Southern California'],0.0,University of Southern California Trojans
+5ae7b6055542993210983f00,What is the organized crime syndicate founded and led by Carlos Alberto Rosales Mendoza who is friends with Osiel Cárdenas Guillén?,1.0,La Familia Michoacana,['La Familia Michoacana'],0.0,Gulf Cartel
+5abee69c5542993fe9a41d8b,The 1966 Football League Cup Final was contested with which team that is based in the West Midlands?,1.0,West Bromwich Albion Football Club,['West Bromwich Albion Football Club'],0.0,Stoke City
+5adf9b1e5542992d7e9f93b5,In what state is the university where Boria Sax is a lecturer and teacher located?,1.0,New York,['New York'],0.0,California
+5a79eef75542996c55b2dca6,Hotel Splendide is a British film from 2000 that features which James Bond actor?,1.0,Daniel Craig,['Daniel Craig'],0.0,Pierce Brosnan
+5a74ab6055429916b01641b9,"Which board game, Attack! or Can't Stop, was published first?",1.0,Can't Stop,"[""Can't Stop""]",0.0,Attack!
+5a72953b5542994cef4bc357,What Labor member of the House of Representatives in the Australian Parliament was a member of the Australian Labor Party Australian Young Labor?,1.0,Tony Burke,['Tony Burke'],0.0,Andrew Leigh
+5a7760165542993569682d74,What is the name of the English poet who wrote a poem titled Don Juan and also served as the real-life model of a character in the novel Glenarvon?,1.0,Lord Byron,['Lord Byron'],0.0,George Gordon Byron
+5ae33a6e5542992f92d8224d,Are Bitter Jester and The Future of Food both documentaries about food?,1.0,no,['no'],0.0,yes
+5ae0a74e554299603e41842f,Which case was brought to court first Miller v. California or Gates v. Collier ?,1.0,Miller v. California,['Miller v. California'],0.0,Gates v. Collier
+5a791ce955429974737f798e,Brett McClure competed in the pommel horse event at the 2001 Goodwill Games in what Australian province?,1.0,Queensland,['Queensland'],0.0,New South Wales
+5abae4995542996606241666,Did both  Slaughter-House Cases and United States v. Darby Lumber Co. involve civil rights law?,1.0,no,['no'],0.0,yes
+5ae608c15542992663a4f246,What magazine was started in 1925 and features the work of Barry Werth?,1.0,The New Yorker,['The New Yorker'],0.0,The Atlantic
+5ae0413555429942ec259c61,Who created the British television series to which Tofu was a sister series focusing on a range of sex attitudes in the twenty-first century from the viewpoint of everyday people?,1.0,Russell T Davies,['Russell T Davies'],0.0,Darren Star
+5addeb685542992200553bb1,Mastophora dizzydeani is a species of spider named after baseball player Jerome Herman Dean who goes by what nickname?,1.0,Dizzy Dean,['Dizzy Dean'],0.0,Dizzy
+5addd6045542997dc7907049,"Between the Riddlers Revenge and the Green Lantern, which stand-up roller coaster stands tallest?",1.0,Riddler's Revenge,"[""The Riddler's Revenge""]",0.0,Green Lantern
+5ae7fb1155429952e35ea9eb,"In what event was Harold Davis a former record holder, but now is held by Usain Bolt?",1.0,100 metres,['100 metres'],0.0,400 metres hurdles
+5ab85b1755429916710eb041,"Which mathematician worked with algebraic geometry instead of probability theory, Askold Khovanskii or Andrey Kolmogorov?",1.0,Askold Georgievich Khovanskii,['Askold Georgievich Khovanskii'],0.0,Askold Khovanskii
+5a7f38e255429930675136b6,"The Ronkonkama railroad station and the town of Islip, New York are near?",1.0,Long Island,['Long Island'],0.0,"Suffolk County, New York"
+5a8d4fbf5542994ba4e3dc68,In which county is this site located where Operation Buster–Jangle was conducted?,1.0,Nye County,['Nye County'],0.0,"Nye County, Nevada"
+5a75436155429974ef308cbc,The Pluralist school is said to have included what creator of the theory of atomism? ,1.0,Leucippus,['Leucippus'],0.0,Epicurus
+5adf37785542992d7e9f92d3,An NFL Color Rush uniform and a Third Jersey are both considered what type of uniform in the NFL?,1.0,alternate uniform,['alternate uniform'],0.0,uniform
+5adfc77b554299603e4183ab,Is Edison Sault Power Canal somehow linked with or used with the Cayuga–Seneca Canal?,1.0,no,['no'],0.0,yes
+5ae3789b5542992e3233c412,Riom Trial was headed by the French general who reached what distinction?,1.0,Marshal of France,['Marshal of France'],0.0,President of France
+5a8a1dbc55429970aeb7025a,Lex Antonia nullified the dictatorial laws set up by which Roman general?,1.0,Sulla,['Sulla'],0.0,Julius Caesar
+5a77720255429967ab10517f,"In what year did both Orson Scott Card's novel ""Ender's Game"" and Keri Hulme's ""The Bone People"" come out?",1.0,1985,['1985'],0.0,1983
+5ade28b15542997c77aded83,Is the Virgilia found in Africa? And is Koeleria found all over?,1.0,yes,['yes'],0.0,no
+5a7b88a85542995eb53be954,What year did Francesca Caccini's father die?,1.0,1618,['1618'],0.0,1609
+5ae002ec55429925eb1afbdc,"Who wrote the play performed by 1948 TV actor Nicholas Amer, were he played Ferdinand?",1.0,William Shakespeare,['William Shakespeare'],0.0,Oscar Hammerstein II and Richard Rodgers
+5adf32ee5542995534e8c767,What is the name of the national level academy for performing arts that Bhupen Hazarika won his award in 2008? ,1.0,Sangeet Natak Akademi,['Sangeet Natak Akademi'],0.0,"National Academy of Music, Dance and Drama"
+5ae2bba35542992decbdcd89,Which Beatles movie did the John's Children's  studio album Orgasm dub audience screams from?,1.0,A Hard Day's Night,"[""A Hard Day's Night""]",0.0,Help!
+5ae1b943554299492dc91b7f,"Are Macheng and Lianjiang, Guangdong both cities ?",1.0,yes,['yes'],0.0,no
+5a79c9395542994bb94570a2,Which two occupations does Ronnie Dunn and Annie Lennox have in common?,1.0,"singer, songwriter","['singer, songwriter']",0.0,singer and songwriter
+5a8089535542992bc0c4a762,Maria Curcio taught a classical pianist who is of what South American lineage?,1.0,Argentine,['Argentine'],0.0,Spanish and Argentine
+5a9042825542990a984935d6,What is the rule that makes a major difference between the National League and the American League that allows another player to bat for the pitcher?,1.0,Designated hitter rule,['the designated hitter rule'],0.0,DH rule
+5ab2b95c5542991669774072,Women's soccer star Caprice Dydasco plays for Newcastle Jets FC based in what nation?,1.0,Australia,['Australia'],0.0,Australian
+5adc3a7055429947ff173913,What is the nationality of the poet who wrote Une Tempete and first performed it in Tunisia?,1.0,French,['French'],0.0,French-Algerian
+5ab6b59f5542995eadef0065,Lost Someone was written by James Brown and an American R&B/soul singer who began his career in 1952 as a member of what gospel group?,1.0,The Gospel Starlighters,['Gospel Starlighters'],0.0,the Teenagers
+5a74be0b5542996c70cfadc8,Which Comcast-owned film studio produced the movie Radio Patrol?,1.0,Universal Pictures,['Universal Pictures'],0.0,Universal Filmed Entertainment Group
+5ae4a2d05542995ad6573de1,"Bridger, Gallatin County, Montana comprises the ski area that serves which college?",1.0,Montana State University,['Montana State University.'],0.0,Montana State University–Bozeman
+5adf4da15542995534e8c780,Are Philip Cortez and Julian Castro democratic or republican?,1.0,Democratic,['Democratic'],0.0,Democrat
+5a812d0555429938b61422e1,"Which breed of dog came first, the Norrbottenspets or the Blue Lacy?",1.0,Norrbottenspets,['Norrbottenspets'],0.0,Blue Lacy
+5a7fa55555429969796c1b0e,"The star of ""The Inkwell"" also starred in what 1993 movie as O-Dog?",1.0,Menace II Society,['Menace II Society'],0.0,Boyz n the Hood
+5a83335f5542996488c2e3ec,"Which American novelist was notable primarily for publishing science fiction, Allen Drury or Philip K. Dick?",1.0,Philip Kindred Dick,['Philip Kindred Dick'],0.0,Philip K. Dick
+5abb61c0554299642a094a86,Are both Trace Cyrus and Jizzy Pearl vocalists?,1.0,yes,['yes'],0.0,no
+5a79fac85542996c55b2dcc1,The Curaçao Centre for Correction and Detention changed its name to Sentro di Detenshon i Korekshon Kòrsou at this event which saw the dissolution of a Caribbean country on what date?,1.0,10 October 2010,['10 October 2010'],0.0,"October 10, 2010"
+5aba75e655429955dce3ee3c,In which city have Gary Ayres and Neil Craig both been head coach of the Crows?,1.0,Adelaide,['Adelaide'],0.0,Adelaide Oval
+5a83305d55429966c78a6b4a,In which U.S. state are MedStar Georgetown University Hospital and Providence Hospital?,1.0,District of Columbia,['District of Columbia'],0.0,"Washington, D.C"
+5a88ac3d554299206df2b328,What country of origin does Eric Lucassen and Party for Freedom have in common?,1.0,Dutch,['Dutch'],0.0,Netherlands
+5adddf5d5542997dc7907078,"Which sports station was the host of The Late Show, prior to Damien Fahey, an anchor for?",1.0,ESPN,['ESPN'],0.0,Fox Sports
+5ac31ad4554299741d48a1ee,Are Ainslee's Magazine and The Australian Women's Weekly both monthly magazines?,1.0,yes,['yes'],0.0,no
+5a7df6e65542995f4f402353,"Which American musician and songwriter was born earlier, Adam Duritz or Cherie Currie?",1.0,Cherie Ann Currie,['Cherie Ann Currie'],0.0,Cherie Currie
+5ab2771e554299340b5254d8,Said Fazal Akbar was appointed Governor by the President of Afghanistan that served until what day?,1.0,29 September 2014,['29 September 2014'],0.0,7 September 2014
+5ab2beba554299166977408f,Who is the father of the Prince in which William Joseph Weaver is most famous for painting a full length portrait of?,1.0,George III,['George III'],0.0,Prince Albert
+5ae765185542995703ce8c0f,"YouPorn was surpassed, in 2013, by competitor sites xHamster, Pornhub, LiveJasmin, and this website that is registered to the Polish company WGCZ Holding? ",1.0,XVideos,['XVideos'],0.0,XHamster
+5ab73de755429928e1fe383b,"Which item spanned farther distances regarding sales, Interact Home Computer or Sord M5?",1.0,Sord M5,['Sord M5'],0.0,Interact Home Computer
+5ab48f245542990594ba9c66,Did both the Beaulieu Mine and Colomac Mine fall into bankruptcy?,1.0,yes,['yes'],0.0,no
+5ae3e1e95542994393b9e78b,"""I Wed Three Wives"" is an episode of a television series that ran on what network?",1.0,ABC,['ABC'],0.0,CBS
+5a7b1a82554299042af8f6cf,What is the fourth most populous urban area in the Republic of Ireland and has the housing estate Corrib Park?,1.0,Galway,['Galway'],0.0,Galway City
+5ab596d95542992aa134a371,WHere are both Sanming and Jiutai District located?,1.0,China,['China'],0.0,Fujian province
+5a7fa48c5542994857a7679a,"In addition to Syosset Central, Half Hollow Hills Central, and the school district that has Henry L. Grishman as its superintendent, what other school district is near Hauppauge Union Free School District?",1.0,Commack School District,['Commack School District'],0.0,Northport-East Northport Union Free School District
+5ab809195542991d3222380f,"Which genus has 5 known species, Leonotis or Psychopsis?",1.0,Psychopsis,['Psychopsis'],0.0,Leonotis
+5a8e4e7855429917b4a5bd92,Are both Papa John's Pizza and Papa Gino's specialized in Pizza?,1.0,yes,['yes'],0.0,no
+5a76c98855429972597f13d0,Near what ocean does the highway carried by the Long-Allen bridge terminate near?,1.0,Atlantic Ocean,['the Atlantic Ocean'],0.0,Lake Huron
+5a87100655429960ec39b71e,Which British Indian novelist and essayist did Anthony Burgess address in a lengthy letter?,1.0,Salman Rushdie,['Salman Rushdie'],0.0,V. S. Naipaul
+5a886b7555429938390d3f4d,When did the party inspired by Cacareco begin in Canada?,1.0,1960s,['1960s'],0.0,1987
+5a87144155429960ec39b72b,"What topic does GeekDad cover that pertains to a line of plastic construction toys that are manufactured by a privately held company based in Billund, Denmark?",1.0,LEGO,['Lego'],0.0,toys and games
+5ac406c155429919431738fc,What are both Caleb Shomo and Brian Welch?,1.0,singer,['singer'],0.0,"musician, singer, and songwriter"
+5ab285d1554299449642c8dd,Monroe Regional Airport and Deadhorse Airport are both in this country?,1.0,United States,['United States'],0.0,yes
+5a81b4cc5542995ce29dcc3c,"Hotride is the fifteenth single released by what music group from Braintree, Essex, that was formed in 1990?",1.0,The Prodigy,['The Prodigy'],0.0,The Darkness
+5a84eecd5542994c784dda8e,What type of group does Pablo Carballo and Argentine Air Force have in common?,1.0,military,['military'],0.0,Argentine Air Force
+5ae0335655429925eb1afc28,"Who is the mother of Mary Robinson in Shakespeare's ""The Winter's Tale""",1.0,Leontes,['Leontes'],0.0,Hermione
+5abfde655542997719eab6f2,Does the band God Lives Underwater or the band The Dear Hunter come from a larger state?,1.0,God Lives Underwater,['God Lives Underwater'],0.0,The Dear Hunter
+5a8dd47c5542995a26add3fa,Love and Poison is the official biography of an English alternative rock band formed in what city?,1.0,London,['London'],0.0,Manchester
+5a8af0a355429950cd6afc1c,Armand Castelmary played Horatio in the 1868 version of the opera set to a play by whom?,1.0,William Shakespeare,['William Shakespeare'],0.0,Shakespeare
+5adbf3fa554299438c868ce0,The Cleveland Thyagaraja Festival is a type of festival that honors a type of music in what language?,1.0,Telugu,['Telugu'],0.0,South Indian
+5ab5cdb85542997d4ad1f1e0,"""Take Me"" is a song recorded by which American singer, actor, and producer who was one of the most popular and influential musical artists of the 20th century?",1.0,Frank Sinatra,['Frank Sinatra'],0.0,Elvis Presley
+5a7148d25542994082a3e766,"Which of these artists is older, Warrel Dane or Roy Khan?",1.0,Warrel Dane,['Warrel Dane'],0.0,Roy Khan
+5a81fbc25542990a1d231f09,"Are Sandy Mayer and Billy Martin both more successful at doubles than singles, in terms of tournament wins?",1.0,yes,['yes'],0.0,no
+5a81fa59554299676cceb1b0,What type of profession does Jonah Meyerson and Alison Pill have in common?,1.0,actor,['actor'],0.0,actress
+5ac29f58554299657fa28fe4,"The figure skater who was coached to Olympic, World, and national titles by Richard Callaghan was born in what year?",1.0,1982,['1982'],0.0,1956
+5ade6acf554299728e26c71a,"Between Yasujirō Ozu and Bent Hamer, who has more creative titles?",1.0,Bent Hamer,['Bent Hamer'],0.0,Yasujirō Ozu
+5a73266d5542994cef4bc47d,Who opened Gunnersby Park and signed the Munich Agreement?,1.0,Neville Chamberlain,['Neville Chamberlain'],0.0,King George VI
+5ae226755542996483e64906,"What computer was released earlier, Gradiente Expert or LNW-80?",1.0,LNW-80,['LNW-80'],0.0,Gradiente Expert
+5add5ac95542992200553ace,Which How to Steal a Million actor attended the Royal Academy of Dramatic Art?,1.0,Peter O'Toole,"[""Peter O'Toole""]",0.0,Richard Todd
+5ab5627b5542992aa134a2ff,How many members did Joseph Yablonski's union have in 2014?,1.0,"35,000","['35,000']",0.0,1.1 million
+5a7cd7f055429909bec7683e,What school was the actress who appeared with Michelle Williams in the last play by Russian playwright Anton Chekhov attending when she was signed on for a talent holding deal?,1.0,The Juilliard School,['Juilliard School'],0.0,Yale School of Drama
+5ae4083755429970de88d885,"What stone cube, meaning ""stumbling stone"", was designed by an American public affairs campaigner?",1.0,Stolperstein,['stolperstein'],0.0,Stolpersteine
+5ab6d9b25542995eadef00c8,"Which opera has more acts, Don Quichotte or Tosca?",1.0,Don Quichotte,['Don Quichotte'],0.0,neither
+5a80a1b25542992bc0c4a78c,Are either Edward H. Griffith or Edward Burns from Germany?,1.0,no,['no'],0.0,Edward Burns
+5ab5ec2a5542992aa134a3e3,What kind of group does Takahiro Moriuchi and Doug Pinnick have in common?,1.0,band,['band'],0.0,guitarist
+5ab3b7c555429969a97a8190,"On what date did the geological event, that caused the 2011 Japanese motorcycle Grand Prix to be rescheduled, take place ?",1.0,11 March 2011,"['11 March 2011,']",0.0,"March 11, 2011"
+5ab27287554299722f9b4d2c,Which of the following board games accommodates up to 10 players: The Game of Life or the History of the World?,1.0,The Game of Life,['The Game of Life'],0.0,neither
+5ab8680755429934fafe6da8,What type of profession do Dave Pirner and Les McKeown both have?,1.0,singer,['singer'],0.0,musician
+5ab3a83d5542992ade7c6e08,Faith Goldy got fired after an interview she gave on what production site edited by Andrew Anglin?,1.0,The Daily Stormer,['The Daily Stormer'],0.0,Infowars
+5ab9b4a555429970cfb8eb75,Is Rick Husband Amarillo International Airport or Grand Forks International Airport closer to the town it is near?,1.0,Grand Forks International Airport,['Grand Forks International Airport'],0.0,Rick Husband Amarillo International Airport
+5a8a44c65542996c9b8d5e85,"Which singer has been in more music bands, Michael Crafter or Martin Degville?",1.0,Michael Crafter,['Michael Crafter'],0.0,Martin Degville
+5ab3063e554299753aec58fe,Which goal scoring player in the 1992 FA Cup Final was Welsh?,1.0,Ian Rush,['Ian Rush'],0.0,Alan Shearer
+5a89d2d75542992e4fca83d2,What country of origin does Shawnee Trail and Great Indian Warpath have in common?,1.0,American,['American'],0.0,United States
+5ae5621655429908b63265fc,"Musical artist Diabolic and Vinnie Paz, who was featured on Diabolic's second studio album Fightin' Words, are both what type of musicians?",1.0,rapper,['rapper'],0.0,rapper and producer
+5a8e0370554299068b959e2d,"In which Florida city is Skyplex being constructed, featuring Skyscraper, the tallest rollercoaster in the world?",1.0,Orlando,['Orlando'],0.0,Lakeland
+5a8671e95542994775f60763,The Six Arms Saga was written by the former editor-in-chief of what company?,1.0,Marvel Comics,['Marvel Comics'],0.0,Ballantine Books
+5a8da97c554299068b959d84,"Which university offers more campuses in the Philippines, Fairleigh Dickinson University or the Western Institute of Technology?",1.0,Western Institute of Technology,['Western Institute of Technology'],0.0,Fairleigh Dickinson University
+5abce73055429959677d6b34,Riaz-Ur-Rehman Saghar wrote songs for the Pakistani singer who has performed at what US venue?,1.0,The Kennedy Center,['The Kennedy Center'],0.0,Carnegie Hall
+5ae5da8d55429929b08079d1,What player was the first overall pick in the 2004 NFL draft and had the Manning Field named after him?,1.0,Eli Manning,['Eli Manning'],0.0,Peyton Manning
+5adfed5e55429942ec259b92,What city does the company that owns Bumble and bumble have its headquarters in?,1.0,New York City,['New York City'],0.0,"Paris, France"
+5abe6f8455429965af743f03,What country of origin does Robert brothers and Jacques Charles have in common?,1.0,French,['French'],0.0,France
+5ab92f1f554299753720f77b,What profession does 2007 Formula 3 Euro Series and Romain Grosjeanhave in common?,1.0,driver,['driver'],0.0,racing driver
+5a8a1aea5542992e4fca8508,Are Myles Kennedy and SafetySuit both associated with rock bands?,1.0,yes,['yes'],0.0,no
+5a7b76225542997c3ec9719c,"What documentary has more creators, The Devil Came on Horseback or My Best Fiend?",1.0,The Devil Came on Horseback,['The Devil Came on Horseback'],0.0,My Best Fiend
+5ae3f82a5542996836b02c01,The CNN-News18 Indian of the Year award was created by Sagarika Ghose and a news anchor born in what year?,1.0,1965,['1965'],0.0,1960
+5ac2eb635542990b17b154a7,Where was the think tank founded by a neoconservative political analyst born in 1952 established?,1.0,"Washington, D.C.","['Washington, D.C.']",0.0,"University of California, Santa Barbara"
+5a76404b5542994ccc91873d,"Which documentary was made first, The Shame of a City or Unchained Memories?",1.0,Unchained Memories,['Unchained Memories'],0.0,The Shame of a City
+5ae564a155429960a22e02e4,What is part of an alternate title to a Three 6 Mafia song and is slang for a concoction which includes prescription-strength cough syrup also known as purple drank?,1.0,Sizzurp,['Sizzurp'],0.0,Purple drank
+5ae3fd595542995dadf24292,"Arrêtez-moi is a film in which film genre, known for suspense and anxiety?",1.0,thriller,['Thriller'],0.0,crime thriller
+5ac2a10e554299657fa28fec,What year did a blacklisted screenwriter share an Academy Award with Michael Kanin?,1.0,1942,['1942'],0.0,1952
+5abb9ad4554299642a094abe,Which terrorist group was the cause of the battle in which Mark E. Michell won an award for his actions?,1.0,Al-Qaeda,['al-Qaeda'],0.0,Somali National Alliance
+5abbee315542993f40c73c1d,Could you read both Bicycling and National Review,1.0,yes,['yes'],0.0,no
+5a75f7db5542994ccc918670,"Which breed of dog was first recognized by their country's official kennel club, the American Hairless Terrier or the Saint-Usuge Spaniel? ",1.0,American Hairless Terrier,['The American Hairless Terrier'],0.0,Saint-Usuge Spaniel
+5a8f2fed55429918e830d1c7,Both Bo Diddley and The Yardbirds played which common genre of music during their careers?,1.0,rock and roll,['rock and roll'],0.0,rock
+5a8edb7f55429917b4a5bdeb,Is 4 World Trade Center or Trump Palace Condominiums higher?,1.0,4 World Trade Center,['4 World Trade Center'],0.0,Trump Palace Condominiums
+5ab931475542991b5579f12f,"Which country in Florida is the airport associated with transportation in Jacksonville, Florida?",1.0,Duval County,['Duval County'],0.0,United States
+5ac175635542994ab5c67d4b,Who replaced the manager of the Aston Villa that began at Leeds United?,1.0,Martin O'Neill,"[""Martin O'Neill""]",0.0,Steve Bruce
+5a7a1f795542996c55b2dd1b,"If Selfridges in London is the UK's second largest shop, which store - today owned by the State of Qatar - is the biggest?",1.0,Harrods,['Harrods'],0.0,Oxford Street
+5ac322c95542995ef918c117,"Which magazine had more previous names, Watercolor Artist or The General?",1.0,The General,['The General'],0.0,Watercolor Artist
+5ab91ef3554299753720f708,"Gene Sculatti write for CREEM sometime in the 60s or 70s, what famous term did CREEM coin for describing a genre of rock?",1.0,punk rock,"['""punk rock']",0.0,punk
+5ac19ff65542994d76dcce8f,Is The Devils of Loudun and Maskarade both operas?,1.0,yes,['yes'],0.0,no
+5a7cd66a554299452d57ba90,"Which band had more members, Semisonic or Cake?",1.0,Cake,['Cake'],0.0,Semisonic
+5abdbf3755429933744ab818,Have Tionne Watkins and Park So-yeon both been members of a girl group?,1.0,yes,['yes'],0.0,no
+5abe67ae5542991f6610616b,"What is the name of the region that includes the cities Dover and Portsmouth, New Hampshire?",1.0,Seacoast Region,['Seacoast Region'],0.0,Seacoast
+5ab3849a55429969a97a8170,What part did Dan Lewis play for Arsenal Football Club?,1.0,goalkeeper,['goalkeeper'],0.0,midfielder
+5a72bb045542994cef4bc3e4,The Nun is based on what film series based on the real life cases of Ed and Lorraine Warren?,1.0,The Conjuring,['The Conjuring'],0.0,Paranormal Activity
+5ae3f1bb5542995ad6573cbe,"Which is a type of herb, Brassia or Achimenes?",1.0,Achimenes,['Achimenes'],0.0,Brassia
+5a8f45385542997ba9cb320a,Dahlia and Aruncus are both examples of what type of plant catagorization?,1.0,genus,['genus'],0.0,flowering plant
+5ab72d925542993667793f6e,What kind of group does Josey Scott and Kurt Cobain have in common?,1.0,band,['band'],0.0,rock band
+5a88f2cc55429938390d3ffb,"What year did the Jang Hoon directed film, starring Song Kang-ho in the title role and selected as the South Korean entry for the Best Foreign Language Film at the 90th Academy Awards, debut?",1.0,2017,['2017'],0.0,2006
+5ae40a2955429970de88d8a3,In what Italian region was the House of Grimaldi?,1.0,Liguria,['Liguria'],0.0,Provence-Alpes-Côte d'Azur
+5ab844815542992aa3b8c8af,What county is Icknield Walk First School located in?,1.0,Hertfordshire,['Hertfordshire'],0.0,London Borough of Waltham Forest
+5a8da2b05542994ba4e3dcdc,The Grieg crater is named for a Norwegian composer who composed during what era?,1.0,Romantic,['Romantic'],0.0,Romantic era
+5a74a26a55429979e28829d6,"Which composer was born earlier, Paul Hindemith or Béla Bartók?",1.0,Béla Viktor János Bartók,['Béla Viktor János Bartók'],0.0,Béla Bartók
+5ae28f43554299492dc91c2f,Is Chicago Rockford International Airport or McClellan–Palomar Airport closer to their nearest cities?,1.0,McClellan–Palomar Airport,['McClellan–Palomar Airport'],0.0,Chicago Rockford International Airport
+5ae6e36155429908198fa6d3,How many disciplines are combined in the degree that Hector Janse van Rensburg graduated from the University of York with?,1.0,three,['three'],0.0,two
+5abbaf6c554299660624171c,What was the profession of Cate Shortland and Sidney Franklin?,1.0,film director,['film director'],0.0,director
+5ac50bca55429924173fb57f,Where was Nobel Laureate in Physics know for his contributions with Abdus Salam and Steven Weinberg a professor?,1.0,Harvard University,['Harvard University'],0.0,Boston University
+5a8a484f5542996c9b8d5e94,"What city did the author of ""Portraits and Prayers"" choose to live in after moving to France?",1.0,Paris,['Paris'],0.0,a small village in the south of France
+5a7e02e05542995ed0d1667c,Was the Sacramento Deep Water Ship Channel or the Contra Costa Canal completed in an earlier year?,1.0,Contra Costa Canal,['Contra Costa Canal'],0.0,Sacramento Deep Water Ship Channel
+5add3e2b5542997545bbbcf5,Who directed both Last Days and Point Break?,1.0,Kathryn Bigelow,['Kathryn Bigelow'],0.0,Stacy Peralta
+5a8e4b7c5542990e94052ab7,What is the familial relationship of the founder of the Gulf Cartel to Juan García Ábrego?,1.0,uncle,['uncle'],0.0,cousin
+5a88364c5542994846c1ce2e,Were Ransom Riggs and John Berry from the same country?,1.0,yes,['yes'],0.0,no
+5ae205fd554299234fd043a9,"Which  baseball team who represents Texas Tech University in NCAA Division I college baseball is  ""The Law"" its home stadium",1.0,Texas Tech Red Raiders baseball,['Texas Tech Red Raiders baseball'],0.0,Texas Tech Red Raiders
+5ab6c63755429953192ad38b,Siegfriedstellung in the First World War was a defensive position of what country's army?,1.0,German,['German'],0.0,German Army
+5a810c44554299260e20a221,What objects were carried into battle by these naval ships for qhich the QF 6-pounder Hotchkiss were introduced to defend against?,1.0,torpedoes,['torpedoes'],0.0,torpedo boats
+5a77d5b855429949eeb29f77,"Which nationality is the international footballer, born 20 March 1984, who made his breakthrough La Liga debut in the 2002–03 Atlético Madrid season, scoring 13 league goals as a teenager?",1.0,Spanish,['Spanish'],0.0,Uruguayan
+5a7563a45542996c70cfaeec,What university employed the psychologist that inspired David McClelland's thinking on power??,1.0,Harvard University,['Harvard University'],0.0,University of Iowa
+5ab3acc9554299753aec5985,"Which genus's family comes first alphabetically, Crepis or Isatis?",1.0,Crepis,['Crepis'],0.0,Asteraceae
+5ab4396555429942dd415eed,What Kenya-based company owns the Tusker beer brand?,1.0,East African Breweries Limited,['East African Breweries Limited'],0.0,Tusker Breweries
+5a7a96b055429941d65f26d7,What is the central institution of Cheyenne Indian tribal governance that Ehyophsta was not a member of?,1.0,Council of Forty-Four,['the Council of Forty-four'],0.0,tribal council
+5ab95dd8554299743d22eb13,Which film came first The Strongest Man in the World or Candleshoe?,1.0,The Strongest Man in the World,['The Strongest Man in the World'],0.0,Candleshoe
+5abd0077554299700f9d7954,Lafe Pence was a member of which lower chamber of the United States congress?,1.0,United States House of Representatives,['United States House of Representatives'],0.0,House of Representatives
+5ae46c9d5542996836b02c9d,What prize was won in 1963by this physicist who was part of the Princeton Three?,1.0,Nobel Prize,['Nobel Prize'],0.0,None
+5a7c38c955429935c91b5132,"What characteristic meaning it's transferable between species, does monkeypox and cowpox virus both share?",1.0,zoonotic,['zoonotic'],0.0,poxvirus
+5a7322a25542991f9a20c634,Was the Metropolitan Life Insurance Company Tower [Met Life Tower] or the 15 Hudson Yards building designed by the firm of Napoleon LeBrun & Sons?,1.0,Metropolitan Life Insurance Company Tower,['The Metropolitan Life Insurance Company Tower'],0.0,Met Life Tower
+5ae36ee05542992f92d822c4,On what date will the election for which Krishanti Vignarajah is a declared Democratic candidate be held?,1.0,"November 6, 2018","['November 6, 2018']",0.0,"November 4, 2014"
+5adbe27c55429947ff173854,"Which university has more campuses, Dalhousie University or California State Polytechnic University, Pomona?",1.0,Dalhousie University,['Dalhousie University'],0.0,"California State Polytechnic University, Pomona"
+5a8ec3205542995a26add506,Does Dashboard Confessional have more members than World Party?,1.0,yes,['yes'],0.0,no
+5a8c92dd554299653c1aa0c4,Did Big Pig or Blur have more members?,1.0,Big Pig,['Big Pig'],0.0,Blur
+5ab439f055429942dd415eef,Which airport Albany International Airport and Dane County Regional Airport is nearer its local town ?,1.0,Dane County Regional Airport,['Dane County Regional Airport'],0.0,Albany International Airport
+5a72e4375542992359bc31bf,"Who is older, Lucy Gichuhi or Bob Day?",1.0,Bob Day,['Bob Day'],0.0,"Robert ""Bob"" Day"
+5ae0b4c15542993d6555ec21,What are The Ready Set and Cell?,1.0,band,['band'],0.0,musical group
+5add5f925542997545bbbd48,Tikkun and Moment are both what?,1.0,magazine,['magazine'],0.0,periodical
+5a7222b155429971e9dc92c4,"Which film, The Happiest Millionaire or Mars Needs Moms, was created first?",1.0,The Happiest Millionaire,['The Happiest Millionaire'],0.0,Mars Needs Moms
+5a83972f5542996488c2e46d,Roy Holder appeared in a 1967 film which was based on a play of the same name written by who?,1.0,William Shakespeare,['William Shakespeare'],0.0,Maxwell Anderson and James Jones
+5a8361f35542996488c2e431,Underwater! is a 1955 adventure film starring an American film actress who was a leading sex symbol in what decades?,1.0,1940s and 1950s,['1940s and 1950s'],0.0,1950s and 1960s
+5a87defa5542993e715abfec,"Nicholas Scibetta's hit man brother-in-law, who confessed to being involved in the murder of 19 people, helped prosecutors convict what Gambino family boss?",1.0,John Gotti,['John Gotti'],0.0,Anthony Provenzano
+5a7a4f335542990198eaf11e,"Who is from farther west, Kings of Convenience or Belle and Sebastian?",1.0,Belle and Sebastian,['Belle and Sebastian'],0.0,Kings of Convenience
+5a8da70a5542994ba4e3dcea,Ashly Burch is known for voicing Aloy in a video game released in what year?,1.0,2017,['2017'],0.0,2020
+5a7d003b55429907fabef0a1,"Who was born first, Vladimir Nabokov or Harper Lee?",1.0,Vladimir Vladimirovich Nabokov,['Vladimir Vladimirovich Nabokov'],0.0,Vladimir Nabokov
+5a76a2b55542993569682c6c,WonderWorks made an adaptation of what novel created by Frances Hogson Burnett?,1.0,A Little Princess,['A Little Princess'],0.0,The Secret Garden
+5ab455dc5542991779162c77,What relationship did Gordon Banks have to the person who killed American recording artist Marvin Gaye?,1.0,brother-in-law,['brother-in-law'],0.0,son
+5a8a410655429970aeb70279,Pyotr Verzilov is married to a Russian conceptual artist and what kind of activist?,1.0,political,['political'],0.0,feminist
+5a8f503c5542992414482a34,"The Prodigal Daughter, though a book about an American, is by a novelist of what nationality?",1.0,English,['English'],0.0,Canadian
+5a8534305542997b5ce3ffc4,"Between the two operas, Mosè in Egitto and Lucrezia Borgia, which one has more acts?",1.0,Mosè in Egitto,['Mosè in Egitto'],0.0,Lucrezia Borgia
+5a8351fd55429954d2e2ec98,What superhero is followed in the American comic book series that started as a horror comics anthology and introduced the fictional realm based on Norse mythology?,1.0,Thor,['Thor'],0.0,Odin
+5a8e8bed5542990e94052b47,What United Kingdom Prime Minister was succeeded in the 1990s by the Leader of the Conservative Party?,1.0,Margaret Thatcher,['Margaret Thatcher'],0.0,John Major
+5a7f63645542992e7d278cf1,Did Vertical Horizon or LCD Soundsystem start their bands first?,1.0,Vertical Horizon,['Vertical Horizon'],0.0,LCD Soundsystem
+5ade157e55429939a52fe802,"Jaroslav Kvapil the Czech poet was born in the Kingdom of Bohemia, also referred to by what name?",1.0,Czech Kingdom,['Czech Kingdom'],0.0,Bohemia
+5ae73d415542991e8301cc2b,Who co-wrote Taylor Swift's song that had its music video premiere during the pre-show of the 2015 MTV Video Music Awards? ,1.0,Max Martin and Shellback,['Max Martin and Shellback'],0.0,Max Martin
+5abaee4f5542996cc5e49f15,Were Cinderella and The Emperor's New Groove released by the same picture company?,1.0,no,['no'],0.0,yes
+5ab295eb554299194fa93412,Were both Ernst Messerschmid and Reinhold Ewald ESA astronauts?,1.0,no,['no'],0.0,yes
+5ade8b2655429975fa854eff,"What is the nickname of this American retired airline captain celebrated for his water landing with Jeffrey Skiles, after a bird strike and being unable to reach an airport?",1.0,Sully,['Sully'],0.0,The Miracle on the Hudson
+5a8b8b3a5542995d1e6f13e5,What is the relationship between the singers on the album Tales of Old Grand Daddy?,1.0,brothers,['brothers'],0.0,musician
+5ae2eda355429928c4239570,Who wrote the tragic play which also has a 1968 film with a soundtrack by Nino Rota?,1.0,William Shakespeare,['William Shakespeare'],0.0,Alexandre Dumas fils
+5ab746c8554299110f219aef,Are Angostura bitters and Springbokkie an alcoholic mixture?,1.0,yes,['yes'],0.0,no
+5ab7f0b9554299366779405d,What type of vegetation does Tabernaemontana and Crinum have in common?,1.0,plants,['plants'],0.0,flowering plant
+5ae52bc75542992663a4f12d,Where was Nexon who was composed by Adam Gubman located at?,1.0,South Korea,['South Korea'],0.0,"Seoul, South Korea"
+5ab989f755429970cfb8eb38,The creators of the product designation TSR 2002 was the first to publish what kind of game?,1.0,role-playing game,['role-playing game'],0.0,flight simulator
+5a8eaa74554299068b959e88,"Which American digital media company and news satire organization that publishes articles on international, national, and local news did the comic artist of Jim's Journal co-found?",1.0,The Onion,['The Onion'],0.0,The Daily Beast
+5a8b64695542997f31a41d04,Which southern Georgia city features the Blazers college athletic teams?,1.0,Valdosta,['Valdosta'],0.0,Carrollton
+5abbb64455429931dba144b4,The Trans-Tasman Challenge winning car was based off which second generation North american Ford compact car?,1.0,Ford Falcon,['Ford Falcon'],0.0,Ford Fairlane
+5a7286865542991f9a20c4cb,Which 1949 British black comedy film does the Skindles hotel appear on? ,1.0,Kind Hearts and Coronets,['Kind Hearts and Coronets'],0.0,The Lavender Hill Mob
+5a8f2ba155429918e830d1b9,What theme park was seen as a competitor for Ocean Park Hong Kong and opened in September 2005?,1.0,Hong Kong Disneyland,['Hong Kong Disneyland'],0.0,Universal Studios Hong Kong
+5ac3a2fa5542993915413857,This One's for the Children had lead vocals by the singer and songwriter of what nationality?,1.0,American,['American'],0.0,English
+5ab529b8554299637185c4e7,"Who commanded the Anglo-Canadian 21st Army Group and was nicknamed ""Monty""?",1.0,Bernard Montgomery,['Bernard Montgomery'],0.0,Field Marshal Bernard Montgomery
+5a8abcab5542996c9b8d5f67,Which was the last of four Alien films to feature Sigourney Weaver?,1.0,Alien Resurrection,['Alien Resurrection'],0.0,Prometheus
+5a7bc42e554299294a54aabe,What award was an actor born in 1955 that acted in the movie Ransom nominated for?,1.0,Academy Award,['Academy Award'],0.0,Academy Award for Best Actor
+5ae3d2715542990afbd1e1e9,Are Control Room and Meeting Resistance both documentary films that involve Iraq?,1.0,yes,['yes'],0.0,no
+5abcf1ce554299700f9d7930,Jayaraj made the 2016 epic historical drama that is an adaptation of what Shakespeare play?,1.0,Macbeth,['Macbeth'],0.0,Hamlet
+5a8241a855429940e5e1a819,The Sports Museum is a non-profit museum currently located in what multi-purpose arena that opened in 1995?,1.0,TD Garden,['TD Garden'],0.0,PNC Arena
+5ae532e955429908b632656f,Does the genus Cunninghamia or Chilopsis contain only one species?,1.0,Chilopsis,['Chilopsis'],0.0,Cunninghamia
+5a8b768655429949d91db5a9,What country of origin does Witness and Pamela Wallace have in common?,1.0,American,['American'],0.0,English
+5a8e92b55542995085b37458,What type of rock makes up the formation where Douglas Crabbe drove into a bar?,1.0,sandstone,['sandstone'],0.0,sedimentary rocks
+5a8a59c955429930ff3c0da6,Maximilian Büsser was the CEO of a company that produced timepieces from which country?,1.0,Swiss,['Swiss'],0.0,Switzerland
+5a7755c65542993569682d54,What is the name of a Sri Lankan political party associated with the aim of developing a national identity based on shared characteristics and preserving the nation's culture?,1.0,Sri Lanka Freedom Party,['The Sri Lanka Freedom Party'],0.0,Jathika Hela Urumaya
+5ab5e13c5542992aa134a3bf,What type of musician does Beau Bokan and Jason Scheff have in common?,1.0,singer,['singer'],0.0,singer-songwriter
+5a710a1e5542994082a3e4fd,"What is the genus of the viral disease that has symptoms such as fever, chills, loss of appetite, nausea, muscle pains, and headaches, and has a chance of causing liver damage?",1.0,Flavivirus,['Flavivirus'],0.0,Orthohepadnavirus
+5a8f55f9554299458435d5bd,What profession did Willi Forst and Elmer Clifton share?,1.0,actor,['actor'],0.0,film director
+5ab2b61d5542991669774065,Who did the actor who played a bellhop in Dead Heat on a Merry-Go-Round play in Star Wars?,1.0,Han Solo,['Han Solo'],0.0,C-3PO
+5a7cd8da55429909bec76845,Which The Wind's Twelve Quarters story depicts a summer festival in the utopian city of Omelas?,1.0,The Ones Who Walk Away from Omelas,['The Ones Who Walk Away from Omelas'],0.0,The Summer Festival
+5a89019a5542995153361259,Mazda's Mazda6 belongs to which country's car manufacturer?,1.0,Japanese,['Japanese'],0.0,Japan
+5ae3dce45542994393b9e783,"Oak Beach, New York and Great South Bay are both situated between what same island?",1.0,Long Island,['Long Island'],0.0,Fire Island
+5a8c6ebd5542996e8ac88aa9,What city is the army division that conducted Operation Blue Hearts in the Korean War based out of?,1.0,"Fort Hood, Texas","['Fort Hood, Texas']",0.0,Schofield Barracks
+5ab430f655429942dd415eca,"""The Chance of a Lunchtime"" is an episode of a BBC sitcom writtem by who?",1.0,John Sullivan,['John Sullivan'],0.0,Ricky Gervais
+5a7385c45542992d56e7e359,"Who was born first, British novelist Doris Lessing or American writer Philip K. Dick?",1.0,Doris May Lessing,['Doris May Lessing'],0.0,Doris Lessing
+5a836ce55542993344746012,Which genus has more species: Sarracenia or Butea?,1.0,Sarracenia,['Sarracenia'],0.0,Butea
+5ae16bce5542997b2ef7d1e8,"When is the election held for the position former policy director Krishanti ""Krish"" Vignarajah is running in?",1.0,"November 6, 2018","['November 6, 2018']",0.0,"June 26, 2018"
+5a8cd291554299441c6b9f14,"What is the name of the basketball team that trained under assistant coach, Steven Michael Henson at the University of Oklahoma ?",1.0,Oklahoma Sooners men's basketball,"[""Oklahoma Sooners men's basketball""]",0.0,University of Oklahoma Sooners men's basketball team
+5abf1ad15542997ec76fd3c2,"Which French aristocrat and military officer who fought in the American Revolutionary War visited this historic home located at Enfield, Halifax County, North Carolina, known as The Cellar?",1.0,Marquis de Lafayette,['Marquis de Lafayette'],0.0,"Jean-Baptiste Donatien de Vimeur, Comte de Rochambeau"
+5a7103b35542994082a3e4c0,"Which mountain, Masherbrum or Khunyang Chhish, is a taller mountain?",1.0,Khunyang Chhish,['Khunyang Chhish'],0.0,Masherbrum
+5a81c90a5542990a1d231eb4,Are the bands Tiger Please and Black Rebel Motorcycle Club from the same country? ,1.0,no,['no'],0.0,yes
+5a810006554299260e20a1f6,George Lucas created what character to raise Boba Fett?,1.0,Jango Fett,['Jango Fett'],0.0,Mirta Gevius
+5a73987c55429978a71e9039,Which production company was involved with both of the movies A Kid in King Arthur's Court and The Great Locomotive Chase?,1.0,Walt Disney Productions,['Walt Disney Productions'],0.0,Walt Disney Pictures
+5a901d6c5542995651fb50bd,"Which was formed first, Noori or Test Icicles?",1.0,Noori,['Noori'],0.0,Test Icicles
+5ae234005542994d89d5b392,Who has the highest scope in profession in  Rob Thomas or  James Dean Bradfield,1.0,James Dean Bradfield,['James Dean Bradfield'],0.0,Rob Thomas
+5add1eed5542992ae4cec485,"Which band was active the longest, Spirit of the West or Big Pig?",1.0,Spirit of the West,['Spirit of the West'],0.0,Big Pig
+5a7f39d055429934daa2fd2a,"Which is a comedy film, The Million Dollar Duck or Don Quixote?",1.0,The Million Dollar Duck,['The Million Dollar Duck'],0.0,Don Quixote
+5abda6e955429965af743d9b,What country does Ogwini Comprehensive Technical High School and Durban have in common?,1.0,South Africa,['South Africa'],0.0,none
+5a8484495542997175ce1ee8,Jamie Campbell Bower was a cast member of the TNT show that was canceled after how many seasons?,1.0,one,['one'],0.0,three
+5abace6b5542996cc5e49e99,"Irish print journalist, Arthur Quinlan, was the only one to interviewed which major figure of the Cuban Revolution?",1.0,Che Guevara,['Che Guevara'],0.0,Fidel Castro
+5a74872655429979e2882978,"What singer song writer born on December 13, 1989 wears jewelry from Porter Lyons?",1.0,Taylor Swift,['Taylor Swift'],0.0,Lorde
+5a828a7b55429954d2e2eb69,The retired American professional basketball player Walt Williams attended this institution in 1988 that is in which conference today?,1.0,Big Ten Conference,['Big Ten Conference'],0.0,Southeastern Conference
+5ab72a035542993667793f5c,What military organization does SS China Maru and Douglas SBD Dauntless have in common?,1.0,United States Navy,['United States Navy'],0.0,World War II
+5ae4a0ca5542995ad6573dcb,Bill Nelson flew as a Payload Specialist on a Space Shuttle launched for the first time in what year?,1.0,1981,['1981'],0.0,1983
+5ae71f06554299572ea54708,Christopher de Haro provided the financial backing to what Portuguese explorer who organised the Spanish expedition to the East Indies from 1519 to 1522? ,1.0,Ferdinand Magellan,['Ferdinand Magellan'],0.0,Francisco Serrano
+5a89a82c5542993b751ca973,Which of the following has released ten solo albums: Kristin Hersh or Mike Patton?,1.0,Kristin Hersh,['Kristin Hersh'],0.0,Mike Patton
+5a903b7f55429933b8a204af,"What year was the branch of military, who is credited with Operation Tidal Wave, created?",1.0,1942,['1942'],0.0,1941
+5a7ae2f2554299042af8f6aa,"Which sport has been played at the BayArena in Leverkusen, Germany, since 1958?",1.0,football,['football'],0.0,ice hockey
+5a7a34bf5542994f819ef151,In what NCAA division is the team Michael Beasley played basketball for in college?,1.0,Division I,['Division I'],0.0,I
+5a7a73e45542996c55b2ddb6,Evan Buliung played the character Aragon who is based on a character in a book series written by which author? ,1.0,J. R. R. Tolkien,['J. R. R. Tolkien'],0.0,J.R.R. Tolkien
+5ae43d7f5542996836b02c59,"Which director, John Schlesinger or Barbara Albert, was also a writer and film producer?",1.0,Barbara Albert,['Barbara Albert'],0.0,John Schlesinger
+5a90bb4e55429916514e7536,When was the town Emma Gramatica given its current name?,1.0,1927,['1927'],0.0,15 December 1986
+5a8173fa554299260e20a28e,Are Billy and Barak both breeds of scenthound? (Barak is also known as a Bosnian Coarse-haired Hound),1.0,yes,['yes'],0.0,no

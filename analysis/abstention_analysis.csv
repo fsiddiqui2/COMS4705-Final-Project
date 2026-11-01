@@ -1,0 +1,5 @@
+Reference Model,Precision,Recall,TP (Good Abstain),FP (Bad Abstain),FN (Missed Abstain)
+BASE,97.49%,55.69%,3346,86,2662
+SFT,95.72%,56.83%,3285,147,2495
+COT,93.97%,57.54%,3225,207,2380
+HARDEST,90.53%,60.85%,3107,325,1999
